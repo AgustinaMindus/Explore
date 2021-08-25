@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+    <!-- Meta tags -->
+    <meta name="description" content="Llevá un registro de todos tus viajes, podrás planificar lo que recorrerás 
+    por día a través de un mapa interactivo, según tus favoritos de cada ciudad. Todo te resultará más fácil!">
+
+    <meta name="keywords" content="mis viajes, mis aventuras, favoritos por el mundo, recomendaciones de viajes, excursiones, recorridos, 
+    viajeros, mochileros, mundo, mapa interactivo de viaje">
+
+    <meta name="copy" content="Explore">
+    <meta name="author" content="Agustina Mindus">
+
+    <!-- Open graph -->
+    <meta property="og:title" content="Explore - Guía de viajes.">
+    <meta property="og:descripcion" content="Descubrí y planificá cada momento de tu viaje, sumérgete en la 
+    aventura y rememorá las experiencias de cada lugar vivido. Explorá la tienda y elegí los objetos que te acompañarán en el viaje.">
+    <meta property="og:site_name" content="Explore">
+    <meta property="og:image" content="../multimedia/logo.svg">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../multimedia/favicon.ico" type="image/x-icon">
+
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Explore - Tus recorridos y favoritos por el mundo en un solo lugar.</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light nav" style="background-color: #88b773;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../multimedia/logo.svg" alt="logo" width="70" height="70">
+                </a>
+            
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
+              aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item pe-1 ps-1 m-auto">
+                    <a class="nav-link item" href="../secciones/quienes-somos.html">Quienes somos</a>
+                    </li>
+                    <li class="nav-item  pe-1 ps-1 m-auto dropdown">
+                         <a class="nav-link item" href="#" id="navbarDropdownMenuLink" 
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">Aventuras</a>
+                    <ul class="dropdown-menu submenu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item submenu-item" href="../secciones/aventuras.html">América</a></li>
+                      <li><a class="dropdown-item submenu-item" href="#">Asia</a></li>
+                      <li><a class="dropdown-item submenu-item" href="#">África</a></li>
+                      <li><a class="dropdown-item submenu-item" href="#">Europa</a></li>
+                      <li><a class="dropdown-item submenu-item" href="#">Oceanía</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item  pe-1 ps-1 m-auto">
+                        <a class="nav-link item" href="../secciones/galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item  pe-1 ps-1 m-auto">
+                        <a class="nav-link item" href="#contacto">Contacto</a>
+                    </li>   
+                </ul>
+                </div>
+    
+                <div class="navbar-nav">
+                    <li class="nav-item pe-3 ps-3 m-auto">
+                    <a href="../secciones/favoritos.html">
+                            <img class="favoritos" src="../multimedia/favoritos.svg" alt="favoritos" width="35" height="35">
+                    </a>
+                    </li>
+                    <li class="nav-item pe-2 ps-2 m-auto">
+                        <a class="nav-item" href="../secciones/perfil.html">
+                            <img src="../multimedia/user.svg" alt="perfil" width="45" height="45">
+                        </a>
+                    </li> 
+                </div>
+    
+            </div>
+        </nav>
+        </header>
+        <!-- FIN NAVBAR -->
+
+    <!-- Seccion RECORRIDOS -->
+        <section class="recorridos">
+
+            <div class="recorridos-inicio">
+                <h1>Mis recorridos</h1>
+                <img src="../multimedia/perfil.png" alt="perfil">
+            </div>
+
+            <div class="boton-ciudades">
+                <a href="#">Sevilla</a>
+                <a href="#">Valencia</a>
+                <a href="#">Barcelona</a>
+            </div>
+
+            <div class="lugares-contenedor">
+                <div class="lugares-card">
+                    <img src="../multimedia/plaza-espana.png" alt="Plaza España"></a>
+                    <a class="lugar1">Plaza España</a>
+                </div>
+            
+                <div class="lugares-card">
+                    <img src="../multimedia/alcazar.png" alt="Alcázar"></a>
+                    <a class="lugar2">Alcázar</a>
+                </div>
+            
+                <div class="lugares-card">
+                    <img src="../multimedia/setas.png" alt="Setas"></a>
+                    <a class="lugar3">Setas</a>
+                </div>
+            </div>
+
+            <div class="lugar-mapa">
+                <div class="lugar1-marcador"></div>
+                <div class="lugar2-marcador"></div>
+                <div class="lugar3-marcador"></div>
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d10586.536253594275!2d-5.992314093379265!3d37.38502259634726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e2!4m5!1s0x0%3A0x8926f5e874d3da39!2sPlaza%20de%20Espa%C3%B1a!3m2!1d37.3771957!2d-5.986892999999999!4m5!1s0xd126c198c41a24b%3A0xbaa976bfaec1fe87!2sReal%20Alc%C3%A1zar%20de%20Sevilla%2C%20Patio%20de%20Banderas%2C%20s%2Fn%2C%2041004%20Sevilla%2C%20Espa%C3%B1a!3m2!1d37.3830519!2d-5.9902257!4m5!1s0xd126c05109a541f%3A0xbda4ae6de1fed2c4!2sSetas%20de%20Sevilla%2C%20Plaza%20de%20la%20Encarnaci%C3%B3n%2C%20Seville%2C%20Spain!3m2!1d37.3933244!2d-5.991819!5e0!3m2!1ses-419!2sar!4v1627841578860!5m2!1ses-419!2sar" 
+                width="1150" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+        </section>
+
+        <section class="opiniones">
+            <h2>¡Mis recomendaciones!</h2>
+
+            <div class="opiniones-contenedor container">
+            <p> <strong> BARCELONA </strong> <br> 
+                <em> "Es una ciudad multicultural, el primer día que llegás te recomiendo
+                    hacer un free tour por la ciudad para ir aclimatandote.
+                    Podés almolzar en "La Boquería" algo al paso y continuar caminando
+                    por La Rambla. Playa La Barceloneta es ideal para descansar."</em>
+            </p>
+
+            <p> <strong> NÁPOLES </strong> <br> 
+                <em> "Tené cuidado con las motos, pasan a toda velocidad!
+                    Las pizzas fritas son demasiado ricas. Te recomiendo que te tomes
+                    bien temprano el tren a "Pompeya", en día un llegas a recorrer la ciudad.
+                    Por la tarde, probá el auténtico helado italiano!"</em>
+            </p>
+
+            <p> <strong> PARIS </strong> <br>
+                <em> "Podés empezar recorriendo Montmartre, luego tomarte algún
+                    subte que te lleve a la torre Eiffel y merender frente a ella. 
+                    Te recomiendo adquirir la entrada para subir a la torre online, te
+                    ahorrás mucho tiempo, más que nada en verano."</em>
+            </p>
+            </div>
+        </section>
+    <!-- Fin Seccion -->
+
+    <!--Seccion - CONTACTO-->
+    <section class="contacto p-5" id="contacto">
+        <form class="formulario container text-center">
+            <h2 class="m-auto">Contactanos</h2>
+            <div class="texto">
+                <label for="formControlInput" class="form-label mb-1 mt-3">Nombre</label>
+                <input type="text" class="form-control" placeholder="Nombre">
+            </div>
+            <div class="texto">
+              <label for="exampleInputEmail1" class="form-label mb-1 mt-3">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="nombre@cuenta.com.ar">
+            </div>
+            <div class="texto">
+                <label for="formControlInput" class="form-label mb-1 mt-3">¿Desde dónde nos seguís?</label>
+                <input type="text" class="form-control" placeholder="País y ciudad">
+            </div>
+            <div class="texto">
+                <label for="formControlInput" class="form-label mb-1 mt-3">Edad</label>
+                <input type="text" class="form-control" placeholder="Años">
+            </div>
+            <div class="texto form-check">
+              <input type="checkbox" class="form-check-input mt-4" id="exampleCheck1">
+              <label class="form-check-label mt-4" for="exampleCheck1">Quiero recibir novedades de viajes mensualmente</label>
+            </div>
+
+            <div id="text" class="form-text text-white m-4"> <em> No compartiremos esta información con nadie.</em></div>
+            
+            <button type="submit " class="btn btn-primary">ENVIAR</button>
+        </form>
+    </section>
+    
+
+    <!-- WHATSAPP -->
+    <section class="wsp">
+        <img src="../multimedia/wsp.svg" alt="whatsapp" width="30" height="30">
+    </section>
+    <!-- Fin WHATSAPP -->
+    <!--Fin seccion - CONTACTO-->
+
+<!--Pie de pagina-->
+<footer class="footer">
+    
+<div class="footer-li">
+    <nav>
+        <ul>
+            <li class="footer-li-2"><a href="../index.html#quienes-somos">Quienes somos</a></li>
+            <li class="footer-li-2"><a href="../secciones/aventuras.html">Aventuras</a></li>
+            <li class="footer-li-2"><a href="../secciones/galeria.html">Galeria</a></li>
+            <li class="footer-li-2"><a href="#contacto">Contacto</a></li>
+            <li class="footer-li-2"><a href="../secciones/perfil">Perfil</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="redes">
+        <p>¡Sigamos conectados!</p>
+        <div class="redes-img">
+        <a href="http://facebook.com">
+            <img src="../multimedia/img_fb.svg" alt="facebook">
+        </a>
+        <a href="http://instagram.com">
+            <img src="../multimedia/img_ig.svg" alt="instagram">
+        </a>
+        <a href="http://youtube.com">
+            <img src="../multimedia/img_yt.svg" alt="youtube">
+        </a>
+        </div>
+</div>
+
+</footer>
+<!-- Fin pie de pagina-->  
+
+<p class="legal">©2021 AGUS con ❤ en CODERHOUSE - Todos los derechos reservados.</p>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+</html>

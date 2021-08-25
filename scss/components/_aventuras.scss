@@ -1,0 +1,133 @@
+/* HTML AVENTURAS */
+.inicio-aventuras {
+    background-color: nth($color, 2);
+    width: $ancho;
+    padding: 20px 20px 120px 20px;
+
+        h1 {
+        @include titulos(nth($font-family, 4), nth($font-size, 6), $aling, $text-uppercase);
+        letter-spacing: $letter-spacing;
+        color: nth($color, 2);
+        padding-top: 45px;
+        }
+
+        p {
+        @include sub-titulos(nth($font-family, 4), nth($font-size, 5), $aling);
+        color: nth($color, 4);
+        padding: 32px;
+        }
+
+    .continentes {
+    padding: 30px 0 30px 0;
+    text-align: $aling;
+
+    
+        a {
+        @extend %texto;
+        color: nth($color, 3); 
+        text-transform: $text-uppercase;
+        padding: 10px 20px 10px 20px;
+        margin: 10px;
+
+            &:hover {
+            color: nth($color, 5);  
+            text-decoration: underline; 
+            }
+        }
+    }
+
+
+    .contenedor {
+        @extend %flex-3;
+
+        .card {
+        padding-bottom: 25px;
+
+        img {
+        border-radius: 8px 8px 0 0;
+        }
+
+        .card-body {
+        background-color: nth($color, 7);  
+        padding: 20px 0;
+        border-radius: 0 0 8px 8px;
+
+                .card-title {
+                @include titulos(nth($font-family, 4), nth($font-size, 3), $aling, $text-uppercase);
+                letter-spacing: $letter-spacing - 8px;
+                color: nth($color, 4);  
+                }
+        
+                .card-text {
+                @include sub-titulos(nth($font-family, 1), nth($font-size, 1), $aling);
+                color: nth($color, 6);  
+                padding: 15px;
+                }
+
+                .boton {
+                @include titulos(nth($font-family, 4), nth($font-size, 1), $aling, $text-uppercase);
+                background-color: nth($color, 1); 
+                text-decoration: $text-none;
+                color: nth($color, 7); 
+                @extend %boton;
+
+        
+                &:hover {
+                background-color:nth($color, 5);
+                color: nth($color, 7); 
+                }
+                }
+        }
+        }
+    }
+}
+
+
+/* MEDIA QUERYS AVENTURAS */
+
+@media only screen and (max-width:400px) {
+
+.inicio-aventuras {
+
+       p {
+        font-size:  nth($font-size, 3);
+        padding: 5px;
+        }
+
+     .continentes {
+        a {
+        font-size:  nth($font-size, 2);
+        padding: 75px;
+        }
+    }
+}
+}
+
+
+// /* Tablet  */
+@media only screen and (min-width:401px) and (max-width:768px) {
+    .inicio-aventuras {
+        p {
+            padding: 20px 0 0 0;
+        }
+
+       .continentes {
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+  
+            a {
+                padding: 10px 15px 10px 15px;
+                margin: 10px 15px;
+    
+            }
+        }
+    }
+}
+/* FIN MEDIA QUERYS AVENTURAS*/
+
+/* FIN HTML AVENTURAS*/

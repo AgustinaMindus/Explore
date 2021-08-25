@@ -1,0 +1,693 @@
+/* INDEX */
+.container-background {
+    background: linear-gradient(45deg, rgba(136,183,115,.6), 
+    rgba(162,166,222,.6), rgba(136,183,115,.6),
+    rgba(162,166,222,.6)) 0 0 / 1000% no-repeat, 
+   url("../multimedia/imagen-inicio.png") 0 0 / cover no-repeat;
+   -webkit-animation: gradientAnimation 40s ease infinite;
+   animation: gradientAnimation 40s ease infinite;
+   background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 0;
+
+    @-webkit-keyframes gradientAnimation {
+        0%   { background-position: 0% 30%, 0 0;}
+        25%  { background-position: 100% 70%, 0 0;}
+        50% { background-position: 0% 30%, 0 0;}
+        }
+    @keyframes gradientAnimation {
+        0%   { background-position: 0% 30%, 0 0;}
+        25%  { background-position: 100% 70%, 0 0;}
+        50% { background-position: 0% 30%, 0 0;}
+        }
+
+    .imagen-inicio {
+        h1 {
+            @include titulos(nth($font-family, 6), nth($font-size, 8), $aling, $text-uppercase);
+            letter-spacing: $letter-spacing;
+            text-shadow: $text-shadow;
+            color: nth($color, 7);
+            margin-top: 15%;
+            @include prefijos2(all 2s ease-in-out);
+        
+            &:hover {
+                color: nth($color, 7);
+                   @include prefijos(scale(1.25))
+            }
+        }
+        
+        p {
+        @include sub-titulos(nth($font-family, 4), nth($font-size, 4), $aling);
+        margin: 2px;
+        letter-spacing: $letter-spacing - 6px;
+        color: nth($color, 7);
+        text-shadow: $text-shadow;
+        }           
+    }
+}
+
+
+
+/* PREFERENCIAS */
+
+.preferencias {
+    background-color: nth($color, 2);
+    background-image: url("../multimedia/preferencias_fondo.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: $ancho;
+    text-align: $aling;
+    padding: 150px 0px 200px 0px;
+
+
+        h2 {
+        @include titulos(nth($font-family, 4), nth($font-size, 6), $aling, $text-uppercase);
+        letter-spacing: $letter-spacing - 8px;
+        padding-bottom: 60px;
+        color: nth($color, 4);
+        }
+
+        .preferencias-contenedor {
+        @extend %flex;
+           
+        .preferencias-card {
+            height: 130px;
+            width: 130px;
+            margin: 35px;
+            @extend %flex;
+
+            }
+            
+            .preferencias-card:hover {
+            height: 130px;
+            width: 130px;
+            background: nth($color, 5);
+            border: nth($color, 1) 2px solid;
+            border-radius: $border-radius;
+            }
+    
+            .preferencias-img1, .preferencias-img2, .preferencias-img3, .preferencias-img4,.preferencias-img5, .preferencias-img6 {
+                width: $ancho - 20%;
+            }
+
+            .preferencia-a {
+            @extend %texto;
+            letter-spacing: $letter-spacing - 8px;
+            color: nth($color, 1);
+            position: absolute;
+            margin-top: 165px;        
+            }
+
+    }
+}
+/* FIN PREFERENCIAS */
+
+/* MAPA */
+
+.mapa-1 {
+    background-color: nth($color, 2);
+    padding: 50px 0;
+
+    h2 {
+        @include titulos(nth($font-family, 3), nth($font-size, 5), $aling, $text-uppercase);
+        letter-spacing: $letter-spacing;
+        color: nth($color, 6);
+    }
+
+    p {
+        @include sub-titulos(nth($font-family, 5), nth($font-size, 2), $aling);
+        color: nth($color, 4);
+    }
+
+    .gps {
+        display: flex;
+        align-content: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .gps1, .gps2, .gps3, .gps4, .gps5, .gps6, .gps7, .gps8 {
+        width: 2%;
+        opacity:0;
+        @include prefijos2(all 1.5s ease-in-out)
+        }
+    }
+
+&:hover .gps1 {
+    @include prefijos(translateY(180px));
+    opacity:5;
+}
+
+&:hover .gps2 {
+    @include prefijos(translateY(360px));
+    opacity:5;
+}
+
+&:hover .gps3 {
+    @include prefijos(translateY(643px));
+    opacity:5;
+}
+
+&:hover .gps4 {
+    @include prefijos(translateY(450px));
+    opacity:5;
+}
+
+&:hover .gps5 {
+    @include prefijos(translateY(550px));
+    opacity:5;
+}
+
+&:hover .gps6 {
+    @include prefijos(translateY(300px));
+    opacity:5;
+}
+
+&:hover .gps7 {
+    @include prefijos(translateY(654px));
+    opacity:5;
+}
+
+&:hover .gps8 {
+    @include prefijos(translateY(195px));
+    opacity:5;
+}
+
+}
+
+/* FIN MAPA */
+
+
+/* TOP-10 */
+.top-10 {
+    background-color: nth($color, 6);
+    padding-bottom: 70px;
+    padding: 70px 0 100px 0;
+
+    h2 {
+        @include titulos(nth($font-family, 6), nth($font-size, 6), $aling, $text-uppercase);
+        letter-spacing: $letter-spacing;
+        color: nth($color, 8);
+        font-family: nth($font-family, 6);
+        font-size: nth($font-size, 6);
+    }
+
+    p {
+        @include sub-titulos(nth($font-family, 3), nth($font-size, 3), $aling);
+        letter-spacing: $letter-spacing - 8px;
+        color: nth($color, 4);
+        padding-bottom: 30px;
+    }
+
+    .destinos-contenedor {
+    @extend %flex-2;
+    padding-right: 30px;
+    padding-left: 30px;
+
+        .destinos-card {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        @include prefijos2(all 1s ease-in-out);
+        padding: 15px;
+        
+        &:hover {
+            @include prefijos(scale(1.1))
+        }
+        
+        img {
+        border-radius: $border-radius;
+        width: $ancho;
+        }
+
+        .top-a {
+        @extend %texto;
+        color: nth($color, 7);
+        text-shadow: $text-shadow;
+        margin-top: -54px;
+        margin-bottom: 30px;
+        }
+        }
+    }
+
+    .flecha {
+        margin: -40px;
+    }
+}
+/* FIN TOP-10 */
+
+
+/* QUIENES SOMOS */
+.quienes {
+    background-color: nth($color, 2);
+    color: nth($color, 7);
+    padding: 70px 0;
+    width: $ancho;
+    
+    h2 {
+        @include titulos(nth($font-family, 4), nth($font-size, 6), $aling, $text-uppercase);
+        letter-spacing: $letter-spacing;
+        text-align: $aling;
+        margin-bottom: 60px;
+        }
+
+    .info-quienes-somos {
+        @extend %flex-2;
+
+        .texto-quienes-somos {        
+        font-size: nth($font-size, 2);
+        font-family: nth($font-family, 1);
+        padding-right: 70px;
+        }
+
+        .mifoto {
+        width: $ancho - 10%;
+        border-radius: $border-radius;
+        @include prefijos2(0.5s linear);
+
+            &:hover{
+            -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+            box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+            }
+        }
+    }
+
+    .quienes-icon {
+    @extend %flex-3;
+    padding-top: 70px;
+
+        img {
+        width: $ancho - 87%;
+        }
+    }
+}
+/* FIN QUIENES SOMOS */
+
+
+/* CONTACTO */
+.contacto {
+    background: linear-gradient(45deg, rgba(240,190,156,.6), 
+     rgba(243,178,68,.6), rgba(106,134,102,.6),
+     rgba(185,206,173,.6)) 0 0 / 1000% no-repeat, 
+    url("../multimedia/img-contacto.png") 0 0 / cover no-repeat;
+    width: $ancho;
+         
+    .formulario {
+    width: $ancho - 50%;
+    padding: 40px;
+    background-color: #df864fce;
+    border-radius: $border-radius;
+    
+        h2 {
+        @include titulos(nth($font-family, 4), nth($font-size, 6), $aling, $text-uppercase);
+        letter-spacing: $letter-spacing - 5px;
+        color: nth($color, 2);
+        padding-bottom: 15px;
+        }
+
+        .texto {
+        @include sub-titulos(nth($font-family, 3), nth($font-size, 2), left);
+        color: nth($color, 7);
+        }
+
+        button {
+        background-color: nth($color,2);
+        border: 1px solid nth($color,2);
+        @include titulos(nth($font-family, 2), nth($font-size, 2), $aling, $text-uppercase);
+
+        &:hover{
+        background-color: nth($color,1);
+        border: 1px solid nth($color,1);
+        }
+        } 
+    }
+}
+
+
+/* WHATSAPP */
+.wsp {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 100;
+    background-color: #4dc247;
+    box-shadow: $text-shadow;
+    border-radius: 50%;
+    padding: 9px;
+}
+/* FIN WHATSAPP */
+
+/* FIN CONTACTO */
+
+
+// /* MEDIA QUERYS INDEX */ //
+
+// /* Mobile */
+
+ @media only screen and (max-width:400px) {
+    
+    .imagen-inicio {
+        width: $ancho;
+
+        h1, p {
+            padding: 0 10px;
+        }
+    }
+    
+    .preferencias {
+
+        h2 {
+        padding: 20px 30px;
+        text-align: $aling;
+        }
+
+        .preferencias-contenedor {
+            @extend %flex;
+           
+            .preferencias-card {
+            @extend %flex;
+            margin: 15px;
+            width: $ancho - 25%;
+            }
+            
+            .preferencias-img {
+                border-radius: $border-radius;
+                width: $ancho;
+                @include prefijos2(2.5s all)
+            }
+
+            .preferencia-a {
+            margin-top: -80px;
+            font-size: nth($font-size, 5);
+            }
+        }
+    }
+
+    .mapa-1 {
+        padding: 30px 0;
+       
+        p {
+        padding: 10px 30px;
+        }
+        
+    &:hover .gps1 {
+        @include prefijos(translateY(50px));
+        opacity:5;
+    }
+    
+    &:hover .gps2 {
+        @include prefijos(translateY(95px));
+        opacity:5;
+    }
+    
+    &:hover .gps3 {
+        @include prefijos(translateY(170px));
+        opacity:5;
+    }
+    
+    &:hover .gps4 {
+        @include prefijos(translateY(117px));
+        opacity:5;
+    }
+    
+    &:hover .gps5 {
+        @include prefijos(translateY(145px));
+        opacity:5;
+    }
+    
+    &:hover .gps6 {
+        @include prefijos(translateY(80px));
+        opacity:5;
+    }
+    
+    &:hover .gps7 {
+        @include prefijos(translateY(170px));
+        opacity:5;
+    }
+    
+    &:hover .gps8 {
+        @include prefijos(translateY(51px));
+        opacity:5;
+    }
+    
+    }
+
+    .top-10 {
+
+        p {
+            padding-bottom: 0px;
+        }
+
+        .destinos-contenedor{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+        padding: 0 40px;
+
+            .destinos-card {
+
+            .top-a {
+                font-size: nth($font-size, 5);
+                margin-top: -80px;
+                } 
+            }
+        }   
+
+        .flecha {
+            margin: 0px;
+            width: $ancho - 75%;
+        }
+    }
+     
+    .quienes {
+        padding: 35px 25px;
+        text-align: justify;
+        
+        h2 {
+            margin: 13px 0px;
+            }
+
+        .info-quienes-somos {
+            display: flex;
+            flex-direction: column;
+
+            .texto-quienes-somos {
+            margin: 13px 0px;
+            padding: 0;
+            }
+    }
+       .quienes-icon {
+        display: flex;
+        width: $ancho;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+            img {
+            width: $ancho - 40%;
+            margin-bottom: 30px;
+            }
+        }
+
+    }
+
+    .contacto {
+
+        .formulario{
+             width: $ancho;
+             padding: 40px 30px;
+        
+            h2 {
+                font-size: nth($font-size, 3);
+            }
+        }
+    }
+    
+    .wsp {
+    vertical-align: middle;
+    }
+}
+
+// /* Tablet  */
+ @media only screen and (min-width:401px) and (max-width:768px) {
+
+    .imagen-inicio {
+        padding: 100px 50px;
+    }  
+
+    .preferencias {
+    margin-bottom: -80px;
+
+        h2 {
+        padding: 5px 0 0 0;
+        text-align: $aling;
+        }
+
+        .preferencias-contenedor { 
+            .preferencias-card {
+                
+                margin: 15px 0 15px 0;
+                width: $ancho - 70%;
+                }
+                
+        .preferencia-a {
+        font-size: nth($font-size, 4);
+        position: relative;
+        margin-top: -60px;
+        } 
+
+    }
+}
+
+    .mapa-1 {
+        text-align: $aling;
+        padding: 10px;
+
+        h2{
+        padding: 20px 130px;
+        font-size: nth($font-size, 6);
+        }
+
+        .mapa-parrafo { 
+        padding-left: 0;
+        font-size: nth($font-size, 4);
+        }
+
+        .mapa-1-img {
+        padding: 0px;
+        margin: 20px 0px 20px 0px;
+        }
+        &:hover .gps1 {
+            @include prefijos(translateY(112px));
+            opacity:5;
+        }
+        
+        &:hover .gps2 {
+            @include prefijos(translateY(200px));
+            opacity:5;
+        }
+        
+        &:hover .gps3 {
+            @include prefijos(translateY(337px));
+            opacity:5;
+        }
+        
+        &:hover .gps4 {
+            @include prefijos(translateY(240px));
+            opacity:5;
+        }
+        
+        &:hover .gps5 {
+            @include prefijos(translateY(300px));
+            opacity:5;
+        }
+        
+        &:hover .gps6 {
+            @include prefijos(translateY(170px));
+            opacity:5;
+        }
+        
+        &:hover .gps7 {
+            @include prefijos(translateY(340px));
+            opacity:5;
+        }
+        
+        &:hover .gps8 {
+            @include prefijos(translateY(115px));
+            opacity:5;
+        }
+    }
+
+    
+    .top-10 {
+        padding-bottom: 50px;
+        padding-top: 50px;
+
+        p {
+            padding-bottom: 0px;
+        }
+        
+        .destinos-contenedor {
+
+            .destinos-card {
+                padding: 15px 8px;
+    
+            img {
+            width: $ancho;
+            }
+
+            .top-a {
+            font-size: nth($font-size, 1);
+            margin-top: -35px;
+            }
+            }
+        }
+
+        .flecha {
+            margin: 0px;
+            width: 17%;
+        }
+    }
+
+    .quienes {
+        padding: 35px 70px;
+        text-align: justify;
+        
+        h2 {
+            margin: 13px 0px;
+            }
+
+        .info-quienes-somos {
+            display: flex;
+            flex-direction: column;
+
+            .texto-quienes-somos {
+            margin: 13px 0px;
+            padding: 0;
+            }
+    }
+
+        .quienes-icon {
+            @extend %flex-3;
+            padding-top: 20px;
+        
+                img {
+                width: $ancho - 80%;
+                margin: 10px;
+                }
+        }    
+}
+
+ .contacto {
+
+    .formulario{
+        width: $ancho;
+    padding: 40px;
+
+        h2 {
+            font-size: nth($font-size, 3);
+        }
+    }
+}
+
+    .wsp {
+        vertical-align: middle;
+        margin: 25px;
+        }
+
+}
+
+/* FIN MEDIA QUERYS INDEX */
+
+/* FIN INDEX */
