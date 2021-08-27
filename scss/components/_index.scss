@@ -3,7 +3,7 @@
     background: linear-gradient(45deg, rgba(136,183,115,.6), 
     rgba(162,166,222,.6), rgba(136,183,115,.6),
     rgba(162,166,222,.6)) 0 0 / 1000% no-repeat, 
-   url("../multimedia/imagen-inicio.png") 0 0 / cover no-repeat;
+   url("../multimedia/imagen-inicio.jpg") 0 0 / cover no-repeat;
    -webkit-animation: gradientAnimation 40s ease infinite;
    animation: gradientAnimation 40s ease infinite;
    background-repeat: no-repeat;
@@ -292,10 +292,7 @@
 
 /* CONTACTO */
 .contacto {
-    background: linear-gradient(45deg, rgba(240,190,156,.6), 
-     rgba(243,178,68,.6), rgba(106,134,102,.6),
-     rgba(185,206,173,.6)) 0 0 / 1000% no-repeat, 
-    url("../multimedia/img-contacto.png") 0 0 / cover no-repeat;
+    background-color: nth($color, 2);
     width: $ancho;
          
     .formulario {

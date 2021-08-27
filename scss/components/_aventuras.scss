@@ -37,28 +37,28 @@
     }
 
 
-    .contenedor {
+    .contenedor-aventuras {
         @extend %flex-3;
 
-        .card {
+        .card-aventuras {
         padding-bottom: 25px;
 
-        img {
+        .img-aventuras {
         border-radius: 8px 8px 0 0;
         }
 
-        .card-body {
+        .contenedor-texto {
         background-color: nth($color, 7);  
         padding: 20px 0;
         border-radius: 0 0 8px 8px;
 
-                .card-title {
+                .titulo-aventuras {
                 @include titulos(nth($font-family, 4), nth($font-size, 3), $aling, $text-uppercase);
                 letter-spacing: $letter-spacing - 8px;
                 color: nth($color, 4);  
                 }
         
-                .card-text {
+                .parrafo-aventuras {
                 @include sub-titulos(nth($font-family, 1), nth($font-size, 1), $aling);
                 color: nth($color, 6);  
                 padding: 15px;
