@@ -14,12 +14,12 @@
           $aling,
           $text-uppercase
         );
-        color: nth($color, 7);
+        color: nth($color, 11);
         padding: 6px 15px;
   
         &:hover {
-          border-bottom: nth($color, 7) 3px solid;
-          color: nth($color, 7);
+          border-bottom: nth($color, 2) 3px solid;
+          color: nth($color, 11);
         }
       }
   

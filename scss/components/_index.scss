@@ -1,8 +1,8 @@
 /* INDEX */
 .container-background {
-    background: linear-gradient(45deg, rgba(136,183,115,.6), 
-    rgba(162,166,222,.6), rgba(136,183,115,.6),
-    rgba(162,166,222,.6)) 0 0 / 1000% no-repeat, 
+    background: linear-gradient(45deg, rgba(181,144,255,.5), 
+    rgba(199,255,240,.5), rgba(181,144,255,.5),
+    rgba(199,255,240,.5)) 0 0 / 1000% no-repeat, 
    url("../multimedia/imagen-inicio.jpg") 0 0 / cover no-repeat;
    -webkit-animation: gradientAnimation 40s ease infinite;
    animation: gradientAnimation 40s ease infinite;
@@ -22,18 +22,17 @@
         25%  { background-position: 100% 70%, 0 0;}
         50% { background-position: 0% 30%, 0 0;}
         }
-
+    
     .imagen-inicio {
         h1 {
             @include titulos(nth($font-family, 6), nth($font-size, 8), $aling, $text-uppercase);
             letter-spacing: $letter-spacing;
             text-shadow: $text-shadow;
-            color: nth($color, 7);
+            color: nth($color, 11);
             margin-top: 15%;
             @include prefijos2(all 2s ease-in-out);
         
             &:hover {
-                color: nth($color, 7);
                    @include prefijos(scale(1.25))
             }
         }
@@ -42,7 +41,7 @@
         @include sub-titulos(nth($font-family, 4), nth($font-size, 4), $aling);
         margin: 2px;
         letter-spacing: $letter-spacing - 6px;
-        color: nth($color, 7);
+        color: nth($color, 11);
         text-shadow: $text-shadow;
         }           
     }
@@ -53,72 +52,136 @@
 /* PREFERENCIAS */
 
 .preferencias {
-    background-color: nth($color, 2);
+    background-color: nth($color, 10);
     background-image: url("../multimedia/preferencias_fondo.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     width: $ancho;
     text-align: $aling;
-    padding: 150px 0px 200px 0px;
+    padding: 90px 0px;
 
 
         h2 {
         @include titulos(nth($font-family, 4), nth($font-size, 6), $aling, $text-uppercase);
-        letter-spacing: $letter-spacing - 8px;
+        letter-spacing: $letter-spacing *2;
         padding-bottom: 60px;
-        color: nth($color, 4);
+        color: nth($color, 9);
         }
 
         .preferencias-contenedor {
         @extend %flex;
+        
            
         .preferencias-card {
-            height: 130px;
-            width: 130px;
-            margin: 35px;
+            width: 165px;
+            margin: 55px 90px;
             @extend %flex;
+            
 
             }
             
             .preferencias-card:hover {
-            height: 130px;
-            width: 130px;
-            background: nth($color, 5);
-            border: nth($color, 1) 2px solid;
+            width: 165px;
+            background: nth($color, 10);
+            border: nth($color, 3) 2px solid;
             border-radius: $border-radius;
             }
     
             .preferencias-img1, .preferencias-img2, .preferencias-img3, .preferencias-img4,.preferencias-img5, .preferencias-img6 {
-                width: $ancho - 20%;
+                width: $ancho - 25%;  
+
+                
             }
 
             .preferencia-a {
             @extend %texto;
             letter-spacing: $letter-spacing - 8px;
-            color: nth($color, 1);
+            color: nth($color, 3);
             position: absolute;
-            margin-top: 165px;        
+            margin-top: 180px;        
             }
 
     }
 }
 /* FIN PREFERENCIAS */
 
+
+/* TOP-10 */
+.top-10 {
+    background-color: nth($color, 7);
+    padding-bottom: 70px;
+    padding: 80px 0 110px 0;
+
+    h2 {
+        @include titulos(nth($font-family, 6), nth($font-size, 6), $aling, $text-uppercase);
+        letter-spacing: $letter-spacing *2;
+        color: nth($color, 8);
+    }
+
+    p {
+        @include sub-titulos(nth($font-family, 3), nth($font-size, 2), $aling);
+        letter-spacing: $letter-spacing - 8px;
+        color: nth($color, 11);
+        padding-bottom: 30px;
+    }
+
+    .destinos-contenedor {
+    @extend %flex-2;
+    padding-right: 30px;
+    padding-left: 30px;
+
+        .destinos-card {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        @include prefijos2(all 1s ease-in-out);
+        padding: 15px;
+        
+        &:hover {
+            @include prefijos(scale(1.1))
+        }
+        
+        img {
+        border-radius: $border-radius;
+        width: $ancho;
+        }
+
+        .top-a {
+        @extend %texto;
+        color: nth($color, 11);
+        text-shadow: $text-shadow;
+        margin-top: -54px;
+        margin-bottom: 30px;
+        }
+        }
+    }
+
+    .flecha {
+        margin: -40px;
+    }
+}
+/* FIN TOP-10 */
+
 /* MAPA */
 
 .mapa-1 {
-    background-color: nth($color, 2);
-    padding: 50px 0;
+    background-color: nth($color, 10);
+    padding: 80px 0 110px 0;
 
     h2 {
-        @include titulos(nth($font-family, 3), nth($font-size, 5), $aling, $text-uppercase);
+        @include titulos(nth($font-family, 4), nth($font-size, 5), $aling, $text-uppercase);
         letter-spacing: $letter-spacing;
-        color: nth($color, 6);
+        color: nth($color, 9);
+        padding: 20px 0;
     }
 
     p {
         @include sub-titulos(nth($font-family, 5), nth($font-size, 2), $aling);
-        color: nth($color, 4);
+        color: nth($color, 2);
+        padding-bottom: 20px;
     }
 
     .gps {
@@ -179,68 +242,6 @@
 }
 
 /* FIN MAPA */
-
-
-/* TOP-10 */
-.top-10 {
-    background-color: nth($color, 6);
-    padding-bottom: 70px;
-    padding: 70px 0 100px 0;
-
-    h2 {
-        @include titulos(nth($font-family, 6), nth($font-size, 6), $aling, $text-uppercase);
-        letter-spacing: $letter-spacing;
-        color: nth($color, 8);
-        font-family: nth($font-family, 6);
-        font-size: nth($font-size, 6);
-    }
-
-    p {
-        @include sub-titulos(nth($font-family, 3), nth($font-size, 3), $aling);
-        letter-spacing: $letter-spacing - 8px;
-        color: nth($color, 4);
-        padding-bottom: 30px;
-    }
-
-    .destinos-contenedor {
-    @extend %flex-2;
-    padding-right: 30px;
-    padding-left: 30px;
-
-        .destinos-card {
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        flex-direction: row;
-        @include prefijos2(all 1s ease-in-out);
-        padding: 15px;
-        
-        &:hover {
-            @include prefijos(scale(1.1))
-        }
-        
-        img {
-        border-radius: $border-radius;
-        width: $ancho;
-        }
-
-        .top-a {
-        @extend %texto;
-        color: nth($color, 7);
-        text-shadow: $text-shadow;
-        margin-top: -54px;
-        margin-bottom: 30px;
-        }
-        }
-    }
-
-    .flecha {
-        margin: -40px;
-    }
-}
-/* FIN TOP-10 */
 
 
 /* QUIENES SOMOS */
@@ -311,8 +312,8 @@
         .texto {
         @include sub-titulos(nth($font-family, 3), nth($font-size, 2), left);
         color: nth($color, 7);
-        }
 
+    }
         button {
         background-color: nth($color,2);
         border: 1px solid nth($color,2);
