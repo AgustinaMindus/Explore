@@ -78,6 +78,11 @@
             padding: 0;
             }
     }
+
+        h3 {
+        margin: 70px 0 10px 0;
+        }
+        
        .quienes-icon {
         display: flex;
         width: $ancho;
@@ -88,16 +93,14 @@
         align-items: center;
 
             img {
-            width: $ancho - 40%;
-            margin-bottom: 30px;
+            width: $ancho - 30%;
+            margin-bottom: 10px;
             }
         }
 
     }
     
 }
-
-
 
 // /* Tablet  */
 @media only screen and (min-width:401px) and (max-width:768px) {
@@ -118,21 +121,25 @@
             margin: 13px 0px;
             padding: 0;
             }
-    }
+        }
 
+        h3{
+        @include titulos(nth($font-family, 3), nth($font-size, 6), $aling, $text-uppercase);
+        letter-spacing: $letter-spacing;
+        margin: 70px 0 20px 0;
+        }
+    
         .quienes-icon {
-            @extend %flex-3;
-            padding-top: 20px;
-        
-                img {
-                width: $ancho - 80%;
-                margin: 10px;
-                }
-        }    
-}
+    
+            img {
+            width: $ancho - 80%;
+            margin: 0px 0px;
+            padding: 10px 10px;
+            }
+        }  
+    }
+}    
 
-}
-    
-    
+/* FIN MEDIA QUERYS QUIENES SOMOS */
     
     /* FIN QUIENES SOMOS */

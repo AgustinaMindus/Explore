@@ -1,6 +1,6 @@
 /* HTML ERROR */
 .error {
-    background-color: nth($color, 4);
+    background-color: nth($color, 10);
     background-image: url("../multimedia/error_fondo.svg");
     background-repeat: no-repeat;
     width: $ancho;
@@ -18,7 +18,7 @@
 
     h4 {
         @include titulos(nth($font-family, 6), nth($font-size, 4), $aling, $text-uppercase);
-        color: nth($color, 1);
+        color: nth($color, 2);
         padding: 100px 380px 40px 380px;
     }
 
@@ -31,11 +31,74 @@
 
     a {
         @include titulos(nth($font-family, 4), nth($font-size, 1), $aling, $text-uppercase);
-        background-color: nth($color, 3); 
+        background-color: nth($color, 8); 
         text-decoration: $text-none;
-        color: nth($color, 7); 
+        color: nth($color, 11); 
         @extend %boton;
     }
 }
+
+/* MEDIA QUERYS ERROR*/
+
+@media only screen and (max-width:400px) {
+
+    .error {
+        background-color: nth($color, 10);
+        background-image: url("../multimedia/error_fondo2.svg");
+        background-repeat: no-repeat;
+        width: $ancho;
+        height: 80vh;
+        color: nth($color, 7);
+        text-align: $aling;
+        padding: 300px 0 60px 0;
+    
+        h1 {
+            @include titulos(nth($font-family, 6), nth($font-size, 4), $aling, $text-uppercase);
+            letter-spacing: $letter-spacing - 6px;
+            margin-top: -155px;
+            margin-left: 20px;
+        }
+    
+        h4 {
+            @include titulos(nth($font-family, 6), nth($font-size, 2), $aling, $text-uppercase);
+            color: nth($color, 2);
+            padding: 50px;
+        }
+    
+        p {
+            @include sub-titulos(nth($font-family, 4), nth($font-size, 1), $aling);
+            margin: 25px 20px 35px 20px;
+
+        }
+    }
+}   
+    
+    // /* Tablet  */
+    @media only screen and (min-width:401px) and (max-width:768px) {
+        .error {
+           
+            padding: 300px 0 60px 0;
+        
+            h1 {
+                @include titulos(nth($font-family, 6), nth($font-size, 5), $aling, $text-uppercase);
+                letter-spacing: $letter-spacing - 6px;
+                margin-top: -197px;
+                margin-left: 20px;
+            }
+        
+            h4 {
+                @include titulos(nth($font-family, 6), nth($font-size, 3), $aling, $text-uppercase);
+                color: nth($color, 2);
+                padding: 50px;
+            }
+        
+            p {
+                @include sub-titulos(nth($font-family, 4), nth($font-size, 2), $aling);
+                margin: 25px 20px 35px 20px;
+    
+            }
+        }
+    }
+    /* FIN MEDIA QUERYS ERROR*/
 
 /* FIN HTML ERROR */

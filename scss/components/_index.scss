@@ -341,31 +341,42 @@
 // /* MEDIA QUERYS INDEX */ //
 
 // /* Mobile */
-
  @media only screen and (max-width:400px) {
-    
-    .imagen-inicio {
-        width: $ancho;
 
-        h1, p {
-            padding: 0 10px;
+    .container-background {
+        height: 80vh;
+    
+        .imagen-inicio {
+        width: $ancho;
+        
+        h1 {
+        @include titulos(nth($font-family, 6), nth($font-size, 7), $aling, $text-uppercase);
+        padding: 35px 10px;
+        }
+        
+        p {
+        @include sub-titulos(nth($font-family, 4), nth($font-size, 3), $aling);
+        padding: 15px 10px;
+        }    
         }
     }
     
     .preferencias {
 
         h2 {
-        padding: 20px 30px;
-        text-align: $aling;
-        }
+            @include titulos(nth($font-family, 4), nth($font-size, 6), $aling, $text-uppercase);
+            letter-spacing: $letter-spacing - 2px;
+            padding: 20px 30px;
+            color: nth($color, 9);
+            }
 
         .preferencias-contenedor {
             @extend %flex;
            
             .preferencias-card {
             @extend %flex;
-            margin: 15px;
-            width: $ancho - 25%;
+            margin: 10px 0 70px 0;
+            width: $ancho - 40%;
             }
             
             .preferencias-img {
@@ -375,17 +386,47 @@
             }
 
             .preferencia-a {
-            margin-top: -80px;
+            margin-top: 200px;
             font-size: nth($font-size, 5);
             }
         }
     }
 
+    .top-10 {
+
+        p {
+            padding-bottom: 30px;
+        }
+
+        .destinos-contenedor{
+            display: flex;
+            padding: 0 40px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+
+            .destinos-card {
+
+                .top-a {
+                font-size: nth($font-size, 5);
+                margin-top: -75px;
+                } 
+            }
+        }   
+
+        .flecha {
+            margin: 0px;
+            width: $ancho - 65%;
+        }
+    }
+
     .mapa-1 {
-        padding: 30px 0;
+        padding: 10px 0 30px 0;
        
         p {
-        padding: 10px 30px;
+        padding: 0 30px;
         }
         
     &:hover .gps1 {
@@ -429,47 +470,20 @@
     }
     
     }
-
-    .top-10 {
-
-        p {
-            padding-bottom: 0px;
-        }
-
-        .destinos-contenedor{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-content: center;
-        align-items: center;
-        padding: 0 40px;
-
-            .destinos-card {
-
-            .top-a {
-                font-size: nth($font-size, 5);
-                margin-top: -80px;
-                } 
-            }
-        }   
-
-        .flecha {
-            margin: 0px;
-            width: $ancho - 75%;
-        }
-    }
      
-    
     .contacto {
-
-        .formulario{
-             width: $ancho;
-             padding: 40px 30px;
-        
-            h2 {
-                font-size: nth($font-size, 3);
-            }
+        padding: 30px 0;
+    
+        .formulario {
+    
+        .form {
+        width: $ancho - 20%;
+        padding: 40px 30px;
+    
+            button {
+            padding-left: 8px;
+            } 
+        }
         }
     }
     
@@ -481,51 +495,91 @@
 // /* Tablet  */
  @media only screen and (min-width:401px) and (max-width:768px) {
 
-    .imagen-inicio {
-        padding: 100px 50px;
-    }  
+    .container-background {
+    
+        .imagen-inicio {
 
+        
+        h1 {
+        padding: 35px 0;
+        }
+        
+        p {
+        padding: 25px 0;
+        }    
+        }
+    } 
+
+    
     .preferencias {
-    margin-bottom: -80px;
+    margin-bottom: 0;
 
         h2 {
-        padding: 5px 0 0 0;
+        padding: 0 0 40px 0;
         text-align: $aling;
         }
 
         .preferencias-contenedor { 
             .preferencias-card {
-                
-                margin: 15px 0 15px 0;
+                margin: 15px 0 40px 0;
                 width: $ancho - 70%;
                 }
                 
         .preferencia-a {
         font-size: nth($font-size, 4);
         position: relative;
-        margin-top: -60px;
+        margin-top: 5px;
         } 
 
     }
 }
 
-    .mapa-1 {
-        text-align: $aling;
-        padding: 10px;
+.top-10 {
+    padding-bottom: 50px;
+    padding-top: 50px;
 
-        h2{
-        padding: 20px 130px;
-        font-size: nth($font-size, 6);
+    p {
+        padding-bottom: 0px;
+    }
+    
+    .destinos-contenedor {
+
+        .destinos-card {
+            padding: 15px 8px;
+
+        img {
+        width: $ancho;
         }
 
-        .mapa-parrafo { 
-        padding-left: 0;
-        font-size: nth($font-size, 4);
+        .top-a {
+        font-size: nth($font-size, 1);
+        margin-top: -35px;
+        }
+        }
+    }
+
+    .flecha {
+        margin: 15px;
+        width: 10%;
+    }
+}
+
+    .mapa-1 {
+        padding: 10px 0;
+
+        h2{
+        padding: 30px 65px;
+        font-size: nth($font-size, 5);
+        }
+
+        p { 
+        padding: 0 0 0 0;
+        font-size: nth($font-size, 3);
         }
 
         .mapa-1-img {
         padding: 0px;
-        margin: 20px 0px 20px 0px;
+        margin: 0 0 20px 0;
         }
         &:hover .gps1 {
             @include prefijos(translateY(112px));
@@ -568,49 +622,22 @@
         }
     }
 
-    
-    .top-10 {
-        padding-bottom: 50px;
-        padding-top: 50px;
-
-        p {
-            padding-bottom: 0px;
-        }
         
-        .destinos-contenedor {
-
-            .destinos-card {
-                padding: 15px 8px;
+    .contacto {
+        padding: 30px 0;
     
-            img {
-            width: $ancho;
-            }
-
-            .top-a {
-            font-size: nth($font-size, 1);
-            margin-top: -35px;
-            }
-            }
+        .formulario {
+    
+        .form {
+        width: $ancho - 20%;
+        padding: 40px 30px;
+    
+            button {
+            padding-left: 8px;
+            } 
         }
-
-        .flecha {
-            margin: 0px;
-            width: 17%;
         }
     }
-
-    
- .contacto {
-
-    .formulario{
-        width: $ancho;
-    padding: 40px;
-
-        h2 {
-            font-size: nth($font-size, 3);
-        }
-    }
-}
 
     .wsp {
         vertical-align: middle;

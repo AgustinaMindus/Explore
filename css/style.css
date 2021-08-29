@@ -37,7 +37,10 @@
   padding: 5px 70px;
   background-color: transparent;
 }
-.header .nav .item {
+.header .nav .navbar-nav2 {
+  display: flex;
+}
+.header .nav .nav-item .item {
   font-family: "raleway-medium";
   font-size: 15px;
   text-align: center;
@@ -45,7 +48,7 @@
   color: #fafafa;
   padding: 6px 15px;
 }
-.header .nav .item:hover {
+.header .nav .nav-item .item:hover {
   border-bottom: #6e50f9 3px solid;
   color: #fafafa;
 }
@@ -73,20 +76,32 @@
 
 /* FIN HEADER */
 /* MEDIA QUERYS HEADER */
+/* Mobile */
 @media only screen and (max-width: 400px) {
-  .header .nav .container-fluid img {
-    margin-left: -50px;
+  .header .nav .logo img {
+    margin-left: -55px;
   }
-  .header .nav .container-fluid button {
-    margin-right: -50px;
+  .header .nav .hamburger {
+    margin: 0px -50px 0 20px;
+  }
+  .header .nav .navbar-nav2 {
+    position: absolute;
+    right: 105px;
+    top: 20px;
   }
 }
+/* Tablet */
 @media only screen and (min-width: 401px) and (max-width: 768px) {
-  .header .nav .container-fluid img {
-    margin-left: -50px;
+  .header .nav .logo img {
+    margin-left: -55px;
   }
-  .header .nav .container-fluid button {
-    margin-right: -50px;
+  .header .nav .hamburger {
+    margin: 0px -50px 0 20px;
+  }
+  .header .nav .navbar-nav2 {
+    position: absolute;
+    right: 105px;
+    top: 20px;
   }
 }
 /* FIN MEDIA QUERYS HEADER */
@@ -165,7 +180,7 @@
 
 /* MEDIA QUERYS */
 /* Mobile */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 414px) {
   .footer {
     width: 100%;
   }
@@ -186,12 +201,12 @@
   .footer .redes p {
     font-size: 22px;
   }
-  .footer .redes img {
+  .footer .redes .redes-img img {
     margin: 0 20px;
     width: 15%;
   }
 }
-@media only screen and (min-width: 401px) and (max-width: 768px) {
+@media only screen and (min-width: 415px) and (max-width: 768px) {
   .footer .footer-li {
     padding: 0;
   }
@@ -199,14 +214,14 @@
     padding: 0;
   }
   .footer .footer-li nav ul .footer-li-2 a {
-    font-size: 22px;
+    font-size: 16px;
   }
   .footer .redes p {
-    font-size: 25px;
+    font-size: 22px;
   }
-  .footer .redes img {
-    margin: 0 25px;
-    width: 8%;
+  .footer .redes .redes-img img {
+    margin: 0 20px;
+    width: 6%;
   }
 }
 /* FIN PIE DE PAGINA */
@@ -595,20 +610,38 @@
 /* FIN WHATSAPP */
 /* FIN CONTACTO */
 @media only screen and (max-width: 400px) {
-  .imagen-inicio {
+  .container-background {
+    height: 80vh;
+  }
+  .container-background .imagen-inicio {
     width: 100%;
   }
-  .imagen-inicio h1, .imagen-inicio p {
-    padding: 0 10px;
+  .container-background .imagen-inicio h1 {
+    font-family: "raleway-extrabold";
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 35px 10px;
+  }
+  .container-background .imagen-inicio p {
+    font-family: "raleway-bold";
+    font-size: 22px;
+    text-align: center;
+    padding: 15px 10px;
   }
 
   .preferencias h2 {
-    padding: 20px 30px;
+    font-family: "raleway-bold";
+    font-size: 35px;
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    padding: 20px 30px;
+    color: #515151;
   }
   .preferencias .preferencias-contenedor .preferencias-card {
-    margin: 15px;
-    width: 75%;
+    margin: 10px 0 70px 0;
+    width: 60%;
   }
   .preferencias .preferencias-contenedor .preferencias-img {
     border-radius: 8px;
@@ -619,15 +652,36 @@
     transition: 2.5s all;
   }
   .preferencias .preferencias-contenedor .preferencia-a {
-    margin-top: -80px;
+    margin-top: 200px;
     font-size: 30px;
   }
 
+  .top-10 p {
+    padding-bottom: 30px;
+  }
+  .top-10 .destinos-contenedor {
+    display: flex;
+    padding: 0 40px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .top-10 .destinos-contenedor .destinos-card .top-a {
+    font-size: 30px;
+    margin-top: -75px;
+  }
+  .top-10 .flecha {
+    margin: 0px;
+    width: 35%;
+  }
+
   .mapa-1 {
-    padding: 30px 0;
+    padding: 10px 0 30px 0;
   }
   .mapa-1 p {
-    padding: 10px 30px;
+    padding: 0 30px;
   }
   .mapa-1:hover .gps1 {
     -webkit-transform: translateY(50px);
@@ -686,33 +740,15 @@
     opacity: 5;
   }
 
-  .top-10 p {
-    padding-bottom: 0px;
+  .contacto {
+    padding: 30px 0;
   }
-  .top-10 .destinos-contenedor {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: center;
-    align-items: center;
-    padding: 0 40px;
-  }
-  .top-10 .destinos-contenedor .destinos-card .top-a {
-    font-size: 30px;
-    margin-top: -80px;
-  }
-  .top-10 .flecha {
-    margin: 0px;
-    width: 25%;
-  }
-
-  .contacto .formulario {
-    width: 100%;
+  .contacto .formulario .form {
+    width: 80%;
     padding: 40px 30px;
   }
-  .contacto .formulario h2 {
-    font-size: 22px;
+  .contacto .formulario .form button {
+    padding-left: 8px;
   }
 
   .wsp {
@@ -720,42 +756,66 @@
   }
 }
 @media only screen and (min-width: 401px) and (max-width: 768px) {
-  .imagen-inicio {
-    padding: 100px 50px;
+  .container-background .imagen-inicio h1 {
+    padding: 35px 0;
+  }
+  .container-background .imagen-inicio p {
+    padding: 25px 0;
   }
 
   .preferencias {
-    margin-bottom: -80px;
+    margin-bottom: 0;
   }
   .preferencias h2 {
-    padding: 5px 0 0 0;
+    padding: 0 0 40px 0;
     text-align: center;
   }
   .preferencias .preferencias-contenedor .preferencias-card {
-    margin: 15px 0 15px 0;
+    margin: 15px 0 40px 0;
     width: 30%;
   }
   .preferencias .preferencias-contenedor .preferencia-a {
     font-size: 25px;
     position: relative;
-    margin-top: -60px;
+    margin-top: 5px;
+  }
+
+  .top-10 {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  .top-10 p {
+    padding-bottom: 0px;
+  }
+  .top-10 .destinos-contenedor .destinos-card {
+    padding: 15px 8px;
+  }
+  .top-10 .destinos-contenedor .destinos-card img {
+    width: 100%;
+  }
+  .top-10 .destinos-contenedor .destinos-card .top-a {
+    font-size: 15px;
+    margin-top: -35px;
+  }
+  .top-10 .flecha {
+    margin: 15px;
+    width: 10%;
   }
 
   .mapa-1 {
-    text-align: center;
-    padding: 10px;
+    padding: 10px 0;
   }
   .mapa-1 h2 {
-    padding: 20px 130px;
-    font-size: 35px;
+    padding: 30px 65px;
+    font-size: 30px;
   }
-  .mapa-1 .mapa-parrafo {
-    padding-left: 0;
-    font-size: 25px;
+  .mapa-1 p {
+    padding: 0 0 0 0;
+    font-size: 22px;
   }
   .mapa-1 .mapa-1-img {
     padding: 0px;
-    margin: 20px 0px 20px 0px;
+    margin: 0 0 20px 0;
   }
   .mapa-1:hover .gps1 {
     -webkit-transform: translateY(112px);
@@ -814,34 +874,15 @@
     opacity: 5;
   }
 
-  .top-10 {
-    padding-bottom: 50px;
-    padding-top: 50px;
+  .contacto {
+    padding: 30px 0;
   }
-  .top-10 p {
-    padding-bottom: 0px;
+  .contacto .formulario .form {
+    width: 80%;
+    padding: 40px 30px;
   }
-  .top-10 .destinos-contenedor .destinos-card {
-    padding: 15px 8px;
-  }
-  .top-10 .destinos-contenedor .destinos-card img {
-    width: 100%;
-  }
-  .top-10 .destinos-contenedor .destinos-card .top-a {
-    font-size: 15px;
-    margin-top: -35px;
-  }
-  .top-10 .flecha {
-    margin: 0px;
-    width: 17%;
-  }
-
-  .contacto .formulario {
-    width: 100%;
-    padding: 40px;
-  }
-  .contacto .formulario h2 {
-    font-size: 22px;
+  .contacto .formulario .form button {
+    padding-left: 8px;
   }
 
   .wsp {
@@ -939,31 +980,35 @@
 
 /* MEDIA QUERYS AVENTURAS */
 @media only screen and (max-width: 400px) {
-  .inicio-aventuras p {
-    font-size: 22px;
-    padding: 5px;
+  .inicio-aventuras h1 {
+    padding-top: 20px;
+  }
+  .inicio-aventuras .continentes p {
+    font-size: 25px;
+    padding: 7px;
   }
   .inicio-aventuras .continentes a {
-    font-size: 20px;
-    padding: 75px;
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3px;
   }
 }
 @media only screen and (min-width: 401px) and (max-width: 768px) {
-  .inicio-aventuras p {
-    padding: 20px 0 0 0;
+  .inicio-aventuras h1 {
+    padding-top: 20px;
   }
-  .inicio-aventuras .continentes {
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+  .inicio-aventuras .continentes p {
+    font-size: 30px;
+    padding: 10px 0 0 0;
   }
   .inicio-aventuras .continentes a {
-    padding: 10px 15px 10px 15px;
-    margin: 10px 15px;
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
   }
 }
 /* FIN MEDIA QUERYS AVENTURAS*/
@@ -1091,11 +1136,11 @@
 /* MEDIA QUERYS GALERIA */
 @media only screen and (max-width: 400px) {
   .galeria {
-    padding: 25px;
+    padding: 25px 30px;
   }
   .galeria h1 {
-    font-size: 30px;
-    padding: 10px 0;
+    font-size: 25px;
+    padding: 20px 0;
   }
   .galeria .imagenes-galeria {
     grid-template-columns: repeat(2, auto);
@@ -1144,26 +1189,30 @@
   }
 }
 .online {
-  padding: 70px 25px;
+  padding: 35px 0 70px 0;
+  text-align: justify;
 }
-.online h2 {
+.online h3 {
   margin-bottom: 0;
-  padding: 0 50px;
 }
-.online .container-online {
+.online .container-online .video-info {
   display: flex;
   flex-direction: column;
 }
-.online .container-online .video-info {
-  width: 100%;
+.online .container-online .video-info p {
+  margin: 30px 0px;
+  padding: 0 35px;
 }
 .online .container-online .video {
-  width: 100%;
+  margin: 10px 0;
 }
 
 @media only screen and (min-width: 401px) and (max-width: 768px) {
   .galeria {
-    padding: 25px;
+    padding: 40px;
+  }
+  .galeria h1 {
+    padding: 30px 0;
   }
   .galeria .paginas {
     margin-top: 130px;
@@ -1339,7 +1388,7 @@
 /* MEDIA QUERYS PERFIL */
 @media only screen and (max-width: 400px) {
   .recorridos {
-    margin: 0 25px;
+    padding: 70px 30px 100px 30px;
   }
   .recorridos .recorridos-inicio {
     padding-bottom: 45px;
@@ -1347,7 +1396,7 @@
   .recorridos .recorridos-inicio h1 {
     font-size: 25px;
     letter-spacing: 5px;
-    margin-right: 30px;
+    padding-bottom: 15px;
   }
   .recorridos .recorridos-inicio img {
     width: 20%;
@@ -1355,6 +1404,7 @@
   .recorridos .boton-ciudades {
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
   .recorridos .boton-ciudades a {
     margin: 10px;
@@ -1381,6 +1431,10 @@
     width: 100%;
     border-radius: 12px 12px 0px 0px;
   }
+  .recorridos .lugar-mapa {
+    margin-top: -205px;
+    margin-bottom: 30px;
+  }
   .recorridos .lugar-mapa .lugar1-marcador {
     position: relative;
     top: 465px;
@@ -1402,12 +1456,12 @@
   }
 
   .opiniones {
-    padding: 50px 25px;
+    padding: 50px 30px;
   }
   .opiniones h2 {
     padding-bottom: 10px;
     font-size: 25px;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
   }
   .opiniones .opiniones-contenedor {
     display: flex;
@@ -1415,6 +1469,9 @@
   }
 }
 @media only screen and (min-width: 401px) and (max-width: 768px) {
+  .recorridos {
+    padding: 70px 30px 20px 30px;
+  }
   .recorridos .recorridos-inicio {
     padding-bottom: 45px;
   }
@@ -1422,15 +1479,14 @@
     width: 10%;
   }
   .recorridos .boton-ciudades a {
-    margin: 45px;
+    margin: 15px;
+  }
+  .recorridos .lugares-contenedor {
+    padding: 15px 0 80px 0;
   }
   .recorridos .lugares-contenedor .lugares-card {
     width: 40%;
-    margin: 10px -25px;
-  }
-  .recorridos .lugares-contenedor .lugares-card img {
-    width: 70%;
-    border-radius: 12px 12px 0px 0px;
+    margin: 0 -25px;
   }
   .recorridos .lugar-mapa .lugar1-marcador {
     position: relative;
@@ -1448,7 +1504,7 @@
     left: 295px;
   }
   .recorridos .lugar-mapa .mapa {
-    width: 100%;
+    width: 95%;
   }
 
   .opiniones {
@@ -1461,12 +1517,15 @@
     display: flex;
     flex-direction: column;
   }
+  .opiniones .opiniones-contenedor p {
+    font-size: 18px;
+  }
 }
 /* FIN MEDIA QUERYS PERFIL */
 /* FIN HTML PERFIL */
 /* HTML ERROR */
 .error {
-  background-color: #c7fff0;
+  background-color: #eeeeee;
   background-image: url("../multimedia/error_fondo.svg");
   background-repeat: no-repeat;
   width: 100%;
@@ -1489,7 +1548,7 @@
   font-size: 25px;
   text-align: center;
   text-transform: uppercase;
-  color: #1abc9c;
+  color: #39c2b6;
   padding: 100px 380px 40px 380px;
 }
 .error p {
@@ -1505,11 +1564,76 @@
   font-size: 15px;
   text-align: center;
   text-transform: uppercase;
-  background-color: #76c0b4;
+  background-color: #b590ff;
   text-decoration: none;
-  color: #7d60f5;
+  color: #fafafa;
 }
 
+/* MEDIA QUERYS ERROR*/
+@media only screen and (max-width: 400px) {
+  .error {
+    background-color: #eeeeee;
+    background-image: url("../multimedia/error_fondo2.svg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+    color: #7d60f5;
+    text-align: center;
+    padding: 300px 0 60px 0;
+  }
+  .error h1 {
+    font-family: "raleway-extrabold";
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: -155px;
+    margin-left: 20px;
+  }
+  .error h4 {
+    font-family: "raleway-extrabold";
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #39c2b6;
+    padding: 50px;
+  }
+  .error p {
+    font-family: "raleway-bold";
+    font-size: 15px;
+    text-align: center;
+    margin: 25px 20px 35px 20px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 768px) {
+  .error {
+    padding: 300px 0 60px 0;
+  }
+  .error h1 {
+    font-family: "raleway-extrabold";
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: -197px;
+    margin-left: 20px;
+  }
+  .error h4 {
+    font-family: "raleway-extrabold";
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #39c2b6;
+    padding: 50px;
+  }
+  .error p {
+    font-family: "raleway-bold";
+    font-size: 20px;
+    text-align: center;
+    margin: 25px 20px 35px 20px;
+  }
+}
+/* FIN MEDIA QUERYS ERROR*/
 /* FIN HTML ERROR */
 /* QUIENES SOMOS */
 .quienes {
@@ -1580,6 +1704,9 @@
     margin: 13px 0px;
     padding: 0;
   }
+  .quienes h3 {
+    margin: 70px 0 10px 0;
+  }
   .quienes .quienes-icon {
     display: flex;
     width: 100%;
@@ -1590,8 +1717,8 @@
     align-items: center;
   }
   .quienes .quienes-icon img {
-    width: 60%;
-    margin-bottom: 30px;
+    width: 70%;
+    margin-bottom: 10px;
   }
 }
 @media only screen and (min-width: 401px) and (max-width: 768px) {
@@ -1610,14 +1737,21 @@
     margin: 13px 0px;
     padding: 0;
   }
-  .quienes .quienes-icon {
-    padding-top: 20px;
+  .quienes h3 {
+    font-family: "raleway-medium";
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin: 70px 0 20px 0;
   }
   .quienes .quienes-icon img {
     width: 20%;
-    margin: 10px;
+    margin: 0px 0px;
+    padding: 10px 10px;
   }
 }
+/* FIN MEDIA QUERYS QUIENES SOMOS */
 /* FIN QUIENES SOMOS */
 /* HTML FAVORITOS */
 .seccion-favoritos {
@@ -1663,6 +1797,37 @@
   color: #fafafa;
 }
 
+/* MEDIA QUERYS FAVORITOS*/
+@media only screen and (max-width: 400px) {
+  .seccion-favoritos {
+    padding: 70px 30px;
+  }
+  .seccion-favoritos h1 {
+    letter-spacing: 2px;
+  }
+  .seccion-favoritos .contenedor-mayor-favoritos h2 {
+    padding-top: 45px;
+  }
+  .seccion-favoritos .contenedor-mayor-favoritos .contenedor-fav .card-fav {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 768px) {
+  .seccion-favoritos {
+    padding: 70px 30px;
+  }
+  .seccion-favoritos h1 {
+    letter-spacing: 4px;
+  }
+  .seccion-favoritos .contenedor-mayor-favoritos h2 {
+    padding-top: 50px;
+  }
+  .seccion-favoritos .contenedor-mayor-favoritos .contenedor-fav .card-fav {
+    width: 29%;
+    margin: 14px;
+  }
+}
+/* FIN MEDIA QUERYS FAVORITOS*/
 /* HTML FIN FAVORITOS */
 
 /*# sourceMappingURL=style.css.map */

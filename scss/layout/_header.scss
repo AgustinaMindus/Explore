@@ -8,8 +8,11 @@
       padding: 5px 70px;
       background-color: transparent;
 
-      
+      .navbar-nav2{
+        display: flex;
+      }
 
+      .nav-item {
       .item {
         @include titulos(
           nth($font-family, 3),
@@ -25,7 +28,9 @@
           color: nth($color, 11);
         }
       }
-  
+      }
+
+
       .submenu {
         min-width: 7.5rem;
         font-family: nth($font-family, 2);
@@ -51,39 +56,54 @@
       background-image: url("../multimedia/favoritos_2.svg");
       background-repeat: no-repeat;
     }
+
   }
  
   /* FIN HEADER */
   
   /* MEDIA QUERYS HEADER */
   
+  /* Mobile */
   @media only screen and (max-width: 400px) {
-    .header {
-      .nav {
-        .container-fluid {
-          img {
-            margin-left: -50px;
-          }
-  
-          button {
-            margin-right: -50px;
+        .header {
+          .nav {
+            .logo {
+                img {
+                margin-left: -55px;
+                }
+            }
+
+            .hamburger {
+              margin: 0px -50px 0 20px;
+            }
+
+            .navbar-nav2{
+              position: absolute;
+              right: 105px;
+              top: 20px;      
+            }
           }
         }
-      }
-    }
   }
 
+ /* Tablet */
   @media only screen and (min-width:401px) and (max-width:768px) {
     .header {
       .nav {
-        .container-fluid {
-          img {
-            margin-left: -50px;
-          }
-  
-          button {
-            margin-right: -50px;
-          }
+        .logo {
+            img {
+            margin-left: -55px;
+            }
+        }
+
+        .hamburger {
+          margin: 0px -50px 0 20px;
+        }
+
+        .navbar-nav2{
+          position: absolute;
+          right: 105px;
+          top: 20px;      
         }
       }
     }

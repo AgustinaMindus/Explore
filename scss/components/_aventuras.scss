@@ -105,41 +105,48 @@
 
 .inicio-aventuras {
 
-       p {
-        font-size:  nth($font-size, 3);
-        padding: 5px;
-        }
+    h1 {
+    padding-top: 20px;
+    }
 
      .continentes {
+             p {
+            font-size:  nth($font-size, 4);
+            padding: 7px;
+            }
+
         a {
-        font-size:  nth($font-size, 2);
-        padding: 75px;
+        font-size:  nth($font-size, 3);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 3px;
+        }
         }
     }
 }
-}
-
 
 // /* Tablet  */
 @media only screen and (min-width:401px) and (max-width:768px) {
     .inicio-aventuras {
-        p {
-            padding: 20px 0 0 0;
-        }
 
-       .continentes {
-        padding: 0;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
+        h1 {
+            padding-top: 20px;
+            }
+
+        .continentes {
+        
+            p {
+            font-size:  nth($font-size, 5);
+            padding: 10px 0 0 0;
+            }
   
             a {
-                padding: 10px 15px 10px 15px;
-                margin: 10px 15px;
-    
+            font-size:  nth($font-size, 3);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 10px;
             }
         }
     }
