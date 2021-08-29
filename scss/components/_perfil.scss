@@ -3,22 +3,17 @@
 .recorridos {
     background-color: nth($color, 11);
     text-align: $aling;
-    padding: 50px;
+    padding: 120px 0 100px 0;
 
 
     .recorridos-inicio {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: nowrap;
-    align-content: center;
+    @extend %flex-3;
     padding-bottom: 70px;
 
         h1 {
         @include titulos(nth($font-family, 4), nth($font-size, 6), $aling, $text-uppercase);
-        letter-spacing: $letter-spacing;
-        color: nth($color, 1);
+        letter-spacing: $letter-spacing *2;
+        color: nth($color, 5);
         }
     
         img {
@@ -28,42 +23,53 @@
     }
 
     .boton-ciudades{
+        padding: 20px 0 45px 0;
 
-        a{
-        @include titulos(nth($font-family, 3), nth($font-size, 2), $aling, $text-uppercase);
-        text-decoration: $text-none;
-        color: nth($color, 7);
-        background-color: nth($color, 4);
-        @extend %boton;
-        margin: 100px;
-
-        &:hover {
-        background-color: nth($color, 5);
-        color: nth($color, 7);
+        h3 {
+        @include sub-titulos(nth($font-family, 3), nth($font-size, 4), $aling);
+        color: nth($color, 9);
+        padding-bottom: 40px;
         }
 
+        a{
+        @include sub-titulos(nth($font-family, 3), nth($font-size, 2), $aling);
+        text-decoration: $text-none;
+        color: nth($color, 3);
+        background-color: nth($color, 4);
+        @extend %boton;
+        margin: 60px;
+
+        &:hover {
+        background-color: nth($color, 3);
+        color: nth($color, 4);
+        }
         }
     }
 
     .lugares-contenedor {
     width: $ancho;
     @extend %flex;
-    margin: 60px 0 60px 0px;
+    padding: 60px 0 95px 0;
 
         .lugares-card {
         @extend %flex;
         width: $ancho - 70%;
+        @include prefijos2(all 1s ease-in-out);
+        &:hover {
+            @include prefijos(scale(1.05))
+            }
             
             img {
             width: $ancho - 30%;
-            border-radius: 12px 12px 0px 0px;
+            border-radius: 8px 8px 0px 0px;
+            box-shadow: $text-shadow;
             }  
 
             a {
             @include titulos(nth($font-family, 5), nth($font-size, 1), $aling, $text-uppercase);
             letter-spacing: $letter-spacing - 5px;
             text-decoration: $text-none;
-            color: nth($color, 7);
+            color: nth($color, 11);
             width: $ancho - 30%;
             height: 20%;
             padding: 10px;
@@ -71,15 +77,15 @@
             }
 
             .lugar1 {
-            background-color: nth($color, 6);
+            background-color: nth($color, 5);
             }
 
             .lugar2 {
-            background-color: nth($color, 3);
+            background-color: nth($color, 8);
             }
 
             .lugar3 {
-            background-color: nth($color,1);
+            background-color: nth($color,7);
             }
         }   
     }
@@ -93,10 +99,10 @@
             border-radius: 50%;
             height: 30px;
             width: 30px;
-            background-color: nth($color, 2);
+            background-color: nth($color, 5);
             position: relative;
             top: 415px;
-            left: 730px;
+            left: 668px;
             box-shadow: $text-shadow;
             }
 
@@ -104,10 +110,10 @@
             border-radius: 50%;
             height: 30px;
             width: 30px;
-            background-color: nth($color, 3);
+            background-color: nth($color, 8);
             position: relative;
             top: 300px;
-            left: 675px;
+            left: 614px;
             box-shadow: $text-shadow;
             }
 
@@ -115,24 +121,24 @@
             border-radius: 50%;
             height: 30px;
             width: 30px;
-            background-color: nth($color,1);
+            background-color: nth($color,7);
             position: relative;
             top: 105px;
-            left: 665px;
+            left: 607px;
             box-shadow: $text-shadow;
             }
     }
 }
 
 .opiniones {
-    background-color: nth($color,1);
+    background-color: nth($color,4);
     text-align: $aling;
-    padding: 90px 0;
+    padding: 100px 0;
     
     h2 {
     @include titulos(nth($font-family, 6), nth($font-size, 5), $aling, $text-uppercase);
     letter-spacing: $letter-spacing;
-    color: nth($color, 7);
+    color: nth($color, 2);
     padding-bottom: 30px;
     }
 
@@ -145,7 +151,8 @@
             margin: 30px;
             line-height: 25px;
             padding: 20px;
-            border: 3px solid nth($color, 4);;
+            border: nth($color, 2) 2px solid;
+            color: nth($color, 9);
             }
     }
 }

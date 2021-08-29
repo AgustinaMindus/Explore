@@ -243,87 +243,81 @@
 
 /* FIN MAPA */
 
-
-/* QUIENES SOMOS */
-.quienes {
-    background-color: nth($color, 2);
-    color: nth($color, 7);
-    padding: 70px 0;
-    width: $ancho;
-    
-    h2 {
-        @include titulos(nth($font-family, 4), nth($font-size, 6), $aling, $text-uppercase);
-        letter-spacing: $letter-spacing;
-        text-align: $aling;
-        margin-bottom: 60px;
-        }
-
-    .info-quienes-somos {
-        @extend %flex-2;
-
-        .texto-quienes-somos {        
-        font-size: nth($font-size, 2);
-        font-family: nth($font-family, 1);
-        padding-right: 70px;
-        }
-
-        .mifoto {
-        width: $ancho - 10%;
-        border-radius: $border-radius;
-        @include prefijos2(0.5s linear);
-
-            &:hover{
-            -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
-            box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
-            }
-        }
-    }
-
-    .quienes-icon {
-    @extend %flex-3;
-    padding-top: 70px;
-
-        img {
-        width: $ancho - 87%;
-        }
-    }
-}
-/* FIN QUIENES SOMOS */
-
-
 /* CONTACTO */
 .contacto {
-    background-color: nth($color, 2);
+    background: linear-gradient(45deg, rgba(181,144,255,.5), 
+    rgba(199,255,240,.5), rgba(181,144,255,.5),
+    rgba(199,255,240,.5)) 0 0 / 1000% no-repeat, 
+    url("../multimedia/imagen-contacto.jpg") 0 0 / cover no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     width: $ancho;
-         
+    padding: 90px;
+
     .formulario {
-    width: $ancho - 50%;
-    padding: 40px;
-    background-color: #df864fce;
+    min-height: 100vh;
+    @extend %flex;
+
+    .form {
+    box-shadow: $text-shadow;
     border-radius: $border-radius;
-    
+    width: $ancho - 60%;
+    background: nth($color, 11);
+    overflow: hidden;
+    padding: 45px;
+
         h2 {
-        @include titulos(nth($font-family, 4), nth($font-size, 6), $aling, $text-uppercase);
-        letter-spacing: $letter-spacing - 5px;
+        @include titulos(nth($font-family, 4), nth($font-size, 4), $aling, $text-uppercase);
         color: nth($color, 2);
-        padding-bottom: 15px;
+        letter-spacing: $letter-spacing - 6px;
+        margin-bottom: 20px;
         }
 
-        .texto {
-        @include sub-titulos(nth($font-family, 3), nth($font-size, 2), left);
+        .form-label {
+        @include sub-titulos(nth($font-family, 3), nth($font-size, 1), left);
         color: nth($color, 7);
+        margin-bottom: 7px;
+        }
 
-    }
+        .form-input {
+        border-width: 0px;
+        border-bottom: nth($color, 3) 1px solid;
+        background: transparent;
+        width: $ancho;
+        margin-bottom: 30px;
+        outline: 0;
+        }
+
+        .select {
+        text-transform: none;
+        @include sub-titulos(nth($font-family, 3), nth($font-size, 1), left);
+        color: nth($color, 2);
+        }
+
+        .form-textarea {
+        border: nth($color, 3) 1px solid;
+        width: $ancho;
+        margin-bottom: 10px;
+        outline: 0;
+        }
+    
         button {
-        background-color: nth($color,2);
-        border: 1px solid nth($color,2);
-        @include titulos(nth($font-family, 2), nth($font-size, 2), $aling, $text-uppercase);
+            width: $ancho - 70%;
+            background-color: nth($color, 8);
+            border: 1px solid nth($color,8);
+            @include titulos(nth($font-family, 2), nth($font-size, 1), $aling, $text-uppercase);
+            color: nth($color, 11);
+            @extend %boton;
+            text-decoration: none;
+            cursor: pointer;
 
         &:hover{
-        background-color: nth($color,1);
-        border: 1px solid nth($color,1);
+        background-color: nth($color,7);
+        border: 1px solid nth($color,7);
         }
         } 
+    }
     }
 }
 
@@ -466,40 +460,7 @@
         }
     }
      
-    .quienes {
-        padding: 35px 25px;
-        text-align: justify;
-        
-        h2 {
-            margin: 13px 0px;
-            }
-
-        .info-quienes-somos {
-            display: flex;
-            flex-direction: column;
-
-            .texto-quienes-somos {
-            margin: 13px 0px;
-            padding: 0;
-            }
-    }
-       .quienes-icon {
-        display: flex;
-        width: $ancho;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-
-            img {
-            width: $ancho - 40%;
-            margin-bottom: 30px;
-            }
-        }
-
-    }
-
+    
     .contacto {
 
         .formulario{
@@ -638,35 +599,7 @@
         }
     }
 
-    .quienes {
-        padding: 35px 70px;
-        text-align: justify;
-        
-        h2 {
-            margin: 13px 0px;
-            }
-
-        .info-quienes-somos {
-            display: flex;
-            flex-direction: column;
-
-            .texto-quienes-somos {
-            margin: 13px 0px;
-            padding: 0;
-            }
-    }
-
-        .quienes-icon {
-            @extend %flex-3;
-            padding-top: 20px;
-        
-                img {
-                width: $ancho - 80%;
-                margin: 10px;
-                }
-        }    
-}
-
+    
  .contacto {
 
     .formulario{

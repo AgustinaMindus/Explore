@@ -1,15 +1,15 @@
 /* HTML GALERIA */
 
 .galeria {
-    background-color: nth($color, 7);
-    padding: 15px 100px 60px 100px;
+    background-color: nth($color, 10);
+    padding: 20px 100px 80px 100px;
     width: $ancho;
 
     h1 {
     @include titulos(nth($font-family, 4), nth($font-size, 6), $aling, $text-uppercase);
     letter-spacing: $letter-spacing;
     color: nth($color, 5);
-    padding: 45px;
+    padding: 100px;
     }
 
     img {
@@ -80,20 +80,20 @@
         
         &:hover {
         filter: none;
-        @include prefijos(scale(1.1))
+        @include prefijos(scale(1.05))
         }
         }
 
     }
 
     .paginas {
-        margin-top: 200px;
+        margin-top: 250px;
         nav {
             ul{
                 li {
                 a {
                     @include sub-titulos(nth($font-family, 2), nth($font-size, 2), $aling);
-                    color: nth($color, 2) ;
+                    color: nth($color, 9) ;
                 }
             }
             }
@@ -104,44 +104,39 @@
 .online {
     background-color: nth($color, 3);
     width: $ancho;
-    padding: 70px 0 115px 0;
+    padding: 90px 0 150px 0;
 
-        h2 {
+        h3 {
         @include titulos(nth($font-family, 4), nth($font-size, 6), $aling, $text-uppercase);
-        color: nth($color, 2);
+        color: nth($color, 11);
         letter-spacing: $letter-spacing;
         text-align: $aling;
         margin-bottom: 60px;
         }
 
             .container-online {
-            @extend %flex-2;
+                
 
                 .video-info {
-                width: $ancho - 50%;
-                
-                    p {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+
+                    p {    
+                    width: $ancho;                       
                     @include sub-titulos(nth($font-family, 1), nth($font-size, 2), left);
                     font-style: italic;
-                    color: nth($color, 7);
-                    margin: 40px 5px;
+                    color: nth($color, 9);
+                    margin-right: 50px;
                     }
                 }
 
                 .video {
-                width: 500px;
-                text-align: $aling;
-
-                    p {
-                    @include sub-titulos(nth($font-family, 3), nth($font-size, 2), $aling);
-                    color: nth($color, 6);
-                    margin-bottom: 2px;
-                    }
-
-                    .video {
                     margin: 0;
-                    }
-                }
+                   }
             }
 }
 

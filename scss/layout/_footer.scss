@@ -1,6 +1,6 @@
 /* PIE DE PAGINA */
 .footer {
-    background-color: nth($color,5);
+    background-color: nth($color,3);
     width: $ancho;
     display: flex;
     padding: 40px;
@@ -16,9 +16,9 @@
 
         li {
             a {
-            @include sub-titulos(nth($font-family, 1), nth($font-size, 2), $aling);
+            @include sub-titulos(nth($font-family, 1), nth($font-size, 1), $aling);
             text-decoration: $text-none;
-            color: nth($color, 7);
+            color: nth($color, 11);
             margin: 20px;
 
             &:hover {
@@ -35,13 +35,16 @@
 
         p {
         @include titulos(nth($font-family, 4), nth($font-size, 2), $aling, $text-uppercase);
-        color: nth($color, 4);
-        padding: 50px 0 0 0;
+        color: nth($color, 5);
+        padding: 40px 0 0 0;
         }     
         
+        .redes-img {
+            margin-top: -5px;
+        
         img {
-        margin: 0 10px;
-        width: 5%;
+        margin: 0 20px;
+        width: 4%;
         @include prefijos2(2s linear);
 
         &:hover {
@@ -52,6 +55,7 @@
         a {
             text-decoration: $text-none;
         }
+        }
 }
 
 }
@@ -59,9 +63,9 @@
 .legal {
     @include titulos(nth($font-family, 1), nth($font-size, 1), $aling, $text-uppercase);
     letter-spacing: $letter-spacing - 8px;
-    background-color: nth($color,5);
+    background-color: nth($color,3);
     width: $ancho;
-    color: nth($color, 6);
+    color: nth($color, 10);
     padding: 50px 0;
     margin: 0;
 }

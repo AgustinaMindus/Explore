@@ -1,0 +1,50 @@
+/* HTML FAVORITOS */
+.seccion-favoritos {
+    background-color: nth($color, 11);
+    text-align: $aling;
+    padding: 120px 0 140px 0;
+
+    h1 {
+        @include titulos(nth($font-family, 4), nth($font-size, 6), $aling, $text-uppercase);
+        letter-spacing: $letter-spacing;
+        color: nth($color, 2);
+    }
+
+    .contenedor-mayor-favoritos {
+
+        h2 {
+        @include sub-titulos(nth($font-family, 3), nth($font-size, 4), $aling);
+        color: nth($color, 9);
+        padding-top: 80px;
+        }
+
+        .contenedor-fav {
+            @extend %flex-3;
+                    
+            .card-fav {
+            width: $ancho - 75%;
+            margin: 30px;
+            box-shadow: $text-shadow;
+            background-color: transparent;
+            border-radius: 8px;
+            
+            .img-fav {
+            border-radius: 8px 8px 0 0;
+            }
+    
+            .contenedor-texto-fav {
+            background-color: nth($color, 8);
+            border-radius: 0 0 8px 8px;
+    
+                .titulo-fav {
+                @include titulos(nth($font-family, 4), nth($font-size, 1), $aling, $text-uppercase);
+                letter-spacing: $letter-spacing - 8px;
+                color: nth($color, 11);  
+                }
+            }
+            }
+        }
+            }
+        }
+
+/* HTML FIN FAVORITOS */

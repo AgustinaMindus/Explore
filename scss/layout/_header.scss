@@ -6,6 +6,9 @@
     .nav {
       width: $ancho;
       padding: 5px 70px;
+      background-color: transparent;
+
+      
 
       .item {
         @include titulos(
@@ -18,32 +21,32 @@
         padding: 6px 15px;
   
         &:hover {
-          border-bottom: nth($color, 2) 3px solid;
+          border-bottom: nth($color, 5) 3px solid;
           color: nth($color, 11);
         }
       }
   
       .submenu {
-        min-width: 6.9rem;
+        min-width: 7.5rem;
         font-family: nth($font-family, 2);
         font-size: nth($font-size, 1);
         text-transform: $text-uppercase;
         color: nth($color, 7);
-        background-color: nth($color, 1);
+        background-color: nth($color, 10);
         margin-left: 4px;
         border-radius: 0%;
-  
+
         .submenu-item {
-          color: nth($color, 7);
+          color: nth($color, 5);
   
           &:hover {
-            background-color: nth($color, 2);
-            color: nth($color, 7);
+            background-color: nth($color,7);
+            color: nth($color, 11);
           }
         }
       }
     }
-    
+        
     .favoritos:hover {
       background-image: url("../multimedia/favoritos_2.svg");
       background-repeat: no-repeat;

@@ -40,8 +40,8 @@
     <!-- NAVBAR -->
     <header class="header">
         <div class="container-fluid container-background">
-    <nav class="navbar navbar-expand-lg navbar-light nav">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light nav ">
+        <div class=" container-fluid ">
             <a class="navbar-brand" href="index.html">
                 <img src="./multimedia/logo.svg" alt="logo" width="70" height="70">
             </a>
@@ -262,30 +262,38 @@
  </section>
 <!--Fin seccion MAPA-INICIO-->    
 
-
-    <!--Seccion - CONTACTO-->
-    <section class="contacto p-5" id="contacto">
-        <form class="formulario container " action="enviar.php" method="POST" name="contact-form">
-            <h2 class="m-auto">Contactanos</h2>
-            <div class="texto">
-                <label for="name" class="form-label mb-1 mt-3">Nombre</label>
-                <input type="text" class="form-control" placeholder="Nombre" id="name" name="nombre">
+<!--Seccion - CONTACTO-->
+    <section class="contacto" id="contacto">
+        <form class="formulario container" action="enviar.php" method="POST" name="contact-form">
+            <div class="form">
+                <h2>Contactanos</h2>
+                <label class="form-label" for="name">Nombre</label>
+                <input class="form-input" type="text" name="name" aria-label="Ingresar nombre" required="">
+                <br>
+                <label class="form-label" for="lastname">Apellido</label>
+                <input class="form-input" type="text" name="lastname" aria-label="Ingresar apellido" required="">
+                <br>
+                <label class="form-label" for="email">E-mail</label>
+                <input class="form-input" type="email" name="email" aria-label="Ingresar correo electrónico" required="">
+                <br>
+                <label class="form-label" for="status">País de residencia</label>
+                <select class="form-select select" name="status">
+                    <option value="argentina">Argentina</option>
+                    <option value="usa">Estados Unidos</option>
+                    <option value="mex">México</option>
+                    <option value="aus">Australia</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <br>
+                <label class="form-label" for="comments">Mensaje</label>
+                <textarea class="form-textarea" name="comments" aria-label="Ingrese su mensaje" cols="30" rows="5"></textarea>
+                <br>
+                <label for="acepta" class="form-label"><input class="form-checkbox" type="checkbox" 
+                name="acepta" value="1" aria-label="Desea recibir el newsletter?"> ¿Desea suscribirse a nuestro newsletter?</label>
+                
+                <button class="btn btn-primary mt-4 button" type="submit" value="Enviar">Enviar</button>  
             </div>
-            <div class="texto">
-              <label for="mail" class="form-label mb-1 mt-3">Email</label>
-              <input type="email" class="form-control" id="mail" aria-describedby="emailHelp" placeholder="nombre@cuenta.com.ar" name="email">
-            </div>
-            <div class="texto">
-                <label for="preferencias" class="form-label mb-1 mt-3">¿Desde dónde nos seguís?</label>
-                <input type="text" class="form-control" placeholder="País y ciudad" id="preferencias" name="preferencias">
-            </div>
-            <div class="texto">
-                <label for="mensaje" class="form-label mb-1 mt-3" >Mensaje</label>
-                <textarea class="form-control" name="mensaje" id="mensaje" cols="60" rows="5"></textarea>
-            </div>
-           
-            <button type="submit " class="btn btn-primary mt-5" value="Enviar">ENVIAR</button>
-        </form>
+            </form>
     </section>
   
 
@@ -294,18 +302,19 @@
         <img src="./multimedia/wsp.svg" alt="whatsapp" width="30" height="30">
     </section>
     <!-- Fin WHATSAPP -->
-    <!--Fin seccion - CONTACTO-->
+    
+<!--Fin seccion - CONTACTO-->
     
     <!--Pie de pagina-->
     <footer class="footer">
-        
     <div class="footer-li">
         <nav>
             <ul>
-                <li class="footer-li-2"><a href="#quienes-somos">Quienes somos</a></li>
+                <li class="footer-li-2"><a href="./secciones/quienes-somos.html">Quienes somos</a></li>
                 <li class="footer-li-2"><a href="./secciones/aventuras.html">Aventuras</a></li>
                 <li class="footer-li-2"><a href="./secciones/galeria.html">Galeria</a></li>
                 <li class="footer-li-2"><a href="#contacto">Contacto</a></li>
+                <li class="footer-li-2"><a href="./secciones/favoritos.html">Favoritos</a></li>
                 <li class="footer-li-2"><a href="./secciones/perfil.html">Perfil</a></li>
             </ul>
         </nav>
@@ -324,8 +333,7 @@
                 <img src="multimedia/img_yt.svg" alt="youtube">
             </a>
             </div>
-    </div>
-
+    </div>    
     </footer>
     <!-- Fin pie de pagina-->  
 
