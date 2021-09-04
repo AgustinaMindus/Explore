@@ -249,7 +249,7 @@ padding: 80px 0 110px 0;
 
     /* Sección Imagen Inicio */
     .container-background {
-        height: 90vh;
+        overflow: hidden;
     
         .imagen-inicio {
         width: $ancho;
@@ -257,11 +257,15 @@ padding: 80px 0 110px 0;
             h1 {
             @include titulos(nth($font-family, 6), nth($font-size, 7), $aling, $text-uppercase);
             padding: 35px 30px;
+            margin-top: 1%;
+            text-align: $aling;
+            letter-spacing: $letter-spacing - 4px;
             }
         
             p {
             @include sub-titulos(nth($font-family, 4), nth($font-size, 3), $aling);
-            padding: 15px 50px;
+            padding: 20px 50px;
+            letter-spacing: $letter-spacing - 8px;
             }    
         }
     }
@@ -393,11 +397,11 @@ padding: 80px 0 110px 0;
 
     /* Sección Imagen Inicio */
     .container-background {
-        // height: 100vh;
 
         .imagen-inicio {
             h1 {
             padding: 35px 30px;
+            margin-top: 25%;
             }
         
             p {

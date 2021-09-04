@@ -385,6 +385,16 @@ html {
     width: 80%;
     padding: 40px 30px;
   }
+  .contacto .formulario .form h2 {
+    font-family: "raleway-bold";
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .contacto .formulario .form button {
+    width: 40%;
+  }
 
   .wsp {
     vertical-align: middle;
@@ -680,7 +690,7 @@ html {
 @media only screen and (max-width: 480px) {
   /* Sección Imagen Inicio */
   .container-background {
-    height: 90vh;
+    overflow: hidden;
   }
   .container-background .imagen-inicio {
     width: 100%;
@@ -691,12 +701,16 @@ html {
     text-align: center;
     text-transform: uppercase;
     padding: 35px 30px;
+    margin-top: 1%;
+    text-align: center;
+    letter-spacing: 6px;
   }
   .container-background .imagen-inicio p {
     font-family: "raleway-bold";
     font-size: 2.2rem;
     text-align: center;
-    padding: 15px 50px;
+    padding: 20px 50px;
+    letter-spacing: 2px;
   }
 
   /* Fin Sección Imagen Inicio */
@@ -828,6 +842,7 @@ html {
   /* Sección Imagen Inicio */
   .container-background .imagen-inicio h1 {
     padding: 35px 30px;
+    margin-top: 25%;
   }
   .container-background .imagen-inicio p {
     padding: 25px 30px;
@@ -1100,7 +1115,7 @@ html {
   color: #6e50f9;
   padding: 100px;
 }
-.galeria .img-galeria {
+.galeria img {
   border-radius: 8px 0;
   width: 100%;
 }
@@ -1251,12 +1266,13 @@ html {
     filter: none;
   }
   .galeria .paginas {
-    margin-top: 120px;
+    margin-top: 100px;
     margin-bottom: 10px;
   }
 }
 .online h2 {
-  letter-spacing: 5px;
+  font-size: 3rem;
+  letter-spacing: 2px;
 }
 .online .container-online {
   display: flex;

@@ -12,7 +12,7 @@ width: $ancho;
     padding: 100px;
     }
 
-    .img-galeria {
+    img {
         border-radius: 8px 0;
         width: $ancho;
     }
@@ -206,7 +206,7 @@ padding: 70px 0;
         }
 
         .paginas {
-        margin-top: 120px;
+        margin-top: 100px;
         margin-bottom: 10px;
         }
     }
@@ -215,7 +215,8 @@ padding: 70px 0;
 .online {
             
         h2 {
-        letter-spacing: $letter-spacing - 5px;
+        font-size: nth($font-size, 5);
+        letter-spacing: $letter-spacing - 8px;
         }
     
         .container-online {

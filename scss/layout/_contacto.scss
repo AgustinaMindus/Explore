@@ -108,6 +108,15 @@
             .form {
             width: $ancho - 20%;
             padding: 40px 30px;
+
+                h2 {
+                @include titulos(nth($font-family, 4), nth($font-size, 4), $aling, $text-uppercase);
+                letter-spacing: $letter-spacing - 8px;
+                }
+
+                button {
+                width: $ancho - 60%;
+                } 
             }
         }
     }
