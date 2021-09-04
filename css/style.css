@@ -38,7 +38,7 @@ html {
 /* FIN TIPOGRAFIAS */
 /* 11  - 9*/
 /* 1rem pase a valer a 10px. Por defecto el navegador aplica 16px */
-/* HEADER */
+/* Header */
 .header .nav {
   width: 100%;
   padding: 5px 70px;
@@ -49,8 +49,7 @@ html {
   height: 5%;
 }
 .header .nav .hamburger {
-  color: #fafafa;
-  border: none;
+  border: #fafafa 1px solid;
 }
 .header .nav .nav-item .item {
   font-family: "raleway-medium";
@@ -86,33 +85,38 @@ html {
   background-repeat: no-repeat;
 }
 
-/* FIN HEADER */
-/* MEDIA QUERYS HEADER */
+/* Fin Header */
+/* Media Querys Header */
 /* Mobile */
-@media only screen and (max-width: 400px) {
-  .header .nav .logo img {
-    margin-left: -55px;
+@media only screen and (max-width: 480px) {
+  .header .nav {
+    padding: 5px 30px;
+  }
+  .header .nav .logo {
+    width: 20%;
+    height: 20%;
+    margin: 13px 0;
   }
   .header .nav .hamburger {
-    margin: 0px -50px 0 20px;
-  }
-  .header .nav .navbar-nav2 {
-    position: absolute;
-    right: 105px;
-    top: 20px;
+    text-align: right;
   }
 }
 /* Tablet */
-@media only screen and (min-width: 401px) and (max-width: 768px) {
-  .header .nav .logo img {
-    margin-left: -55px;
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .header .nav {
+    padding: 5px 30px;
+  }
+  .header .nav .logo {
+    width: 10%;
+    height: 10%;
+    margin: 13px 0;
   }
   .header .nav .hamburger {
-    margin: 0px -50px 0 20px;
+    text-align: right;
   }
 }
-/* FIN MEDIA QUERYS HEADER */
-/* PIE DE PAGINA */
+/* Fin Media Querys Header */
+/* Pie de página */
 .footer {
   background-color: #76c0b4;
   width: 100%;
@@ -185,53 +189,63 @@ html {
   margin: 0;
 }
 
-/* MEDIA QUERYS */
+/* Fin pie de página */
+/* Media Querys Footer */
 /* Mobile */
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 480px) {
   .footer {
     width: 100%;
   }
   .footer .footer-li {
-    padding: 0;
+    padding-left: 0;
   }
-  .footer .footer-li nav ul {
-    padding: 0;
-  }
-  .footer .footer-li nav ul .footer-li-2 {
+  .footer .footer-li .footer-li-2 {
     display: block;
     margin: 20px 0;
     text-align: center;
   }
-  .footer .footer-li nav ul .footer-li-2 a {
+  .footer .footer-li li a {
     font-size: 2rem;
+    margin: 20px;
+  }
+  .footer .redes {
+    position: sticky;
+    top: 2900px;
+    text-align: center;
   }
   .footer .redes p {
     font-size: 2.2rem;
+    padding: 40px 0 10px 0;
+  }
+  .footer .redes .redes-img {
+    margin-top: -5px;
   }
   .footer .redes .redes-img img {
-    margin: 0 20px;
-    width: 15%;
+    width: 5rem;
+  }
+
+  .legal {
+    padding: 50px 60px 70px 50px;
   }
 }
-@media only screen and (min-width: 415px) and (max-width: 768px) {
+/* Tablet */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   .footer .footer-li {
+    padding: 20px 0 10px 0;
+  }
+  .footer .footer-li ul {
     padding: 0;
   }
-  .footer .footer-li nav ul {
-    padding: 0;
+  .footer .footer-li ul .footer-li-2 a {
+    font-size: 1.6rem;
   }
-  .footer .footer-li nav ul .footer-li-2 a {
-    font-size: 16px;
-  }
-  .footer .redes p {
-    font-size: 2.2rem;
-  }
-  .footer .redes .redes-img img {
-    margin: 0 20px;
-    width: 6%;
+
+  .legal {
+    padding: 40px 185px;
   }
 }
-/* FIN PIE DE PAGINA */
+/* Fin Media Footer */
+/* Fin Pie de Página */
 .recorridos .lugares-contenedor .lugares-card, .recorridos .lugares-contenedor, .preferencias .preferencias-contenedor .preferencias-card, .preferencias .preferencias-contenedor, .contacto .formulario {
   display: flex;
   justify-content: center;
@@ -317,11 +331,12 @@ html {
   font-size: 1.5rem;
   text-align: left;
   color: #39c2b6;
+  margin-bottom: 20px;
 }
 .contacto .formulario .form .form-textarea {
   border: #76c0b4 1px solid;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   outline: 0;
 }
 .contacto .formulario .form button {
@@ -341,7 +356,7 @@ html {
   border: 1px solid #7d60f5;
 }
 
-/* WHATSAPP */
+/* Whatsapp */
 .wsp {
   position: fixed;
   right: 15px;
@@ -358,9 +373,42 @@ html {
   height: 100%;
 }
 
-/* FIN WHATSAPP */
-/* FIN CONTACTO */
-/* INDEX */
+/* Fin Whatsapp */
+/* Fin Sección Contacto */
+/* Media Querys Sección Contacto */
+/* Mobile */
+@media only screen and (max-width: 480px) {
+  .contacto {
+    padding: 80px 15px;
+  }
+  .contacto .formulario .form {
+    width: 80%;
+    padding: 40px 30px;
+  }
+
+  .wsp {
+    vertical-align: middle;
+    width: 11.5%;
+  }
+}
+/* Fin Mobile */
+/* Tablet  */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .contacto {
+    padding: 100px 0;
+  }
+  .contacto .formulario .form {
+    width: 70%;
+    padding: 40px 40px;
+  }
+
+  .wsp {
+    width: 6%;
+  }
+}
+/* Fin Tablet */
+/* Fin Media Querys Sección Contacto */
+/* Index */
 .container-background {
   background: linear-gradient(45deg, rgba(181, 144, 255, 0.5), rgba(199, 255, 240, 0.5), rgba(181, 144, 255, 0.5), rgba(199, 255, 240, 0.5)) 0 0/1000% no-repeat, url("../multimedia/imagen-inicio.jpg") 0 0/cover no-repeat;
   -webkit-animation: gradientAnimation 40s ease infinite;
@@ -624,9 +672,12 @@ html {
 }
 
 /* Fin Sección Mapa inicio */
-@media only screen and (max-width: 400px) {
+/* Media Querys Index*/
+/* Mobile */
+@media only screen and (max-width: 480px) {
+  /* Sección Imagen Inicio */
   .container-background {
-    height: 80vh;
+    height: 90vh;
   }
   .container-background .imagen-inicio {
     width: 100%;
@@ -636,15 +687,17 @@ html {
     font-size: 6rem;
     text-align: center;
     text-transform: uppercase;
-    padding: 35px 10px;
+    padding: 35px 30px;
   }
   .container-background .imagen-inicio p {
     font-family: "raleway-bold";
     font-size: 2.2rem;
     text-align: center;
-    padding: 15px 10px;
+    padding: 15px 50px;
   }
 
+  /* Fin Sección Imagen Inicio */
+  /* Sección Preferencias */
   .preferencias h2 {
     font-family: "raleway-bold";
     font-size: 3.5rem;
@@ -655,7 +708,7 @@ html {
     color: #515151;
   }
   .preferencias .preferencias-contenedor .preferencias-card {
-    margin: 10px 0 70px 0;
+    margin: 70px 0;
     width: 60%;
   }
   .preferencias .preferencias-contenedor .preferencias-img {
@@ -667,12 +720,16 @@ html {
     transition: 2.5s all;
   }
   .preferencias .preferencias-contenedor .preferencia-a {
-    margin-top: 200px;
+    margin-top: 250px;
     font-size: 3rem;
   }
 
+  /* Fin Sección Preferencias */
+  /* Sección Top 10 */
   .top-10 p {
-    padding-bottom: 30px;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    padding: 30px;
   }
   .top-10 .destinos-contenedor {
     display: flex;
@@ -688,101 +745,98 @@ html {
     margin-top: -75px;
   }
   .top-10 .flecha {
-    margin: 0px;
-    width: 35%;
+    margin: 30px;
   }
 
+  /* Fin Sección Top 10 */
+  /* Sección Mapa inicio */
   .mapa-1 {
-    padding: 10px 0 30px 0;
+    padding: 10px 0 40px 0;
+  }
+  .mapa-1 h2 {
+    padding: 40px 30px 5px 30px;
   }
   .mapa-1 p {
-    padding: 0 30px;
+    font-size: 2.2rem;
+    padding: 10px 40px;
   }
   .mapa-1:hover .gps1 {
-    -webkit-transform: translateY(50px);
-    -o-transform: translateY(50px);
-    -moz-transform: translateY(50px);
-    transform: translateY(50px);
+    -webkit-transform: translateY(55px);
+    -o-transform: translateY(55px);
+    -moz-transform: translateY(55px);
+    transform: translateY(55px);
     opacity: 5;
   }
   .mapa-1:hover .gps2 {
+    -webkit-transform: translateY(110px);
+    -o-transform: translateY(110px);
+    -moz-transform: translateY(110px);
+    transform: translateY(110px);
+    opacity: 5;
+  }
+  .mapa-1:hover .gps3 {
+    -webkit-transform: translateY(202px);
+    -o-transform: translateY(202px);
+    -moz-transform: translateY(202px);
+    transform: translateY(202px);
+    opacity: 5;
+  }
+  .mapa-1:hover .gps4 {
+    -webkit-transform: translateY(143px);
+    -o-transform: translateY(143px);
+    -moz-transform: translateY(143px);
+    transform: translateY(143px);
+    opacity: 5;
+  }
+  .mapa-1:hover .gps5 {
+    -webkit-transform: translateY(173px);
+    -o-transform: translateY(173px);
+    -moz-transform: translateY(173px);
+    transform: translateY(173px);
+    opacity: 5;
+  }
+  .mapa-1:hover .gps6 {
     -webkit-transform: translateY(95px);
     -o-transform: translateY(95px);
     -moz-transform: translateY(95px);
     transform: translateY(95px);
     opacity: 5;
   }
-  .mapa-1:hover .gps3 {
-    -webkit-transform: translateY(170px);
-    -o-transform: translateY(170px);
-    -moz-transform: translateY(170px);
-    transform: translateY(170px);
-    opacity: 5;
-  }
-  .mapa-1:hover .gps4 {
-    -webkit-transform: translateY(117px);
-    -o-transform: translateY(117px);
-    -moz-transform: translateY(117px);
-    transform: translateY(117px);
-    opacity: 5;
-  }
-  .mapa-1:hover .gps5 {
-    -webkit-transform: translateY(145px);
-    -o-transform: translateY(145px);
-    -moz-transform: translateY(145px);
-    transform: translateY(145px);
-    opacity: 5;
-  }
-  .mapa-1:hover .gps6 {
-    -webkit-transform: translateY(80px);
-    -o-transform: translateY(80px);
-    -moz-transform: translateY(80px);
-    transform: translateY(80px);
-    opacity: 5;
-  }
   .mapa-1:hover .gps7 {
-    -webkit-transform: translateY(170px);
-    -o-transform: translateY(170px);
-    -moz-transform: translateY(170px);
-    transform: translateY(170px);
+    -webkit-transform: translateY(206px);
+    -o-transform: translateY(206px);
+    -moz-transform: translateY(206px);
+    transform: translateY(206px);
     opacity: 5;
   }
   .mapa-1:hover .gps8 {
-    -webkit-transform: translateY(51px);
-    -o-transform: translateY(51px);
-    -moz-transform: translateY(51px);
-    transform: translateY(51px);
+    -webkit-transform: translateY(63px);
+    -o-transform: translateY(63px);
+    -moz-transform: translateY(63px);
+    transform: translateY(63px);
     opacity: 5;
   }
 
-  .contacto {
-    padding: 30px 0;
-  }
-  .contacto .formulario .form {
-    width: 80%;
-    padding: 40px 30px;
-  }
-  .contacto .formulario .form button {
-    padding-left: 8px;
-  }
-
-  .wsp {
-    vertical-align: middle;
-  }
+  /* Fin Sección Mapa inicio */
 }
-@media only screen and (min-width: 401px) and (max-width: 768px) {
+/* Fin Mobile */
+/* Tablet  */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* Sección Imagen Inicio */
   .container-background .imagen-inicio h1 {
-    padding: 35px 0;
+    padding: 35px 30px;
   }
   .container-background .imagen-inicio p {
-    padding: 25px 0;
+    padding: 25px 30px;
   }
 
+  /* Fin Sección Imagen Inicio */
+  /* Sección Preferencias */
   .preferencias {
     margin-bottom: 0;
   }
   .preferencias h2 {
-    padding: 0 0 40px 0;
+    padding: 20px 0 40px 0;
     text-align: center;
   }
   .preferencias .preferencias-contenedor .preferencias-card {
@@ -795,30 +849,34 @@ html {
     margin-top: 5px;
   }
 
+  /* Fin Sección Preferencias */
+  /* Sección Top 10 */
   .top-10 {
     padding-bottom: 50px;
-    padding-top: 50px;
+    padding-top: 60px;
   }
   .top-10 p {
-    padding-bottom: 0px;
+    padding-bottom: 20px;
+    letter-spacing: 5px;
+  }
+  .top-10 .destinos-contenedor {
+    padding: 0 10px;
   }
   .top-10 .destinos-contenedor .destinos-card {
-    padding: 15px 8px;
-  }
-  .top-10 .destinos-contenedor .destinos-card img {
-    width: 100%;
+    padding: 15px 10px;
   }
   .top-10 .destinos-contenedor .destinos-card .top-a {
     font-size: 1.5rem;
-    margin-top: -35px;
+    margin-top: -40px;
   }
   .top-10 .flecha {
-    margin: 15px;
-    width: 10%;
+    margin: 0 -18px;
   }
 
+  /* Fin Sección Top 10 */
+  /* Sección Mapa inicio */
   .mapa-1 {
-    padding: 10px 0;
+    padding: 20px 0;
   }
   .mapa-1 h2 {
     padding: 30px 65px;
@@ -833,81 +891,68 @@ html {
     margin: 0 0 20px 0;
   }
   .mapa-1:hover .gps1 {
-    -webkit-transform: translateY(112px);
-    -o-transform: translateY(112px);
-    -moz-transform: translateY(112px);
-    transform: translateY(112px);
+    -webkit-transform: translateY(95px);
+    -o-transform: translateY(95px);
+    -moz-transform: translateY(95px);
+    transform: translateY(95px);
     opacity: 5;
   }
   .mapa-1:hover .gps2 {
-    -webkit-transform: translateY(200px);
-    -o-transform: translateY(200px);
-    -moz-transform: translateY(200px);
-    transform: translateY(200px);
+    -webkit-transform: translateY(180px);
+    -o-transform: translateY(180px);
+    -moz-transform: translateY(180px);
+    transform: translateY(180px);
     opacity: 5;
   }
   .mapa-1:hover .gps3 {
-    -webkit-transform: translateY(337px);
-    -o-transform: translateY(337px);
-    -moz-transform: translateY(337px);
-    transform: translateY(337px);
+    -webkit-transform: translateY(325px);
+    -o-transform: translateY(325px);
+    -moz-transform: translateY(325px);
+    transform: translateY(325px);
     opacity: 5;
   }
   .mapa-1:hover .gps4 {
-    -webkit-transform: translateY(240px);
-    -o-transform: translateY(240px);
-    -moz-transform: translateY(240px);
-    transform: translateY(240px);
+    -webkit-transform: translateY(228px);
+    -o-transform: translateY(228px);
+    -moz-transform: translateY(228px);
+    transform: translateY(228px);
     opacity: 5;
   }
   .mapa-1:hover .gps5 {
-    -webkit-transform: translateY(300px);
-    -o-transform: translateY(300px);
-    -moz-transform: translateY(300px);
-    transform: translateY(300px);
+    -webkit-transform: translateY(275px);
+    -o-transform: translateY(275px);
+    -moz-transform: translateY(275px);
+    transform: translateY(275px);
     opacity: 5;
   }
   .mapa-1:hover .gps6 {
-    -webkit-transform: translateY(170px);
-    -o-transform: translateY(170px);
-    -moz-transform: translateY(170px);
-    transform: translateY(170px);
+    -webkit-transform: translateY(150px);
+    -o-transform: translateY(150px);
+    -moz-transform: translateY(150px);
+    transform: translateY(150px);
     opacity: 5;
   }
   .mapa-1:hover .gps7 {
-    -webkit-transform: translateY(340px);
-    -o-transform: translateY(340px);
-    -moz-transform: translateY(340px);
-    transform: translateY(340px);
+    -webkit-transform: translateY(327px);
+    -o-transform: translateY(327px);
+    -moz-transform: translateY(327px);
+    transform: translateY(327px);
     opacity: 5;
   }
   .mapa-1:hover .gps8 {
-    -webkit-transform: translateY(115px);
-    -o-transform: translateY(115px);
-    -moz-transform: translateY(115px);
-    transform: translateY(115px);
+    -webkit-transform: translateY(100px);
+    -o-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    transform: translateY(100px);
     opacity: 5;
   }
 
-  .contacto {
-    padding: 30px 0;
-  }
-  .contacto .formulario .form {
-    width: 80%;
-    padding: 40px 30px;
-  }
-  .contacto .formulario .form button {
-    padding-left: 8px;
-  }
-
-  .wsp {
-    vertical-align: middle;
-    margin: 25px;
-  }
+  /* Fin Sección Mapa inicio */
 }
-/* FIN MEDIA QUERYS INDEX */
-/* FIN INDEX */
-/* HTML AVENTURAS */
+/* Fin Tablet */
+/* Fin Media Querys Index */
+/* Fin Index */
+/* Aventuras */
 .inicio-aventuras {
   background-color: #eeeeee;
   width: 100%;
@@ -994,10 +1039,11 @@ html {
   color: #515151;
 }
 
-/* MEDIA QUERYS AVENTURAS */
-@media only screen and (max-width: 400px) {
+/* Media Querys Aventuras */
+/* Mobile */
+@media only screen and (max-width: 480px) {
   .inicio-aventuras h1 {
-    padding-top: 20px;
+    padding: 20px 35px;
   }
   .inicio-aventuras .continentes p {
     font-size: 2.5rem;
@@ -1010,10 +1056,17 @@ html {
     justify-content: center;
     padding: 3px;
   }
+  .inicio-aventuras .contenedor-aventuras .card-aventuras {
+    margin-bottom: 80px;
+  }
 }
-@media only screen and (min-width: 401px) and (max-width: 768px) {
+/* Tablet */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .inicio-aventuras {
+    padding: 40px 50px;
+  }
   .inicio-aventuras h1 {
-    padding-top: 20px;
+    padding-top: 25px;
   }
   .inicio-aventuras .continentes p {
     font-size: 3rem;
@@ -1027,9 +1080,9 @@ html {
     padding: 10px;
   }
 }
-/* FIN MEDIA QUERYS AVENTURAS*/
-/* FIN HTML AVENTURAS*/
-/* HTML GALERIA */
+/* Fin Media Querys Aventuras*/
+/* Fin Aventuras*/
+/* Galeria */
 .galeria {
   background-color: #eeeeee;
   padding: 20px 100px 80px 100px;
@@ -1142,14 +1195,15 @@ html {
   margin: 0;
 }
 
-/* MEDIA QUERYS GALERIA */
-@media only screen and (max-width: 400px) {
+/* Media Querys Galeria */
+/* Mobile */
+@media only screen and (max-width: 480px) {
   .galeria {
-    padding: 25px 30px;
+    padding: 45px 30px;
   }
   .galeria h1 {
     font-size: 2.5rem;
-    padding: 20px 0;
+    padding: 40px 50px 50px 50px;
   }
   .galeria .imagenes-galeria {
     grid-template-columns: repeat(2, auto);
@@ -1194,22 +1248,32 @@ html {
     filter: none;
   }
   .galeria .paginas {
-    margin-top: 80px;
+    margin-top: 120px;
+    margin-bottom: 10px;
   }
 }
-.online {
-  padding: 70px 0;
-  text-align: justify;
+.online h2 {
+  letter-spacing: 5px;
 }
-.online .container-online .video-info {
+.online .container-online {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.online .container-online .video-info {
+  width: 100%;
+  padding: 10px 35px;
 }
 .online .container-online .video {
-  margin: 10px 0;
+  width: 80%;
+  margin: 30px 0;
 }
 
-@media only screen and (min-width: 401px) and (max-width: 768px) {
+/* Tablet  */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   .galeria {
     padding: 40px;
   }
@@ -1220,9 +1284,6 @@ html {
     margin-top: 130px;
   }
 
-  .online {
-    padding: 70px 25px;
-  }
   .online h2 {
     padding: 0 50px;
   }
@@ -1233,9 +1294,9 @@ html {
     width: 90%;
   }
 }
-/* FIN MEDIA QUERYS GALERIA */
-/* FIN HTML GALERIA */
-/* HTML PERFIL */
+/* Fin Media Querys Galeria */
+/* Fin Galeria */
+/* Perfil */
 .recorridos {
   background-color: #fafafa;
   text-align: center;
@@ -1397,8 +1458,9 @@ html {
   color: #515151;
 }
 
-/* MEDIA QUERYS PERFIL */
-@media only screen and (max-width: 400px) {
+/* Media Querys Perfil */
+/* Mobile */
+@media only screen and (max-width: 480px) {
   .recorridos {
     padding: 70px 30px 100px 30px;
   }
@@ -1408,27 +1470,24 @@ html {
   .recorridos .recorridos-inicio h1 {
     font-size: 2.5rem;
     letter-spacing: 5px;
-    padding-bottom: 15px;
   }
   .recorridos .recorridos-inicio img {
-    width: 20%;
+    width: 18%;
   }
   .recorridos .boton-ciudades {
     display: flex;
     flex-direction: column;
-    padding: 0;
+    padding: 10px 30px;
   }
   .recorridos .boton-ciudades a {
-    margin: 10px;
+    margin: 10px 0;
   }
   .recorridos .lugares-contenedor {
     display: flex;
-    flex-direction: column;
-    margin: 15px 0;
   }
   .recorridos .lugares-contenedor .lugares-card {
     width: 100%;
-    margin: 20px 0;
+    margin: 20px 30px;
   }
   .recorridos .lugares-contenedor .lugares-card .lugar1 {
     width: 100%;
@@ -1441,11 +1500,10 @@ html {
   }
   .recorridos .lugares-contenedor .lugares-card img {
     width: 100%;
-    border-radius: 12px 12px 0px 0px;
   }
   .recorridos .lugar-mapa {
-    margin-top: -205px;
-    margin-bottom: 30px;
+    margin-top: -130px;
+    margin-bottom: 15px;
   }
   .recorridos .lugar-mapa .lugar1-marcador {
     position: relative;
@@ -1463,23 +1521,24 @@ html {
     left: 85px;
   }
   .recorridos .lugar-mapa .mapa {
-    width: 100%;
+    width: 90%;
   }
 
   .opiniones {
     padding: 50px 30px;
   }
-  .opiniones h2 {
-    padding-bottom: 10px;
+  .opiniones h3 {
+    padding-bottom: 20px;
     font-size: 2.5rem;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
   }
   .opiniones .opiniones-contenedor {
     display: flex;
     flex-direction: column;
   }
 }
-@media only screen and (min-width: 401px) and (max-width: 768px) {
+/* Tablet  */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   .recorridos {
     padding: 70px 30px 20px 30px;
   }
@@ -1515,7 +1574,7 @@ html {
     left: 295px;
   }
   .recorridos .lugar-mapa .mapa {
-    width: 100%;
+    width: 95%;
   }
 
   .opiniones {
@@ -1532,8 +1591,8 @@ html {
     font-size: 18px;
   }
 }
-/* FIN MEDIA QUERYS PERFIL */
-/* FIN HTML PERFIL */
+/* Fin Media Querys Perfil */
+/* Fin Perfil */
 /* HTML ERROR */
 .error {
   background-color: #eeeeee;
@@ -1646,7 +1705,7 @@ html {
 }
 /* FIN MEDIA QUERYS ERROR*/
 /* FIN HTML ERROR */
-/* QUIENES SOMOS */
+/* Quienes Somos */
 .quienes {
   background-color: #eeeeee;
   padding: 100px 0;
@@ -1685,7 +1744,7 @@ html {
   font-size: 3rem;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 20px;
+  letter-spacing: 10px;
   text-align: center;
   margin: 120px 0 20px 0;
   color: #b590ff;
@@ -1699,23 +1758,25 @@ html {
   padding: 0 15px;
 }
 
-@media only screen and (max-width: 400px) {
+/* Media Querys Quienes Somos */
+/* Mobile */
+@media only screen and (max-width: 480px) {
   .quienes {
-    padding: 35px 25px;
+    padding: 45px 30px;
     text-align: justify;
   }
-  .quienes h2 {
-    margin: 13px 0px;
+  .quienes h1 {
+    margin: 20px 30px;
   }
   .quienes .info-quienes-somos {
     display: flex;
     flex-direction: column;
   }
   .quienes .info-quienes-somos .texto-quienes-somos {
-    margin: 13px 0px;
+    margin: 20px 20px;
     padding: 0;
   }
-  .quienes h3 {
+  .quienes h2 {
     margin: 70px 0 10px 0;
   }
   .quienes .quienes-icon {
@@ -1728,43 +1789,47 @@ html {
     align-items: center;
   }
   .quienes .quienes-icon img {
-    width: 70%;
-    margin-bottom: 10px;
+    width: 65%;
+    margin-bottom: 5px;
   }
 }
-@media only screen and (min-width: 401px) and (max-width: 768px) {
+/* Tablet */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   .quienes {
-    padding: 35px 70px;
+    padding: 40px 50px;
     text-align: justify;
   }
-  .quienes h2 {
-    margin: 13px 0px;
+  .quienes h1 {
+    margin: 25px 50px;
   }
   .quienes .info-quienes-somos {
     display: flex;
     flex-direction: column;
   }
   .quienes .info-quienes-somos .texto-quienes-somos {
-    margin: 13px 0px;
+    margin: 20px 0 60px 0;
     padding: 0;
   }
-  .quienes h3 {
+  .quienes h2 {
     font-family: "raleway-medium";
     font-size: 3.5rem;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 10px;
-    margin: 70px 0 20px 0;
+    margin: 90px 0 10px 0;
+  }
+  .quienes .quienes-icon {
+    padding-bottom: 30px;
   }
   .quienes .quienes-icon img {
-    width: 20%;
-    margin: 0px 0px;
+    width: 35%;
+    margin: 10px 0px;
     padding: 10px 10px;
   }
 }
-/* FIN MEDIA QUERYS QUIENES SOMOS */
-/* FIN QUIENES SOMOS */
-/* HTML FAVORITOS */
+/* Fin Media Querys Quienes Somos */
+/* Fin Quienes Somos */
+/* Favoritos */
 .seccion-favoritos {
   background-color: #fafafa;
   text-align: center;
@@ -1808,8 +1873,9 @@ html {
   color: #fafafa;
 }
 
-/* MEDIA QUERYS FAVORITOS*/
-@media only screen and (max-width: 400px) {
+/* Media Querys Favoritos */
+/* Mobile */
+@media only screen and (max-width: 480px) {
   .seccion-favoritos {
     padding: 70px 30px;
   }
@@ -1823,9 +1889,10 @@ html {
     width: 100%;
   }
 }
-@media only screen and (min-width: 401px) and (max-width: 768px) {
+/* Tablet  */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   .seccion-favoritos {
-    padding: 70px 30px;
+    padding: 70px 30px 90px 30px;
   }
   .seccion-favoritos h1 {
     letter-spacing: 4px;
@@ -1838,7 +1905,7 @@ html {
     margin: 14px;
   }
 }
-/* FIN MEDIA QUERYS FAVORITOS*/
-/* HTML FIN FAVORITOS */
+/* Fin Media Querys Favoritos*/
+/* Fin Favoritos */
 
 /*# sourceMappingURL=style.css.map */

@@ -1,9 +1,9 @@
-/* HTML GALERIA */
 
+/* Galeria */
 .galeria {
-    background-color: nth($color, 8);
-    padding: 20px 100px 80px 100px;
-    width: $ancho;
+background-color: nth($color, 8);
+padding: 20px 100px 80px 100px;
+width: $ancho;
 
     h1 {
     @include titulos(nth($font-family, 4), nth($font-size, 6), $aling, $text-uppercase);
@@ -28,7 +28,6 @@
     "c1-f2 c2-f2 c3-f2 c4-f2"
     "c1-f3 c1-f3 c1-f3 c1-f3"
     "c1-f4 c2-f4 c3-f3 c4-f4";
-
 
         .c1-f1 {
         grid-area: c1-f1; 
@@ -83,7 +82,6 @@
         @include prefijos(scale(1.05))
         }
         }
-
     }
 
     .paginas {
@@ -92,179 +90,184 @@
             ul{
                 li {
                 a {
-                    @include sub-titulos(nth($font-family, 2), nth($font-size, 2), $aling);
-                    color: nth($color, 7) ;
+                @include sub-titulos(nth($font-family, 2), nth($font-size, 2), $aling);
+                color: nth($color, 7) ;
                 }
-            }
+                }
             }
         }
     }
 }
 
 .online {
-    background-color: nth($color, 2);
-    width: $ancho;
-    padding: 70px 0;
+background-color: nth($color, 2);
+width: $ancho;
+padding: 70px 0;
     
-        h2 {
-        @include titulos(nth($font-family, 4), nth($font-size, 6), $aling, $text-uppercase);
-        color: nth($color, 9);
-        letter-spacing: $letter-spacing;
-        text-align: $aling;
-        margin-bottom: 50px;
+    h2 {
+    @include titulos(nth($font-family, 4), nth($font-size, 6), $aling, $text-uppercase);
+    color: nth($color, 9);
+    letter-spacing: $letter-spacing;
+    text-align: $aling;
+    margin-bottom: 50px;
+    }
+
+    .container-online {
+        @extend %flex-2;
+
+        .video-info {
+            width: $ancho - 50%;                       
+            @include sub-titulos(nth($font-family, 1), nth($font-size, 2), left);
+            font-style: italic;
+            color: nth($color, 7);
+            padding-right: 70px;
         }
 
-            .container-online {
-                @extend %flex-2;
-
-                .video-info {
-                    width: $ancho - 50%;                       
-                    @include sub-titulos(nth($font-family, 1), nth($font-size, 2), left);
-                    font-style: italic;
-                    color: nth($color, 7);
-                    padding-right: 70px;
-                }
-
-                .video {
-                    width: $ancho - 50%;
-                    margin: 0;
-                   }
-            }
+        .video {
+            width: $ancho - 50%;
+            margin: 0;
+           }
+    }
 }
 
 
-/* MEDIA QUERYS GALERIA */
+/* Media Querys Galeria */
 
-@media only screen and (max-width:400px) {
+/* Mobile */
+@media only screen and (max-width:480px) {
 
     .galeria {
-    padding: 25px 30px;
+    padding: 45px 30px;
 
-    h1 {
-    font-size: nth($font-size, 4);
-    padding: 20px 0;
-    }
+        h1 {
+        font-size: nth($font-size, 4);
+        padding: 40px 50px 50px 50px;
+        }
 
-    .imagenes-galeria {
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
-    grid-row-gap: 1%;
-    grid-template-areas:
-    "c2-f1 c2-f1"
-    "c1-f2 c2-f2"
-    "c3-f2 c4-f2"
-    "c1-f3 c1-f3"
-    "c1-f4 c2-f4"
-    "c3-f3 c4-f4";
+        .imagenes-galeria {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        grid-row-gap: 1%;
+        grid-template-areas:
+        "c2-f1 c2-f1"
+        "c1-f2 c2-f2"
+        "c3-f2 c4-f2"
+        "c1-f3 c1-f3"
+        "c1-f4 c2-f4"
+        "c3-f3 c4-f4";
 
-        .c1-f1 {
+            .c1-f1 {
             display:none;
+            }
+
+            .c2-f1 {
+            grid-area: c2-f1;
+            }
+
+            .c1-f2 {
+            grid-area: c1-f2;
+            }
+
+            .c2-f2 {
+            grid-area: c2-f2;
+            }
+
+            .c3-f2 {
+            grid-area: c3-f2;
+            }
+
+            .c4-f2 {
+            grid-area: c4-f2;
+            }
+
+            .c1-f3 {
+            grid-area: c1-f3;
+            }
+
+            .c1-f4 {
+            grid-area: c1-f4;
+            }
+
+            .c2-f4 {
+            grid-area: c2-f4;
+            } 
+
+            .c3-f3 {
+            grid-area: c3-f3;
+            }
+
+            .c4-f4 {
+            grid-area: c4-f4;
+            }
+
+            img {
+            filter: none;
+            }
         }
 
-        .c2-f1 {
-        grid-area: c2-f1;
-        }
-
-        .c1-f2 {
-        grid-area: c1-f2;
-        }
-
-        .c2-f2 {
-        grid-area: c2-f2;
-        }
-
-        .c3-f2 {
-        grid-area: c3-f2;
-        }
-
-        .c4-f2 {
-        grid-area: c4-f2;
-        }
-
-        .c1-f3 {
-        grid-area: c1-f3;
-        }
-
-        .c1-f4 {
-        grid-area: c1-f4;
-        }
-
-        .c2-f4 {
-        grid-area: c2-f4;
-        } 
-
-        .c3-f3 {
-        grid-area: c3-f3;
-        }
-
-        .c4-f4 {
-        grid-area: c4-f4;
-        }
-
-        img {
-        filter: none;
+        .paginas {
+        margin-top: 120px;
+        margin-bottom: 10px;
         }
     }
-
-    .paginas {
-        margin-top: 80px;
-    }
-}
 }
 
 .online {
-    padding: 70px 0;
-    text-align: justify;
-
-        
-
-            .container-online {
-
-                .video-info {
-                    display: flex;
-                    flex-direction: column;
-                }
-
-                .video {
-                    margin: 10px 0 ;
-                   }
+            
+        h2 {
+        letter-spacing: $letter-spacing - 5px;
+        }
+    
+        .container-online {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    
+            .video-info {
+            width: $ancho;                      
+            padding: 10px 35px;
             }
+    
+            .video {
+            width: $ancho - 20%;
+            margin: 30px 0;
+            }
+        }
 }
 
-// /* Tablet  */
-@media only screen and (min-width:401px) and (max-width:768px) {
+/* Tablet  */
+@media only screen and (min-width:481px) and (max-width:768px) {
     .galeria {
         padding: 40px;
 
         h1 {
-            padding: 30px 0;
-            }
+        padding: 30px 0;
+        }
       
         .paginas {
         margin-top: 130px;
         }
     }
 
-    .online {
-        padding: 70px 25px;
-    
-            h2 {
-            padding: 0 50px;
+    .online {    
+        h2 {
+        padding: 0 50px;
+        }
+
+        .container-online{
+            .video-info {
+            width: $ancho;
             }
 
-            .container-online{
-
-                .video-info {
-                    width: $ancho;
-                }
-
-                .video {
-                    width: $ancho - 10%;
-                }
+            .video {
+             width: $ancho - 10%;
             }
         }
+    }
 }
+/* Fin Media Querys Galeria */
 
-/* FIN MEDIA QUERYS GALERIA */
-
-/* FIN HTML GALERIA */
+/* Fin Galeria */

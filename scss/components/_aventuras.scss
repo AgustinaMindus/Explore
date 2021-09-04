@@ -1,4 +1,4 @@
-/* HTML AVENTURAS */
+/* Aventuras */
 .inicio-aventuras {
     background-color: nth($color, 8);
     width: $ancho;
@@ -98,43 +98,49 @@
 }
 
 
-/* MEDIA QUERYS AVENTURAS */
+/* Media Querys Aventuras */
 
-@media only screen and (max-width:400px) {
+/* Mobile */
+@media only screen and (max-width:480px) {
 
-.inicio-aventuras {
+    .inicio-aventuras {
 
-    h1 {
-    padding-top: 20px;
-    }
+        h1 {
+        padding: 20px 35px;
+        }
 
-     .continentes {
-             p {
-            font-size:  nth($font-size, 4);
+        .continentes {
+            p {
+            font-size: nth($font-size, 4);
             padding: 7px;
             }
 
-        a {
-        font-size:  nth($font-size, 3);
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding: 3px;
+            a {
+            font-size:  nth($font-size, 3);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 3px;
+            }
         }
+        .contenedor-aventuras {            
+            .card-aventuras {
+            margin-bottom: 80px;
+            }
         }
     }
 }
 
-// /* Tablet  */
-@media only screen and (min-width:401px) and (max-width:768px) {
+/* Tablet */
+@media only screen and (min-width:481px) and (max-width:768px) {
     .inicio-aventuras {
+        padding: 40px 50px;
 
         h1 {
-            padding-top: 20px;
-            }
+        padding-top: 25px;
+        }
 
         .continentes {
-        
             p {
             font-size:  nth($font-size, 5);
             padding: 10px 0 0 0;
@@ -150,6 +156,6 @@
         }
     }
 }
-/* FIN MEDIA QUERYS AVENTURAS*/
+/* Fin Media Querys Aventuras*/
 
-/* FIN HTML AVENTURAS*/
+/* Fin Aventuras*/

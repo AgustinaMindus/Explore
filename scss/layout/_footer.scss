@@ -1,4 +1,5 @@
-/* PIE DE PAGINA */
+
+/* Pie de página */
 .footer {
     background-color: nth($color, 2);
     width: $ancho;
@@ -28,7 +29,7 @@
         }        
     }
 
-.redes {
+    .redes {
     position: sticky;
     top: 2900px;
     text-align: $aling;
@@ -40,113 +41,108 @@
         }     
         
         .redes-img {
-            margin-top: -5px;
+        margin-top: -5px;
         
-        img {
-        margin: 0 20px;
-        width: 4rem;
-        @include prefijos2(2s linear);
+            img {
+            margin: 0 20px;
+            width: 4rem;
+            @include prefijos2(2s linear);
 
-        &:hover {
-            @include prefijos(rotate(360deg) scale(1)) 
-        }
-        }  
+            &:hover {
+                @include prefijos(rotate(360deg) scale(1)) 
+            }
+            }  
 
-        a {
+            a {
             text-decoration: $text-none;
+            }
         }
-        }
-}
-
+    }
 }
 
 .legal {
-    @include titulos(nth($font-family, 1), nth($font-size, 1), $aling, $text-uppercase);
-    letter-spacing: $letter-spacing - 8px;
-    background-color: nth($color, 2);
-    width: $ancho;
-    color: nth($color, 8);
-    padding: 50px 0;
-    margin: 0;
+@include titulos(nth($font-family, 1), nth($font-size, 1), $aling, $text-uppercase);
+letter-spacing: $letter-spacing - 8px;
+background-color: nth($color, 2);
+width: $ancho;
+color: nth($color, 8);
+padding: 50px 0;
+margin: 0;
 }
+/* Fin pie de página */
 
+/* Media Querys Footer */
 
-/* MEDIA QUERYS */
 /* Mobile */
+@media only screen and (max-width:480px) {
 
-@media only screen and (max-width:414px) {
+    .footer {
+    width: $ancho;
 
-.footer {
-   width: $ancho;
+        .footer-li {
+        padding-left: 0;
 
-    .footer-li {
-        padding: 0;
+            .footer-li-2 {
+            display: block;
+            margin: 20px 0;
+            text-align: $aling;
+            }
 
-        nav {   
-            ul {
-            padding: 0;
-            
-                .footer-li-2 {
-                display: block;
-                margin: 20px 0;
-                text-align: $aling;
-
-                    a {
-                    font-size: nth($font-size, 2);
-                    }
+            li {
+                a {
+                font-size: nth($font-size, 2);
+                margin: 20px;    
                 }
             }
-        }         
-    }
-
-    .redes {    
-        p {
-        font-size:  nth($font-size, 3);
-        }     
-        .redes-img {
-        img {
-        margin: 0 20px;
-        width: 15%;
         }
-        }  
-    }
-    }
-}
 
-// /* Tablet  */
-@media only screen and (min-width:415px) and (max-width:768px) {
+        .redes {
+        position: sticky;
+        top: 2900px;
+        text-align: $aling;
+    
+            p {
+            font-size: nth($font-size, 3);
+            padding: 40px 0 10px 0;
+            }     
+            
+            .redes-img {
+            margin-top: -5px;
+        
+                img {
+                width: 5rem;
+                }
+            }
+        }
+    }
+
+    .legal {
+    padding: 50px 60px 70px 50px;
+    }
+} 
+
+/* Tablet */
+@media only screen and (min-width:481px) and (max-width:768px) {
     .footer {
              
         .footer-li {
-            padding: 0;
+            padding: 20px 0 10px 0;
     
-            nav {   
-                ul {
+            ul {
                 padding: 0;
-                
-                    .footer-li-2 {
-   
-                        a {
-                        font-size: 16px
-                        }
+                .footer-li-2 {
+                    a {
+                    font-size: 1.6rem;
                     }
                 }
-            }         
-        }
-     
-        .redes {    
-            p {
-            font-size:  nth($font-size, 3);
-            }     
-            .redes-img {
-            img {
-            margin: 0 20px;
-            width: 6%;
             }
-            }  
         }
     }
+
+    .legal {
+        padding: 40px 185px;
+        }
 }
+/* Fin Media Footer */
 
-
-/* FIN PIE DE PAGINA */
+/* Fin Pie de Página */

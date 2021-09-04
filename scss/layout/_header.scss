@@ -1,115 +1,100 @@
-/* HEADER */
+
+/* Header */
 .header {
+  .nav {
+    width: $ancho;
+    padding: 5px 70px;
+    background-color: transparent;
+    .logo {
+      width: 5%;
+      height: 5%;
+    }
 
-    .nav {
-      width: $ancho;
-      padding: 5px 70px;
-      background-color: transparent;
+    .hamburger{
+      border: nth($color, 9) 1px solid;
+    }
 
-      .logo {
-        width: 5%;
-        height: 5%;
-      }
-
-      .hamburger{
-        color: nth($color, 9);
-        border: none;
-      }
-
-      .nav-item {
+    .nav-item {
       .item {
-        @include titulos(
-          nth($font-family, 3),
-          nth($font-size, 1),
-          $aling,
-          $text-uppercase
-        );
+      @include titulos(
+      nth($font-family, 3), nth($font-size, 1), $aling, $text-uppercase);
+      color: nth($color, 9);
+      padding: 6px 15px;
+  
+      &:hover {
+        border-bottom: nth($color, 4) 3px solid;
         color: nth($color, 9);
-        padding: 6px 15px;
-  
+      }
+      }
+    }
+
+    .submenu {
+      min-width: 11.5rem;
+      font-family: nth($font-family, 2);
+      font-size: nth($font-size, 1);
+      text-transform: $text-uppercase;
+      color: nth($color, 5);
+      background-color: nth($color, 8);
+      margin-left: 4px;
+      border-radius: 0%;
+
+      .submenu-item {
+        color: nth($color, 4);
+
         &:hover {
-          border-bottom: nth($color, 4) 3px solid;
-          color: nth($color, 9);
-        }
-      }
-
-      
-      }
-
-     
-
-      .submenu {
-        min-width: 11.5rem;
-        font-family: nth($font-family, 2);
-        font-size: nth($font-size, 1);
-        text-transform: $text-uppercase;
-        color: nth($color, 5);
-        background-color: nth($color, 8);
-        margin-left: 4px;
-        border-radius: 0%;
-
-        .submenu-item {
-          color: nth($color, 4);
-  
-          &:hover {
-            background-color: nth($color, 5);
-            color: nth($color, 9);
-          }
+        background-color: nth($color, 5);
+        color: nth($color, 9);
         }
       }
     }
-        
-    .favoritos:hover {
-      background-image: url("../multimedia/favoritos_2.svg");
-      background-repeat: no-repeat;
-    }
-
   }
- 
-  /* FIN HEADER */
+        
+  .favoritos:hover {
+    background-image: url("../multimedia/favoritos_2.svg");
+    background-repeat: no-repeat;
+  }
+}
+/* Fin Header */
   
-  /* MEDIA QUERYS HEADER */
+  /* Media Querys Header */
   
   /* Mobile */
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 480px) {
         .header {
           .nav {
+            padding: 5px 30px;
+            
             .logo {
-                img {
-                margin-left: -55px;
-                }
+            width: $ancho - 80%;
+            height: $ancho - 80%;
+            margin: 13px 0;
             }
 
             .hamburger {
-              margin: 0px -50px 0 20px;
+            text-align: right;
             }
-
-            .navbar-nav2{
-              position: absolute;
-              right: 105px;
-              top: 20px;      
-            }
-          }
+        }
         }
   }
 
  /* Tablet */
-  @media only screen and (min-width:401px) and (max-width:768px) {
+  @media only screen and (min-width:481px) and (max-width:768px) {
     .header {
       .nav {
+        padding: 5px 30px;
+
         .logo {
-            img {
-            margin-left: -55px;
-            }
+          width: $ancho - 90%;
+          height: $ancho - 90%;
+          margin: 13px 0;
         }
 
         .hamburger {
-          margin: 0px -50px 0 20px;
+          text-align: right;
         }
 
       }
     }
-  }
-  
-  /* FIN MEDIA QUERYS HEADER */
+  }  
+/* Fin Media Querys Header */
   

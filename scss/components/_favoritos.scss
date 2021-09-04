@@ -1,13 +1,14 @@
-/* HTML FAVORITOS */
+
+/* Favoritos */
 .seccion-favoritos {
     background-color: nth($color, 9);
     text-align: $aling;
     padding: 120px 0 140px 0;
 
     h1 {
-        @include titulos(nth($font-family, 4), nth($font-size, 6), $aling, $text-uppercase);
-        letter-spacing: $letter-spacing;
-        color: nth($color, 1);
+    @include titulos(nth($font-family, 4), nth($font-size, 6), $aling, $text-uppercase);
+    letter-spacing: $letter-spacing;
+    color: nth($color, 1);
     }
 
     .contenedor-mayor-favoritos {
@@ -19,7 +20,7 @@
         }
 
         .contenedor-fav {
-            @extend %flex-3;
+        @extend %flex-3;
                     
             .card-fav {
             width: $ancho - 75%;
@@ -44,28 +45,28 @@
             }
             }
         }
-            }
-        }
+    }
+}
 
+/* Media Querys Favoritos */
 
-/* MEDIA QUERYS FAVORITOS*/
-
-@media only screen and (max-width:400px) {
+/* Mobile */
+@media only screen and (max-width:480px) {
 
     .seccion-favoritos {
-        padding: 70px 30px;
+    padding: 70px 30px;
     
         h1 {
         letter-spacing: $letter-spacing - 8px;
         }
-        .contenedor-mayor-favoritos {
 
+        .contenedor-mayor-favoritos {
             h2 {
             padding-top: 45px;
             }
     
             .contenedor-fav {
-                @extend %flex-3;
+            @extend %flex-3;
                         
                 .card-fav {
                 width: $ancho;
@@ -74,33 +75,30 @@
         }
     }
 }   
-    
-    // /* Tablet  */
-    @media only screen and (min-width:401px) and (max-width:768px) {
-        .seccion-favoritos {
-            padding: 70px 30px;
-        
-            h1 {
-            letter-spacing: $letter-spacing - 6px;
-            }
 
-            .contenedor-mayor-favoritos {
-    
-                h2 {
-                padding-top: 50px;
-                }
+/* Tablet  */
+@media only screen and (min-width:481px) and (max-width:768px) {
+    .seccion-favoritos {
+        padding: 70px 30px 90px 30px;
         
-                .contenedor-fav {
-                            
-                    .card-fav {
-                    width: $ancho - 71%;
-                    margin: 14px;          
-                    }
+        h1 {
+        letter-spacing: $letter-spacing - 6px;
+        }
+
+        .contenedor-mayor-favoritos {
+            h2 {
+            padding-top: 50px;
+            }
+        
+            .contenedor-fav {       
+                .card-fav {
+                width: $ancho - 71%;
+                margin: 14px;          
                 }
             }
         }
     }
-    /* FIN MEDIA QUERYS FAVORITOS*/
+}
+/* Fin Media Querys Favoritos*/
     
-
-/* HTML FIN FAVORITOS */
+/* Fin Favoritos */

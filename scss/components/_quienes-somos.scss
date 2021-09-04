@@ -1,5 +1,5 @@
 
-/* QUIENES SOMOS */
+/* Quienes Somos */
 .quienes {
     background-color: nth($color, 8);
     padding: 100px 0;
@@ -37,7 +37,7 @@
 
     h2{
     @include titulos(nth($font-family, 3), nth($font-size, 5), $aling, $text-uppercase);
-    letter-spacing: $letter-spacing *2;
+    letter-spacing: $letter-spacing;
     text-align: $aling;
     margin: 120px 0 20px 0;
     color: nth($color, 6);
@@ -55,31 +55,29 @@
     }
 }
 
+/* Media Querys Quienes Somos */
 
-// /* MEDIA QUERYS INDEX */ //
-
-// /* Mobile */
-
-@media only screen and (max-width:400px) {
+/* Mobile */
+@media only screen and (max-width:480px) {
     .quienes {
-        padding: 35px 25px;
-        text-align: justify;
+    padding: 45px 30px;
+    text-align: justify;
         
-        h2 {
-            margin: 13px 0px;
-            }
+        h1 {
+        margin: 20px 30px;
+        }
 
         .info-quienes-somos {
-            display: flex;
-            flex-direction: column;
+        display: flex;
+        flex-direction: column;
 
             .texto-quienes-somos {
-            margin: 13px 0px;
+            margin: 20px 20px;
             padding: 0;
             }
-    }
+        }
 
-        h3 {
+        h2 {
         margin: 70px 0 10px 0;
         }
         
@@ -93,53 +91,51 @@
         align-items: center;
 
             img {
-            width: $ancho - 30%;
-            margin-bottom: 10px;
+            width: $ancho - 35%;
+            margin-bottom: 5px;
             }
         }
-
-    }
-    
+    }   
 }
 
-// /* Tablet  */
-@media only screen and (min-width:401px) and (max-width:768px) {
+/* Tablet */
+@media only screen and (min-width:481px) and (max-width:768px) {
     
     .quienes {
-        padding: 35px 70px;
-        text-align: justify;
+    padding: 40px 50px;
+    text-align: justify;
         
-        h2 {
-            margin: 13px 0px;
-            }
+        h1{
+        margin: 25px 50px;
+        }
 
         .info-quienes-somos {
             display: flex;
             flex-direction: column;
 
             .texto-quienes-somos {
-            margin: 13px 0px;
+            margin: 20px 0 60px 0;
             padding: 0;
             }
         }
 
-        h3{
+        h2{
         @include titulos(nth($font-family, 3), nth($font-size, 6), $aling, $text-uppercase);
         letter-spacing: $letter-spacing;
-        margin: 70px 0 20px 0;
+        margin: 90px 0 10px 0;
         }
     
         .quienes-icon {
-    
+        padding-bottom: 30px;
             img {
-            width: $ancho - 80%;
-            margin: 0px 0px;
+            width: $ancho - 65%;
+            margin: 10px 0px;
             padding: 10px 10px;
             }
         }  
     }
 }    
 
-/* FIN MEDIA QUERYS QUIENES SOMOS */
+/* Fin Media Querys Quienes Somos */
     
-    /* FIN QUIENES SOMOS */
+/* Fin Quienes Somos */

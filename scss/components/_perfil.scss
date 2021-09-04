@@ -1,5 +1,5 @@
-/* HTML PERFIL */
 
+/* Perfil */
 .recorridos {
     background-color: nth($color, 9);
     text-align: $aling;
@@ -22,7 +22,7 @@
     }
 
     .boton-ciudades{
-        padding: 20px 0 45px 0;
+    padding: 20px 0 45px 0;
 
         h2 {
         @include sub-titulos(nth($font-family, 3), nth($font-size, 4), $aling);
@@ -30,7 +30,7 @@
         padding-bottom: 40px;
         }
 
-        a{
+        a {
         @include sub-titulos(nth($font-family, 3), nth($font-size, 2), $aling);
         text-decoration: $text-none;
         color: nth($color, 2);
@@ -38,10 +38,10 @@
         @extend %boton;
         margin: 60px;
 
-        &:hover {
-        background-color: nth($color, 2);
-        color: nth($color, 3);
-        }
+            &:hover {
+            background-color: nth($color, 2);
+            color: nth($color, 3);
+            }
         }
     }
 
@@ -54,7 +54,8 @@
         @extend %flex;
         width: $ancho - 70%;
         @include prefijos2(all 1s ease-in-out);
-        &:hover {
+
+            &:hover {
             @include prefijos(scale(1.05))
             }
             
@@ -90,46 +91,45 @@
     }
 
     .lugar-mapa {
-        margin-top: -110px;
-        margin-bottom: 70px;
+    margin-top: -110px;
+    margin-bottom: 70px;
         
+        .lugar1-marcador {
+        border-radius: 50%;
+        height: 3rem;
+        width: 3rem;
+        background-color: nth($color, 4);
+        position: relative;
+        top: 410px;
+        left: 674px;
+        box-shadow: $text-shadow;
+        }
 
-            .lugar1-marcador {
-            border-radius: 50%;
-            height: 3rem;
-            width: 3rem;
-            background-color: nth($color, 4);
-            position: relative;
-            top: 410px;
-            left: 674px;
-            box-shadow: $text-shadow;
-            }
+        .lugar2-marcador {
+        border-radius: 50%;
+        height: 3rem;
+        width: 3rem;
+        background-color: nth($color, 6);
+        position: relative;
+        top: 297px;
+        left: 620px;
+        box-shadow: $text-shadow;
+        }
 
-            .lugar2-marcador {
-            border-radius: 50%;
-            height: 3rem;
-            width: 3rem;
-            background-color: nth($color, 6);
-            position: relative;
-            top: 297px;
-            left: 620px;
-            box-shadow: $text-shadow;
-            }
+        .lugar3-marcador {
+        border-radius: 50%;
+        height: 3rem;
+        width: 3rem;
+        background-color: nth($color, 5);
+        position: relative;
+        top: 105px;
+        left: 611px;
+        box-shadow: $text-shadow;
+        }
 
-            .lugar3-marcador {
-            border-radius: 50%;
-            height: 3rem;
-            width: 3rem;
-            background-color: nth($color, 5);
-            position: relative;
-            top: 105px;
-            left: 611px;
-            box-shadow: $text-shadow;
-            }
-
-            .mapa {
-                width: $ancho - 20%;
-            }
+        .mapa {
+            width: $ancho - 20%;
+        }
     }
 }
 
@@ -168,9 +168,10 @@
     }
 }
 
-/* MEDIA QUERYS PERFIL */
+/* Media Querys Perfil */
 
-@media only screen and (max-width:400px) {
+/* Mobile */
+@media only screen and (max-width:480px) {
     .recorridos {
     padding: 70px 30px 100px 30px;
 
@@ -178,58 +179,53 @@
         padding-bottom: 45px;
 
             h1 {
-                font-size: nth($font-size, 4);
-                letter-spacing: $letter-spacing - 5px;
-                padding-bottom: 15px;
+            font-size: nth($font-size, 4);
+            letter-spacing: $letter-spacing - 5px;
             }
 
             img {
-            width: 20%;
+            width: 18%;
             }
         }
     
         .boton-ciudades{
-            display: flex;
-            flex-direction: column;
-            padding: 0;           
+        display: flex;
+        flex-direction: column;
+        padding: 10px 30px;           
 
             a{
-            margin: 10px;
+            margin: 10px 0;
             }
         }
     
         .lugares-contenedor {
-            display: flex;
-            flex-direction: column;
-            margin: 15px 0;
+        display: flex;
 
             .lugares-card {
             width: $ancho;
-            margin: 20px 0;
+            margin: 20px 30px;
 
-            .lugar1 {
+                .lugar1 {
                 width: $ancho;
-            }
+                }
 
-            .lugar2 {
+                .lugar2 {
                 width: $ancho;
-            }
+                }
 
-            .lugar3 {
+                .lugar3 {
                 width: $ancho;
-            }
+                }
                 
                 img {
                 width: $ancho;
-                border-radius: 12px 12px 0px 0px;
                 }  
-    
-           }   
+            }   
         }
     
         .lugar-mapa {  
-            margin-top: -205px;
-            margin-bottom: 30px;
+            margin-top: -130px;
+            margin-bottom: 15px;
     
                 .lugar1-marcador {
                 position: relative;
@@ -250,7 +246,7 @@
                 }
 
                 .mapa {
-                width: $ancho;
+                width: $ancho - 10%;
                 }
         }
     }
@@ -258,10 +254,10 @@
     .opiniones {
         padding: 50px 30px;
         
-        h2 {
-        padding-bottom: 10px;
+        h3 {
+        padding-bottom: 20px;
         font-size: nth($font-size, 4);
-        letter-spacing: $letter-spacing - 6px;
+        letter-spacing: $letter-spacing - 8px;
         }
     
         .opiniones-contenedor {
@@ -271,8 +267,8 @@
     } 
 }
 
-// /* Tablet  */
-@media only screen and (min-width:401px) and (max-width:768px) {
+/* Tablet  */
+@media only screen and (min-width:481px) and (max-width:768px) {
     .recorridos {
     padding: 70px 30px 20px 30px;
     
@@ -300,28 +296,28 @@
         }
     
         .lugar-mapa {  
-    
-                .lugar1-marcador {
-                position: relative;
-                top: 415px;
-                left: 350px;
-                }
-    
-                .lugar2-marcador {
-                position: relative;
-                top: 300px;
-                left: 300px;
-                }
-    
-                .lugar3-marcador {
-                position: relative;
-                top: 105px;
-                left: 295px;
-                }
 
-                .mapa {
-                    width: $ancho;
-                }
+            .lugar1-marcador {
+            position: relative;
+            top: 415px;
+            left: 350px;
+            }
+    
+            .lugar2-marcador {
+            position: relative;
+            top: 300px;
+            left: 300px;
+            }
+    
+            .lugar3-marcador {
+            position: relative;
+            top: 105px;
+            left: 295px;
+            }
+
+            .mapa {
+            width: $ancho - 5%;
+            }
         }
     }
     
@@ -336,16 +332,12 @@
         display: flex;
         flex-direction: column;
                    
-        p {
-        font-size: 18px;
-        }
-        
+            p {
+            font-size: 18px;
+            }
         }
     } 
 }
+/* Fin Media Querys Perfil */
 
-/* FIN MEDIA QUERYS PERFIL */
-
-
-
-/* FIN HTML PERFIL */
+/* Fin Perfil */
