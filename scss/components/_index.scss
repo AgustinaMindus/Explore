@@ -95,7 +95,6 @@
         position: absolute;
         margin-top: 180px;        
         }
-
     }
 }
 /* Fin Sección Preferencias */
@@ -235,6 +234,10 @@ padding: 80px 0 110px 0;
     &:hover .gps8 {
     @include prefijos(translateY(195px));
     opacity:5;
+    }
+
+    .mapa-1-img {
+        width: $ancho;
     }
 }
 /* Fin Sección Mapa inicio */

@@ -33,7 +33,7 @@
         a {
         @include sub-titulos(nth($font-family, 3), nth($font-size, 2), $aling);
         text-decoration: $text-none;
-        color: nth($color, 2);
+        color: nth($color, 1);
         background-color: nth($color, 3);
         @extend %boton;
         margin: 60px;

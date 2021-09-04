@@ -670,6 +670,9 @@ html {
   transform: translateY(195px);
   opacity: 5;
 }
+.mapa-1 .mapa-1-img {
+  width: 100%;
+}
 
 /* Fin Sección Mapa inicio */
 /* Media Querys Index*/
@@ -1097,7 +1100,7 @@ html {
   color: #6e50f9;
   padding: 100px;
 }
-.galeria img {
+.galeria .img-galeria {
   border-radius: 8px 0;
   width: 100%;
 }
@@ -1332,7 +1335,7 @@ html {
   font-size: 2rem;
   text-align: center;
   text-decoration: none;
-  color: #76c0b4;
+  color: #39c2b6;
   background-color: #c7fff0;
   margin: 60px;
 }
