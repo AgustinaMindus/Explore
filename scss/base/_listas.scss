@@ -1,25 +1,32 @@
 $color: 
-#1abc9c, /* 1, no va */
-#39c2b6, /* 2 */
-#76c0b4,/* 3 */
-#c7fff0, /* 4 */
-#6e50f9, /* 5 */
-#7f44f8, /* 6, no va */
-#7d60f5,/* 7 */
-#b590ff,/* 8 */
-#515151, /* 9 */
-#eeeeee,/* 10 */
-#fafafa; /* 11 */
+#39c2b6, /* 2 - 1 */
+#76c0b4,/* 3 - 2*/
+#c7fff0, /* 4  - 3*/
+#6e50f9, /* 5   4 */
+#7d60f5,/* 7 - 5*/
+#b590ff,/* 8  - 6*/
+#515151, /* 9  - 7*/
+#eeeeee,/* 10 - 8*/
+#fafafa; /* 11  - 9*/
 
 $font-size:
-15px, 
-20px, 
-22px, 
-25px, 
-30px, 
-35px, 
-60px, 
-70px; 
+1.5rem, 
+2rem, 
+2.2rem, 
+2.5rem, 
+3rem, 
+3.5rem, 
+6rem, 
+7rem; 
+// 15px, 
+// 20px, 
+// 22px, 
+// 25px, 
+// 30px, 
+// 35px, 
+// 60px, 
+// 70px;
+/* 1rem pase a valer a 10px. Por defecto el navegador aplica 16px */
 
 $font-family:
 "raleway-light", 

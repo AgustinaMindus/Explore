@@ -1,17 +1,15 @@
 /* HTML AVENTURAS */
 .inicio-aventuras {
-    background-color: nth($color, 10);
+    background-color: nth($color, 8);
     width: $ancho;
     padding: 40px 20px 120px 20px;
 
         h1 {
         @include titulos(nth($font-family, 4), nth($font-size, 6), $aling, $text-uppercase);
         letter-spacing: $letter-spacing;
-        color: nth($color, 2);
+        color: nth($color, 1);
         padding-top: 80px;
         }
-
-        
 
     .continentes {
     padding: 50px 0 70px 0;
@@ -19,19 +17,19 @@
 
         p {
         @include sub-titulos(nth($font-family, 3), nth($font-size, 4), $aling);
-        color: nth($color, 9);
+        color: nth($color, 7);
         padding: 20px;
         }
     
         a {
         @extend %texto;
-        color: nth($color, 9); 
+        color: nth($color, 7); 
         text-transform: $text-uppercase;
         padding: 10px 20px 20px 20px;
         margin: 10px;
 
             &:hover {
-            color: nth($color, 3);  
+            color: nth($color, 2);  
             text-decoration: underline; 
             }
         }
@@ -45,6 +43,7 @@
         box-shadow: $text-shadow;
         background-color: transparent;
         border-radius: 8px;
+        width: 28rem;
         
         .img-aventuras {
         border-radius: 8px 8px 0 0;
@@ -55,7 +54,7 @@
             position: absolute;
             top: 5%;
             left: 80%;  
-
+            
             &:hover {
             background-image: url("../multimedia/favoritos_2.svg");
             background-repeat: no-repeat;
@@ -63,19 +62,19 @@
         }
 
         .contenedor-texto {
-        background-color: nth($color, 11);
+        background-color: nth($color, 9);
         padding: 20px 10px;
         border-radius: 0 0 8px 8px;
 
             .titulo-aventuras {
             @include titulos(nth($font-family, 4), nth($font-size, 3), $aling, $text-uppercase);
             letter-spacing: $letter-spacing - 8px;
-            color: nth($color, 5);  
+            color: nth($color, 4);  
             }
         
             .parrafo-aventuras {
             @include sub-titulos(nth($font-family, 1), nth($font-size, 1), $aling);
-            color: nth($color, 9);  
+            color: nth($color, 7);  
             padding: 15px;
             text-align: left;
             }
@@ -90,7 +89,7 @@
                 li {
                 a {
                     @include sub-titulos(nth($font-family, 2), nth($font-size, 2), $aling);
-                    color: nth($color, 9) ;
+                    color: nth($color, 7) ;
                 }
             }
             }

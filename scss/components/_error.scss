@@ -1,39 +1,39 @@
 /* HTML ERROR */
 .error {
-    background-color: nth($color, 10);
+    background-color: nth($color, 8);
     background-image: url("../multimedia/error_fondo.svg");
     background-repeat: no-repeat;
     width: $ancho;
-    color: nth($color, 7);
+    color: nth($color, 5);
     text-align: $aling;
     padding: 300px 0 180px 0;
 
     h1 {
         @include titulos(nth($font-family, 6), nth($font-size, 7), $aling, $text-uppercase);
         letter-spacing: $letter-spacing;
-        color: nth($color, 7);
+        color: nth($color, 5);
         margin-top: -100px;
         margin-left: 25px;
     }
 
-    h4 {
+    h2 {
         @include titulos(nth($font-family, 6), nth($font-size, 4), $aling, $text-uppercase);
-        color: nth($color, 2);
+        color: nth($color, 1);
         padding: 100px 380px 40px 380px;
     }
 
-    p {
+    h3 {
         @include sub-titulos(nth($font-family, 4), nth($font-size, 2), $aling);
         margin: 35px;
         letter-spacing: $letter-spacing - 6px;
-        color: nth($color, 5);
+        color: nth($color, 4);
     }
 
     a {
         @include titulos(nth($font-family, 4), nth($font-size, 1), $aling, $text-uppercase);
-        background-color: nth($color, 8); 
+        background-color: nth($color, 6); 
         text-decoration: $text-none;
-        color: nth($color, 11); 
+        color: nth($color, 9); 
         @extend %boton;
     }
 }
@@ -43,12 +43,12 @@
 @media only screen and (max-width:400px) {
 
     .error {
-        background-color: nth($color, 10);
+        background-color: nth($color, 8);
         background-image: url("../multimedia/error_fondo2.svg");
         background-repeat: no-repeat;
         width: $ancho;
         height: 80vh;
-        color: nth($color, 7);
+        color: nth($color, 5);
         text-align: $aling;
         padding: 300px 0 60px 0;
     
@@ -61,7 +61,7 @@
     
         h4 {
             @include titulos(nth($font-family, 6), nth($font-size, 2), $aling, $text-uppercase);
-            color: nth($color, 2);
+            color: nth($color, 1);
             padding: 50px;
         }
     
@@ -88,7 +88,7 @@
         
             h4 {
                 @include titulos(nth($font-family, 6), nth($font-size, 3), $aling, $text-uppercase);
-                color: nth($color, 2);
+                color: nth($color, 1);
                 padding: 50px;
             }
         

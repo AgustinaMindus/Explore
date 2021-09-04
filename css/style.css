@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+  /* 1rem pasa a valer a 10px.*/
+}
+
 /* TIPOGRAFIAS */
 @font-face {
   font-family: "raleway-light";
@@ -30,19 +35,25 @@
   src: url("../font/Raleway-ExtraBold.ttf");
 }
 /* FIN TIPOGRAFIAS */
-/* 11 */
+/* 11  - 9*/
+/* 1rem pase a valer a 10px. Por defecto el navegador aplica 16px */
 /* HEADER */
 .header .nav {
   width: 100%;
   padding: 5px 70px;
   background-color: transparent;
 }
-.header .nav .navbar-nav2 {
-  display: flex;
+.header .nav .logo {
+  width: 5%;
+  height: 5%;
+}
+.header .nav .hamburger {
+  color: #fafafa;
+  border: none;
 }
 .header .nav .nav-item .item {
   font-family: "raleway-medium";
-  font-size: 15px;
+  font-size: 1.5rem;
   text-align: center;
   text-transform: uppercase;
   color: #fafafa;
@@ -53,9 +64,9 @@
   color: #fafafa;
 }
 .header .nav .submenu {
-  min-width: 7.5rem;
+  min-width: 11.5rem;
   font-family: "raleway-regular";
-  font-size: 15px;
+  font-size: 1.5rem;
   text-transform: uppercase;
   color: #7d60f5;
   background-color: #eeeeee;
@@ -98,11 +109,6 @@
   .header .nav .hamburger {
     margin: 0px -50px 0 20px;
   }
-  .header .nav .navbar-nav2 {
-    position: absolute;
-    right: 105px;
-    top: 20px;
-  }
 }
 /* FIN MEDIA QUERYS HEADER */
 /* PIE DE PAGINA */
@@ -122,7 +128,7 @@
 }
 .footer .footer-li li a {
   font-family: "raleway-light";
-  font-size: 15px;
+  font-size: 1.5rem;
   text-align: center;
   text-decoration: none;
   color: #fafafa;
@@ -138,7 +144,7 @@
 }
 .footer .redes p {
   font-family: "raleway-bold";
-  font-size: 20px;
+  font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
   color: #6e50f9;
@@ -149,7 +155,7 @@
 }
 .footer .redes .redes-img img {
   margin: 0 20px;
-  width: 4%;
+  width: 4rem;
   -webkit-transition: 2s linear;
   -o-transition: 2s linear;
   -moz-transition: 2s linear;
@@ -167,7 +173,7 @@
 
 .legal {
   font-family: "raleway-light";
-  font-size: 15px;
+  font-size: 1.5rem;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -196,10 +202,10 @@
     text-align: center;
   }
   .footer .footer-li nav ul .footer-li-2 a {
-    font-size: 20px;
+    font-size: 2rem;
   }
   .footer .redes p {
-    font-size: 22px;
+    font-size: 2.2rem;
   }
   .footer .redes .redes-img img {
     margin: 0 20px;
@@ -217,7 +223,7 @@
     font-size: 16px;
   }
   .footer .redes p {
-    font-size: 22px;
+    font-size: 2.2rem;
   }
   .footer .redes .redes-img img {
     margin: 0 20px;
@@ -234,7 +240,7 @@
   align-items: center;
 }
 
-.quienes .info-quienes-somos, .opiniones .opiniones-contenedor, .top-10 .destinos-contenedor {
+.quienes .info-quienes-somos, .opiniones .opiniones-contenedor, .online .container-online, .top-10 .destinos-contenedor {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -298,7 +304,7 @@
 }
 .container-background .imagen-inicio h1 {
   font-family: "raleway-extrabold";
-  font-size: 70px;
+  font-size: 7rem;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 10px;
@@ -318,7 +324,7 @@
 }
 .container-background .imagen-inicio p {
   font-family: "raleway-bold";
-  font-size: 25px;
+  font-size: 2.5rem;
   text-align: center;
   margin: 2px;
   letter-spacing: 4px;
@@ -338,7 +344,7 @@
 }
 .preferencias h2 {
   font-family: "raleway-bold";
-  font-size: 35px;
+  font-size: 3.5rem;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 20px;
@@ -374,7 +380,7 @@
 }
 .top-10 h2 {
   font-family: "raleway-extrabold";
-  font-size: 35px;
+  font-size: 3.5rem;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 20px;
@@ -382,7 +388,7 @@
 }
 .top-10 p {
   font-family: "raleway-medium";
-  font-size: 20px;
+  font-size: 2rem;
   text-align: center;
   letter-spacing: 2px;
   color: #fafafa;
@@ -424,6 +430,10 @@
 .top-10 .flecha {
   margin: -40px;
 }
+.top-10 .flecha .flecha-icon {
+  width: 4rem;
+  height: 4rem;
+}
 
 /* FIN TOP-10 */
 /* MAPA */
@@ -433,7 +443,7 @@
 }
 .mapa-1 h2 {
   font-family: "raleway-bold";
-  font-size: 30px;
+  font-size: 3rem;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 10px;
@@ -442,7 +452,7 @@
 }
 .mapa-1 p {
   font-family: "raleway-bold-italic";
-  font-size: 20px;
+  font-size: 2rem;
   text-align: center;
   color: #39c2b6;
   padding-bottom: 20px;
@@ -530,9 +540,6 @@
   width: 100%;
   padding: 90px;
 }
-.contacto .formulario {
-  min-height: 100vh;
-}
 .contacto .formulario .form {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 8px;
@@ -543,7 +550,7 @@
 }
 .contacto .formulario .form h2 {
   font-family: "raleway-bold";
-  font-size: 25px;
+  font-size: 2.5rem;
   text-align: center;
   text-transform: uppercase;
   color: #39c2b6;
@@ -552,7 +559,7 @@
 }
 .contacto .formulario .form .form-label {
   font-family: "raleway-medium";
-  font-size: 15px;
+  font-size: 1.5rem;
   text-align: left;
   color: #7d60f5;
   margin-bottom: 7px;
@@ -568,7 +575,7 @@
 .contacto .formulario .form .select {
   text-transform: none;
   font-family: "raleway-medium";
-  font-size: 15px;
+  font-size: 1.5rem;
   text-align: left;
   color: #39c2b6;
 }
@@ -583,7 +590,7 @@
   background-color: #b590ff;
   border: 1px solid #b590ff;
   font-family: "raleway-regular";
-  font-size: 15px;
+  font-size: 1.5rem;
   text-align: center;
   text-transform: uppercase;
   color: #fafafa;
@@ -598,13 +605,18 @@
 /* WHATSAPP */
 .wsp {
   position: fixed;
-  right: 10px;
-  bottom: 10px;
+  right: 15px;
+  bottom: 15px;
   z-index: 100;
   background-color: #4dc247;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 50%;
   padding: 9px;
+  width: 3.5%;
+}
+.wsp .wsp-icon {
+  width: 100%;
+  height: 100%;
 }
 
 /* FIN WHATSAPP */
@@ -618,21 +630,21 @@
   }
   .container-background .imagen-inicio h1 {
     font-family: "raleway-extrabold";
-    font-size: 60px;
+    font-size: 6rem;
     text-align: center;
     text-transform: uppercase;
     padding: 35px 10px;
   }
   .container-background .imagen-inicio p {
     font-family: "raleway-bold";
-    font-size: 22px;
+    font-size: 2.2rem;
     text-align: center;
     padding: 15px 10px;
   }
 
   .preferencias h2 {
     font-family: "raleway-bold";
-    font-size: 35px;
+    font-size: 3.5rem;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 8px;
@@ -653,7 +665,7 @@
   }
   .preferencias .preferencias-contenedor .preferencia-a {
     margin-top: 200px;
-    font-size: 30px;
+    font-size: 3rem;
   }
 
   .top-10 p {
@@ -669,7 +681,7 @@
     align-items: center;
   }
   .top-10 .destinos-contenedor .destinos-card .top-a {
-    font-size: 30px;
+    font-size: 3rem;
     margin-top: -75px;
   }
   .top-10 .flecha {
@@ -775,7 +787,7 @@
     width: 30%;
   }
   .preferencias .preferencias-contenedor .preferencia-a {
-    font-size: 25px;
+    font-size: 2.5rem;
     position: relative;
     margin-top: 5px;
   }
@@ -794,7 +806,7 @@
     width: 100%;
   }
   .top-10 .destinos-contenedor .destinos-card .top-a {
-    font-size: 15px;
+    font-size: 1.5rem;
     margin-top: -35px;
   }
   .top-10 .flecha {
@@ -807,11 +819,11 @@
   }
   .mapa-1 h2 {
     padding: 30px 65px;
-    font-size: 30px;
+    font-size: 3rem;
   }
   .mapa-1 p {
     padding: 0 0 0 0;
-    font-size: 22px;
+    font-size: 2.2rem;
   }
   .mapa-1 .mapa-1-img {
     padding: 0px;
@@ -900,7 +912,7 @@
 }
 .inicio-aventuras h1 {
   font-family: "raleway-bold";
-  font-size: 35px;
+  font-size: 3.5rem;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 10px;
@@ -913,7 +925,7 @@
 }
 .inicio-aventuras .continentes p {
   font-family: "raleway-medium";
-  font-size: 25px;
+  font-size: 2.5rem;
   text-align: center;
   color: #515151;
   padding: 20px;
@@ -933,6 +945,7 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background-color: transparent;
   border-radius: 8px;
+  width: 28rem;
 }
 .inicio-aventuras .contenedor-aventuras .card-aventuras .img-aventuras {
   border-radius: 8px 8px 0 0;
@@ -954,7 +967,7 @@
 }
 .inicio-aventuras .contenedor-aventuras .card-aventuras .contenedor-texto .titulo-aventuras {
   font-family: "raleway-bold";
-  font-size: 22px;
+  font-size: 2.2rem;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -962,7 +975,7 @@
 }
 .inicio-aventuras .contenedor-aventuras .card-aventuras .contenedor-texto .parrafo-aventuras {
   font-family: "raleway-light";
-  font-size: 15px;
+  font-size: 1.5rem;
   text-align: center;
   color: #515151;
   padding: 15px;
@@ -973,7 +986,7 @@
 }
 .inicio-aventuras .paginas nav ul li a {
   font-family: "raleway-regular";
-  font-size: 20px;
+  font-size: 2rem;
   text-align: center;
   color: #515151;
 }
@@ -984,11 +997,11 @@
     padding-top: 20px;
   }
   .inicio-aventuras .continentes p {
-    font-size: 25px;
+    font-size: 2.5rem;
     padding: 7px;
   }
   .inicio-aventuras .continentes a {
-    font-size: 22px;
+    font-size: 2.2rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1000,11 +1013,11 @@
     padding-top: 20px;
   }
   .inicio-aventuras .continentes p {
-    font-size: 30px;
+    font-size: 3rem;
     padding: 10px 0 0 0;
   }
   .inicio-aventuras .continentes a {
-    font-size: 22px;
+    font-size: 2.2rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1021,7 +1034,7 @@
 }
 .galeria h1 {
   font-family: "raleway-bold";
-  font-size: 35px;
+  font-size: 3.5rem;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 10px;
@@ -1092,7 +1105,7 @@
 }
 .galeria .paginas nav ul li a {
   font-family: "raleway-regular";
-  font-size: 20px;
+  font-size: 2rem;
   text-align: center;
   color: #515151;
 }
@@ -1100,36 +1113,29 @@
 .online {
   background-color: #76c0b4;
   width: 100%;
-  padding: 90px 0 150px 0;
+  padding: 70px 0;
 }
-.online h3 {
+.online h2 {
   font-family: "raleway-bold";
-  font-size: 35px;
+  font-size: 3.5rem;
   text-align: center;
   text-transform: uppercase;
   color: #fafafa;
   letter-spacing: 10px;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 .online .container-online .video-info {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-}
-.online .container-online .video-info p {
-  width: 100%;
+  width: 50%;
   font-family: "raleway-light";
-  font-size: 20px;
+  font-size: 2rem;
   text-align: left;
   font-style: italic;
   color: #515151;
-  margin-right: 50px;
+  padding-right: 70px;
 }
 .online .container-online .video {
+  width: 50%;
   margin: 0;
 }
 
@@ -1139,7 +1145,7 @@
     padding: 25px 30px;
   }
   .galeria h1 {
-    font-size: 25px;
+    font-size: 2.5rem;
     padding: 20px 0;
   }
   .galeria .imagenes-galeria {
@@ -1189,19 +1195,12 @@
   }
 }
 .online {
-  padding: 35px 0 70px 0;
+  padding: 70px 0;
   text-align: justify;
-}
-.online h3 {
-  margin-bottom: 0;
 }
 .online .container-online .video-info {
   display: flex;
   flex-direction: column;
-}
-.online .container-online .video-info p {
-  margin: 30px 0px;
-  padding: 0 35px;
 }
 .online .container-online .video {
   margin: 10px 0;
@@ -1222,7 +1221,6 @@
     padding: 70px 25px;
   }
   .online h2 {
-    margin-bottom: 0;
     padding: 0 50px;
   }
   .online .container-online .video-info {
@@ -1245,7 +1243,7 @@
 }
 .recorridos .recorridos-inicio h1 {
   font-family: "raleway-bold";
-  font-size: 35px;
+  font-size: 3.5rem;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 20px;
@@ -1258,16 +1256,16 @@
 .recorridos .boton-ciudades {
   padding: 20px 0 45px 0;
 }
-.recorridos .boton-ciudades h3 {
+.recorridos .boton-ciudades h2 {
   font-family: "raleway-medium";
-  font-size: 25px;
+  font-size: 2.5rem;
   text-align: center;
   color: #515151;
   padding-bottom: 40px;
 }
 .recorridos .boton-ciudades a {
   font-family: "raleway-medium";
-  font-size: 20px;
+  font-size: 2rem;
   text-align: center;
   text-decoration: none;
   color: #76c0b4;
@@ -1302,7 +1300,7 @@
 }
 .recorridos .lugares-contenedor .lugares-card a {
   font-family: "raleway-bold-italic";
-  font-size: 15px;
+  font-size: 1.5rem;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -1328,33 +1326,36 @@
 }
 .recorridos .lugar-mapa .lugar1-marcador {
   border-radius: 50%;
-  height: 30px;
-  width: 30px;
+  height: 3rem;
+  width: 3rem;
   background-color: #6e50f9;
   position: relative;
-  top: 415px;
-  left: 668px;
+  top: 410px;
+  left: 674px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .recorridos .lugar-mapa .lugar2-marcador {
   border-radius: 50%;
-  height: 30px;
-  width: 30px;
+  height: 3rem;
+  width: 3rem;
   background-color: #b590ff;
   position: relative;
-  top: 300px;
-  left: 614px;
+  top: 297px;
+  left: 620px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .recorridos .lugar-mapa .lugar3-marcador {
   border-radius: 50%;
-  height: 30px;
-  width: 30px;
+  height: 3rem;
+  width: 3rem;
   background-color: #7d60f5;
   position: relative;
   top: 105px;
-  left: 607px;
+  left: 611px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.recorridos .lugar-mapa .mapa {
+  width: 80%;
 }
 
 .opiniones {
@@ -1362,9 +1363,9 @@
   text-align: center;
   padding: 100px 0;
 }
-.opiniones h2 {
+.opiniones h3 {
   font-family: "raleway-extrabold";
-  font-size: 30px;
+  font-size: 3rem;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 10px;
@@ -1374,14 +1375,22 @@
 .opiniones .opiniones-contenedor {
   width: 100%;
 }
-.opiniones .opiniones-contenedor p {
-  font-family: "raleway-medium";
-  font-size: 15px;
-  text-align: center;
-  margin: 30px;
-  line-height: 25px;
-  padding: 20px;
+.opiniones .opiniones-contenedor .opiniones-card {
   border: #39c2b6 2px solid;
+  margin: 20px;
+  padding: 30px;
+}
+.opiniones .opiniones-contenedor .opiniones-card .opiniones-titulo {
+  font-family: "raleway-bold";
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 25px;
+}
+.opiniones .opiniones-contenedor .opiniones-card .opiniones-texto {
+  font-family: "raleway-medium";
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 25px;
   color: #515151;
 }
 
@@ -1394,7 +1403,7 @@
     padding-bottom: 45px;
   }
   .recorridos .recorridos-inicio h1 {
-    font-size: 25px;
+    font-size: 2.5rem;
     letter-spacing: 5px;
     padding-bottom: 15px;
   }
@@ -1451,7 +1460,6 @@
     left: 85px;
   }
   .recorridos .lugar-mapa .mapa {
-    margin: 45px 0 -40px 0;
     width: 100%;
   }
 
@@ -1460,7 +1468,7 @@
   }
   .opiniones h2 {
     padding-bottom: 10px;
-    font-size: 25px;
+    font-size: 2.5rem;
     letter-spacing: 4px;
   }
   .opiniones .opiniones-contenedor {
@@ -1504,7 +1512,7 @@
     left: 295px;
   }
   .recorridos .lugar-mapa .mapa {
-    width: 95%;
+    width: 100%;
   }
 
   .opiniones {
@@ -1535,7 +1543,7 @@
 }
 .error h1 {
   font-family: "raleway-extrabold";
-  font-size: 60px;
+  font-size: 6rem;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 10px;
@@ -1543,17 +1551,17 @@
   margin-top: -100px;
   margin-left: 25px;
 }
-.error h4 {
+.error h2 {
   font-family: "raleway-extrabold";
-  font-size: 25px;
+  font-size: 2.5rem;
   text-align: center;
   text-transform: uppercase;
   color: #39c2b6;
   padding: 100px 380px 40px 380px;
 }
-.error p {
+.error h3 {
   font-family: "raleway-bold";
-  font-size: 20px;
+  font-size: 2rem;
   text-align: center;
   margin: 35px;
   letter-spacing: 4px;
@@ -1561,7 +1569,7 @@
 }
 .error a {
   font-family: "raleway-bold";
-  font-size: 15px;
+  font-size: 1.5rem;
   text-align: center;
   text-transform: uppercase;
   background-color: #b590ff;
@@ -1583,7 +1591,7 @@
   }
   .error h1 {
     font-family: "raleway-extrabold";
-    font-size: 25px;
+    font-size: 2.5rem;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -1592,7 +1600,7 @@
   }
   .error h4 {
     font-family: "raleway-extrabold";
-    font-size: 20px;
+    font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
     color: #39c2b6;
@@ -1600,7 +1608,7 @@
   }
   .error p {
     font-family: "raleway-bold";
-    font-size: 15px;
+    font-size: 1.5rem;
     text-align: center;
     margin: 25px 20px 35px 20px;
   }
@@ -1611,7 +1619,7 @@
   }
   .error h1 {
     font-family: "raleway-extrabold";
-    font-size: 30px;
+    font-size: 3rem;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -1620,7 +1628,7 @@
   }
   .error h4 {
     font-family: "raleway-extrabold";
-    font-size: 22px;
+    font-size: 2.2rem;
     text-align: center;
     text-transform: uppercase;
     color: #39c2b6;
@@ -1628,7 +1636,7 @@
   }
   .error p {
     font-family: "raleway-bold";
-    font-size: 20px;
+    font-size: 2rem;
     text-align: center;
     margin: 25px 20px 35px 20px;
   }
@@ -1641,9 +1649,9 @@
   padding: 100px 0;
   width: 100%;
 }
-.quienes h2 {
+.quienes h1 {
   font-family: "raleway-bold";
-  font-size: 35px;
+  font-size: 3.5rem;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 10px;
@@ -1652,7 +1660,7 @@
   color: #6e50f9;
 }
 .quienes .info-quienes-somos .texto-quienes-somos {
-  font-size: 20px;
+  font-size: 2rem;
   font-family: "raleway-light";
   padding-right: 70px;
   color: #515151;
@@ -1669,9 +1677,9 @@
   -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
   box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
 }
-.quienes h3 {
+.quienes h2 {
   font-family: "raleway-medium";
-  font-size: 30px;
+  font-size: 3rem;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 20px;
@@ -1683,8 +1691,8 @@
   margin-bottom: 15px;
 }
 .quienes .quienes-icon img {
-  width: 13%;
-  margin: 20px 24px;
+  width: 15%;
+  margin: 30px 11px;
   padding: 0 15px;
 }
 
@@ -1739,7 +1747,7 @@
   }
   .quienes h3 {
     font-family: "raleway-medium";
-    font-size: 35px;
+    font-size: 3.5rem;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 10px;
@@ -1761,7 +1769,7 @@
 }
 .seccion-favoritos h1 {
   font-family: "raleway-bold";
-  font-size: 35px;
+  font-size: 3.5rem;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 10px;
@@ -1769,7 +1777,7 @@
 }
 .seccion-favoritos .contenedor-mayor-favoritos h2 {
   font-family: "raleway-medium";
-  font-size: 25px;
+  font-size: 2.5rem;
   text-align: center;
   color: #515151;
   padding-top: 80px;
@@ -1790,7 +1798,7 @@
 }
 .seccion-favoritos .contenedor-mayor-favoritos .contenedor-fav .card-fav .contenedor-texto-fav .titulo-fav {
   font-family: "raleway-bold";
-  font-size: 15px;
+  font-size: 1.5rem;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;

@@ -1,6 +1,4 @@
 /* HEADER */
-
-
 .header {
 
     .nav {
@@ -8,8 +6,14 @@
       padding: 5px 70px;
       background-color: transparent;
 
-      .navbar-nav2{
-        display: flex;
+      .logo {
+        width: 5%;
+        height: 5%;
+      }
+
+      .hamburger{
+        color: nth($color, 9);
+        border: none;
       }
 
       .nav-item {
@@ -20,33 +24,36 @@
           $aling,
           $text-uppercase
         );
-        color: nth($color, 11);
+        color: nth($color, 9);
         padding: 6px 15px;
   
         &:hover {
-          border-bottom: nth($color, 5) 3px solid;
-          color: nth($color, 11);
+          border-bottom: nth($color, 4) 3px solid;
+          color: nth($color, 9);
         }
       }
+
+      
       }
 
+     
 
       .submenu {
-        min-width: 7.5rem;
+        min-width: 11.5rem;
         font-family: nth($font-family, 2);
         font-size: nth($font-size, 1);
         text-transform: $text-uppercase;
-        color: nth($color, 7);
-        background-color: nth($color, 10);
+        color: nth($color, 5);
+        background-color: nth($color, 8);
         margin-left: 4px;
         border-radius: 0%;
 
         .submenu-item {
-          color: nth($color, 5);
+          color: nth($color, 4);
   
           &:hover {
-            background-color: nth($color,7);
-            color: nth($color, 11);
+            background-color: nth($color, 5);
+            color: nth($color, 9);
           }
         }
       }
@@ -100,11 +107,6 @@
           margin: 0px -50px 0 20px;
         }
 
-        .navbar-nav2{
-          position: absolute;
-          right: 105px;
-          top: 20px;      
-        }
       }
     }
   }

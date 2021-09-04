@@ -36,64 +36,61 @@
     <title>Explore - Descubre tu propia aventura según el país que visitarás.</title>
 </head>
 <body>
-    <!-- NAVBAR -->
+
+    <!-- Navbar -->
     <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light nav" style="background-color: #76c0b4;">
+        <nav class="navbar navbar-expand-lg navbar-dark nav" style="background-color: #76c0b4;">
             <div class="container-fluid">
                 <a class="navbar-brand logo" href="../index.html">
-                    <img src="../multimedia/logo.svg" alt="logo" width="70" height="70">
+                    <img src="../multimedia/logo.svg" alt="logo">
                 </a>
-            
-              <button class="navbar-toggler button hamburger" type="button" data-bs-toggle="collapse" 
-              data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
-              aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+    
+                <button class="navbar-toggler button hamburger" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+                </button>
                 
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item pe-1 ps-1 m-auto">
-                    <a class="nav-link item" href="../secciones/quienes-somos.html">Quienes somos</a>
-                    </li>
-                    <li class="nav-item  pe-1 ps-1 m-auto dropdown">
-                         <a class="nav-link item" href="#" id="navbarDropdownMenuLink" 
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">Aventuras</a>
-                    <ul class="dropdown-menu submenu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item submenu-item" href="../secciones/aventuras.html">América</a></li>
-                      <li><a class="dropdown-item submenu-item" href="#">Asia</a></li>
-                      <li><a class="dropdown-item submenu-item" href="#">África</a></li>
-                      <li><a class="dropdown-item submenu-item" href="#">Europa</a></li>
-                      <li><a class="dropdown-item submenu-item" href="#">Oceanía</a></li>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item pe-1 ps-1 m-auto">
+                            <a class="nav-link item" href="../secciones/quienes-somos.html">Quienes somos</a>
+                        </li>
+                        <li class="nav-item  pe-1 ps-1 m-auto dropdown ">
+                            <a class="nav-link item" href="#" id="navbarDropdownMenuLink" 
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">Aventuras</a>
+                            <ul class="dropdown-menu submenu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item submenu-item" href="../secciones/aventuras.html">América</a></li>
+                                <li><a class="dropdown-item submenu-item" href="#">Asia</a></li>
+                                <li><a class="dropdown-item submenu-item" href="#">África</a></li>
+                                <li><a class="dropdown-item submenu-item" href="#">Europa</a></li>
+                                <li><a class="dropdown-item submenu-item" href="#">Oceanía</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item pe-1 ps-1 m-auto">
+                            <a class="nav-link item" href="../secciones/galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item pe-1 ps-1 m-auto">
+                            <a class="nav-link item" href="#contacto">Contacto</a>
+                        </li> 
+                        <li class="nav-item2 pe-2 ps-2 m-auto">
+                            <a  class="nav-link" href="../secciones/favoritos.html">
+                                <img class="favoritos" src="../multimedia/favoritos.svg" alt="favoritos" width="35" height="35">
+                            </a>
+                        </li>
+                        <li class="nav-item2 pe-2 ps-2 m-auto">
+                            <a class="nav-link" href="../secciones/perfil.html">
+                                <img class="perfil" src="../multimedia/user.svg" alt="perfil" width="45" height="45">
+                            </a>
+                        </li>  
                     </ul>
-                    </li>
-                    <li class="nav-item  pe-1 ps-1 m-auto">
-                        <a class="nav-link item" href="../secciones/galeria.html">Galeria</a>
-                    </li>
-                    <li class="nav-item  pe-1 ps-1 m-auto">
-                        <a class="nav-link item" href="#contacto">Contacto</a>
-                    </li>   
-                </ul>
                 </div>
-    
-                <div class="navbar-nav2">
-                    <li class="nav-item2 pe-3 ps-3 m-auto">
-                    <a href="../secciones/favoritos.html">
-                            <img class="favoritos" src="../multimedia/favoritos.svg" alt="favoritos" width="35" height="35">
-                    </a>
-                    </li>
-                    <li class="nav-item2 pe-2 ps-2 m-auto">
-                        <a class="nav-item" href="../secciones/perfil.html">
-                            <img src="../multimedia/user.svg" alt="perfil" width="45" height="45">
-                        </a>
-                    </li> 
-                </div>
-    
             </div>
         </nav>
-        </header>
-        <!-- FIN NAVBAR -->
+    </header>
+    <!-- Fin Navbar -->
 
-    <!-- Seccion aventuras -->
+    <!-- Sección Aventuras -->
     <section class="inicio-aventuras">
         <h1>¡Descubre tu propia aventura!</h1>
 
@@ -110,103 +107,103 @@
         </div>
 
         <div class="contenedor-aventuras container">
-        <div class="card  card-aventuras" style="width: 18rem; border: none;">
-            <img src="../multimedia/calafate.png" class="card-img-top img-aventuras" alt="Calafate. Santa Cruz, Argentina.">
-            <a href="../secciones/favoritos.html">
-                <img class="favoritos" src="../multimedia/favoritos.svg" alt="favoritos" width="35" height="35">
-            </a>    
-            <div class="card-body contenedor-texto">
+            <div class="card card-aventuras" style="border: none;">
+                <img src="../multimedia/calafate.png" class="card-img-top img-aventuras" alt="Calafate. Santa Cruz, Argentina.">
+                <a href="../secciones/favoritos.html">
+                    <img class="favoritos" src="../multimedia/favoritos.svg" alt="favoritos" width="35" height="35">
+                </a>    
+                <div class="card-body contenedor-texto">
                     <h5 class="card-title text-center titulo-aventuras">Navega por El Calafate</h5>
                     <p class="card-text p-2 parrafo-aventuras">Navegación frente al Glaciar Upsala y Glaciar Spegazzini. 
-                        Desembarco en Bahía de los Glaciares. Servicio de guía durante todo el recorrido. </p>
-                    </div>
-        </div>
+                    Desembarco en Bahía de los Glaciares. Servicio de guía durante todo el recorrido. </p>
+                </div>
+            </div>
 
-        <div class="card card-aventuras" style="width: 18rem; border: none;">
-            <img src="../multimedia/salinas.png" class="card-img-top img-aventuras" alt="Salinas Grandes. Jujuy, Argentina.">
-            <a href="../secciones/favoritos.html">
-                <img class="favoritos" src="../multimedia/favoritos.svg" alt="favoritos" width="35" height="35">
-            </a>       
-            <div class="card-body contenedor-texto">
+            <div class="card card-aventuras" style="border: none;">
+                <img src="../multimedia/salinas.png" class="card-img-top img-aventuras" alt="Salinas Grandes. Jujuy, Argentina.">
+                <a href="../secciones/favoritos.html">
+                    <img class="favoritos" src="../multimedia/favoritos.svg" alt="favoritos" width="35" height="35">
+                </a>       
+                <div class="card-body contenedor-texto">
                     <h5 class="card-title text-center titulo-aventuras">Recorriendo Salinas Grandes</h5>
                     <p class="card-text p-2 parrafo-aventuras">Con su blanco de cristal, es el tercer 
-                        salar más grande de Sudamérica con una extensión mayor a las 12 mil hectáreas a cielo. </p>
+                    salar más grande de Sudamérica con una extensión mayor a las 12 mil hectáreas a cielo. </p>
                 </div>
-        </div>
+            </div>
 
-        <div class="card card-aventuras" style="width: 18rem; border: none;">
-            <img src="../multimedia/sietecolores.png" class="card-img-top img-aventuras" alt="Cerro de los Siete Colores. Jujuy, Argentina.">
-            <a href="../secciones/favoritos.html">
-                <img class="favoritos" src="../multimedia/favoritos.svg" alt="favoritos" width="35" height="35">
-            </a>       
-            <div class="card-body contenedor-texto">
+            <div class="card card-aventuras" style="border: none;">
+                <img src="../multimedia/sietecolores.png" class="card-img-top img-aventuras" alt="Cerro de los Siete Colores. Jujuy, Argentina.">
+                <a href="../secciones/favoritos.html">
+                    <img class="favoritos" src="../multimedia/favoritos.svg" alt="favoritos" width="35" height="35">
+                </a>       
+                <div class="card-body contenedor-texto">
                     <h5 class="card-title text-center titulo-aventuras">Cerro de los Siete Colores</h5>
                     <p class="card-text p-2 parrafo-aventuras">Conocé el cerro ubicado en las afueras de la 
-                        ciudad de Purmamarca, a 4 kilómetros de la Ruta Nacional 9.</p>
+                    ciudad de Purmamarca, a 4 kilómetros de la Ruta Nacional 9.</p>
                 </div>
-        </div>
+            </div>
 
-        <div class="card card-aventuras" style="width: 18rem; border: none;">
-            <img src="../multimedia/laboca.png" class="card-img-top img-aventuras" alt="La Boca. Buenos Aires, Argentina.">
-            <a href="../secciones/favoritos.html">
-                <img class="favoritos" src="../multimedia/favoritos.svg" alt="favoritos" width="35" height="35">
-            </a>      
-            <div class="card-body contenedor-texto">
+            <div class="card card-aventuras" style="border: none;">
+                <img src="../multimedia/laboca.png" class="card-img-top img-aventuras" alt="La Boca. Buenos Aires, Argentina.">
+                <a href="../secciones/favoritos.html">
+                    <img class="favoritos" src="../multimedia/favoritos.svg" alt="favoritos" width="35" height="35">
+                </a>      
+                <div class="card-body contenedor-texto">
                     <h5 class="card-title text-center titulo-aventuras">Viviendo el barrio de La Boca</h5>
                     <p class="card-text p-2 parrafo-aventuras">
-                        Este barrio esta zona en donde se encuentran
-                        las bocas del Riachuelo, que desemboca en el Río de la Plata.</p>
+                    Este barrio esta zona en donde se encuentran
+                    las bocas del Riachuelo, que desemboca en el Río de la Plata.</p>
                 </div>
-        </div>
+            </div>
 
-        <div class="card  card-aventuras" style="width: 18rem; border: none;">
-            <img src="../multimedia/sietelagos.png" class="card-img-top img-aventuras" alt="Siete Lagos. Neuquén, Argentina.">
-            <a href="../secciones/favoritos.html">
-                <img class="favoritos" src="../multimedia/favoritos.svg" alt="favoritos" width="35" height="35">
-            </a>       
-            <div class="card-body contenedor-texto">
+            <div class="card  card-aventuras" style="border: none;">
+                <img src="../multimedia/sietelagos.png" class="card-img-top img-aventuras" alt="Siete Lagos. Neuquén, Argentina.">
+                <a href="../secciones/favoritos.html">
+                    <img class="favoritos" src="../multimedia/favoritos.svg" alt="favoritos" width="35" height="35">
+                </a>       
+                <div class="card-body contenedor-texto">
                     <h5 class="card-title text-center titulo-aventuras">Camino de los Siete Lagos</h5>
                     <p class="card-text p-2 parrafo-aventuras">Tramo de 110 kms de la ruta nacional 40 que une a las localidades 
-                        de San Martín de los Andes y Villa La Angostura.</p>
+                    de San Martín de los Andes y Villa La Angostura.</p>
                 </div>
-        </div>
+            </div>
 
-        <div class="card  card-aventuras" style="width: 18rem; border: none;">
-            <img src="../multimedia/cataratas.png" class="card-img-top img-aventuras" alt="Cataratas del Iguazú. Misiones, Argentina">
-            <a href="../secciones/favoritos.html">
-                <img class="favoritos" src="../multimedia/favoritos.svg" alt="favoritos" width="35" height="35">
-            </a>       
-            <div class="card-body contenedor-texto">
+            <div class="card  card-aventuras" style="border: none;">
+                <img src="../multimedia/cataratas.png" class="card-img-top img-aventuras" alt="Cataratas del Iguazú. Misiones, Argentina">
+                <a href="../secciones/favoritos.html">
+                    <img class="favoritos" src="../multimedia/favoritos.svg" alt="favoritos" width="35" height="35">
+                </a>       
+                <div class="card-body contenedor-texto">
                     <h5 class="card-title text-center titulo-aventuras">Cataratas del Iguazú</h5>
                     <p class="card-text p-2 parrafo-aventuras">Imperdibles de América Latina y mucho más
-                         desde que fueron nombradas entre las 7 maravillas naturales del mundo,</p>
+                    desde que fueron nombradas entre las 7 maravillas naturales del mundo,</p>
                 </div>
-        </div>
+            </div>
 
-        <div class="card  card-aventuras" style="width: 18rem; border: none;">
-            <img src="../multimedia/bosquearrayanes.png" class="card-img-top img-aventuras" alt="Bosque de Arrayanes. Bariloche, Argentina">
-            <a href="../secciones/favoritos.html">
-                <img class="favoritos" src="../multimedia/favoritos.svg" alt="favoritos" width="35" height="35">
-            </a>       
-            <div class="card-body contenedor-texto">
+            <div class="card  card-aventuras" style="border: none;">
+                <img src="../multimedia/bosquearrayanes.png" class="card-img-top img-aventuras" alt="Bosque de Arrayanes. Bariloche, Argentina">
+                <a href="../secciones/favoritos.html">
+                    <img class="favoritos" src="../multimedia/favoritos.svg" alt="favoritos" width="35" height="35">
+                </a>       
+                <div class="card-body contenedor-texto">
                     <h5 class="card-title text-center titulo-aventuras">Bosque de Arrayanes</h5>
                     <p class="card-text p-2 parrafo-aventuras">En esta increible excursión lacustre visitaremos a la isla más grande 
-                        del lago Nahuel Huapi y el último bosque natural de Arrayanes.</p>
+                    del lago Nahuel Huapi y el último bosque natural de Arrayanes.</p>
                 </div>
-        </div>
+            </div>
 
-        <div class="card  card-aventuras" style="width: 18rem; border: none;">
-            <img src="../multimedia/trekking.png" class="card-img-top img-aventuras" alt="Trekking. Mendoza, Argentina">
-            <a href="../secciones/favoritos.html">
-                <img class="favoritos" src="../multimedia/favoritos.svg" alt="favoritos" width="35" height="35">
-            </a>       
-            <div class="card-body contenedor-texto">
+            <div class="card  card-aventuras" style="border: none;">
+                <img src="../multimedia/trekking.png" class="card-img-top img-aventuras" alt="Trekking. Mendoza, Argentina">
+                <a href="../secciones/favoritos.html">
+                    <img class="favoritos" src="../multimedia/favoritos.svg" alt="favoritos" width="35" height="35">
+                </a>       
+                <div class="card-body contenedor-texto">
                     <h5 class="card-title text-center titulo-aventuras">Trekking por la montaña</h5>
                     <p class="card-text p-2 parrafo-aventuras">
-                        La caminata comienza en el Centro de Sky Vallecitos.
-                        Hasta llegar a la cima de la montaña árida junto con la nieve.</p>
-                 </div>
-        </div>
+                    La caminata comienza en el Centro de Sky Vallecitos.
+                    Hasta llegar a la cima de la montaña árida junto con la nieve.</p>
+                </div>
+            </div>
         </div>
 
         <div class="paginas">
@@ -227,84 +224,84 @@
 
     </section>
 
-<!--Seccion - CONTACTO-->
-<section class="contacto" id="contacto">
-    <form class="formulario container" action="enviar.php" method="POST" name="contact-form">
-        <div class="form">
-            <h2>Contactanos</h2>
-            <label class="form-label" for="name">Nombre</label>
-            <input class="form-input" type="text" name="name" aria-label="Ingresar nombre" required="">
-            <br>
-            <label class="form-label" for="lastname">Apellido</label>
-            <input class="form-input" type="text" name="lastname" aria-label="Ingresar apellido" required="">
-            <br>
-            <label class="form-label" for="email">E-mail</label>
-            <input class="form-input" type="email" name="email" aria-label="Ingresar correo electrónico" required="">
-            <br>
-            <label class="form-label" for="status">País de residencia</label>
-            <select class="form-select select" name="status">
-                <option value="argentina">Argentina</option>
-                <option value="usa">Estados Unidos</option>
-                <option value="mex">México</option>
-                <option value="aus">Australia</option>
-                <option value="otro">Otro</option>
-            </select>
-            <br>
-            <label class="form-label" for="comments">Mensaje</label>
-            <textarea class="form-textarea" name="comments" aria-label="Ingrese su mensaje" cols="30" rows="5"></textarea>
-            <br>
-            <label for="acepta" class="form-label"><input class="form-checkbox" type="checkbox" 
-            name="acepta" value="1" aria-label="Desea recibir el newsletter?"> ¿Desea suscribirse a nuestro newsletter?</label>
-            
-            <button class="btn btn-primary mt-4 button" type="submit" value="Enviar">Enviar</button>  
-        </div>
+    <!--Sección Contacto-->
+    <section class="contacto" id="contacto">
+        <form class="formulario container" action="enviar.php" method="POST" name="contact-form">
+            <div class="form">
+                <h2>Contactanos</h2>
+                <label class="form-label" for="name">Nombre</label>
+                <input class="form-input" type="text" name="name" aria-label="Ingresar nombre" required="">
+                
+                <label class="form-label" for="lastname">Apellido</label>
+                <input class="form-input" type="text" name="lastname" aria-label="Ingresar apellido" required="">
+              
+                <label class="form-label" for="email">E-mail</label>
+                <input class="form-input" type="email" name="email" aria-label="Ingresar correo electrónico" required="">
+                
+                <label class="form-label" for="status">País de residencia</label>
+                <select class="form-select select" name="status">
+                    <option value="argentina">Argentina</option>
+                    <option value="usa">Estados Unidos</option>
+                    <option value="mex">México</option>
+                    <option value="aus">Australia</option>
+                    <option value="otro">Otro</option>
+                </select>
+                
+                <label class="form-label" for="comments">Mensaje</label>
+                <textarea class="form-textarea" name="comments" aria-label="Ingrese su mensaje" cols="30" rows="5"></textarea>
+                
+                <label for="acepta" class="form-label"><input class="form-checkbox" type="checkbox" 
+                name="acepta" value="1" aria-label="Desea recibir el newsletter?"> ¿Desea suscribirse a nuestro newsletter?</label>
+                
+                <button class="btn btn-primary mt-4 button" type="submit" value="Enviar">Enviar</button>  
+            </div>
         </form>
-</section>
+    </section>
+  
+    <!-- Whatsapp -->
+    <section class="wsp">
+        <img class="wsp-icon" src="../multimedia/wsp.svg" alt="whatsapp">
+    </section>
+    <!-- Fin Whatsapp -->
 
-
-<!-- WHATSAPP -->
-<section class="wsp">
-    <img src="../multimedia/wsp.svg" alt="whatsapp" width="30" height="30">
-</section>
-<!-- Fin WHATSAPP -->
-
-<!--Fin seccion - CONTACTO-->
-
-<!--Pie de pagina-->
-<footer class="footer">
-<div class="footer-li">
-    <nav>
-        <ul>
-            <li class="footer-li-2"><a href="../secciones/quienes-somos.html">Quienes somos</a></li>
-            <li class="footer-li-2"><a href="../secciones/aventuras.html">Aventuras</a></li>
-            <li class="footer-li-2"><a href="../secciones/galeria.html">Galeria</a></li>
-            <li class="footer-li-2"><a href="#contacto">Contacto</a></li>
-            <li class="footer-li-2"><a href="../secciones/favoritos.html">Favoritos</a></li>
-            <li class="footer-li-2"><a href="../secciones/perfil.html">Perfil</a></li>
-        </ul>
-    </nav>
-</div>
-
-<div class="redes">
-        <p>¡Sigamos conectados!</p>
-        <div class="redes-img">
-        <a href="http://facebook.com">
-            <img src="../multimedia/img_fb.svg" alt="facebook">
-        </a>
-        <a href="http://instagram.com">
-            <img src="../multimedia/img_ig.svg" alt="instagram">
-        </a>
-        <a href="http://youtube.com">
-            <img src="../multimedia/img_yt.svg" alt="youtube">
-        </a>
+    <!--Fin Sección Contacto-->
+    
+    <!--Pie de página-->
+    <footer class="footer">
+        <div class="footer-li">
+            <nav>
+                <ul>
+                    <li class="footer-li-2"><a href="../secciones/quienes-somos.html">Quienes somos</a></li>
+                    <li class="footer-li-2"><a href="../secciones/aventuras.html">Aventuras</a></li>
+                    <li class="footer-li-2"><a href="../secciones/galeria.html">Galeria</a></li>
+                    <li class="footer-li-2"><a href="#contacto">Contacto</a></li>
+                    <li class="footer-li-2"><a href="../secciones/favoritos.html">Favoritos</a></li>
+                    <li class="footer-li-2"><a href="../secciones/perfil.html">Perfil</a></li>
+                </ul>
+            </nav>
         </div>
-</div>    
-</footer>
-<!-- Fin pie de pagina-->  
 
-<p class="legal">©2021 AGUS con ❤ en CODERHOUSE - Todos los derechos reservados.</p>
+        <div class="redes">
+                <p>¡Sigamos conectados!</p>
+                    <div class="redes-img">
+                    <a href="http://facebook.com">
+                        <img src="../multimedia/img_fb.svg" alt="facebook">
+                    </a>
+                    <a href="http://instagram.com">
+                        <img src="../multimedia/img_ig.svg" alt="instagram">
+                    </a>
+                    <a href="http://youtube.com">
+                        <img src="../multimedia/img_yt.svg" alt="youtube">
+                    </a>
+                </div>
+        </div>    
+    </footer>
+    <!-- Fin pie de página-->  
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <p class="legal">©2021 AGUS con ❤ en CODERHOUSE - Todos los derechos reservados.</p>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
 </body>
 </html>

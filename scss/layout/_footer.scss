@@ -1,6 +1,6 @@
 /* PIE DE PAGINA */
 .footer {
-    background-color: nth($color,3);
+    background-color: nth($color, 2);
     width: $ancho;
     display: flex;
     padding: 40px;
@@ -18,7 +18,7 @@
             a {
             @include sub-titulos(nth($font-family, 1), nth($font-size, 1), $aling);
             text-decoration: $text-none;
-            color: nth($color, 11);
+            color: nth($color, 9);
             margin: 20px;
 
             &:hover {
@@ -35,7 +35,7 @@
 
         p {
         @include titulos(nth($font-family, 4), nth($font-size, 2), $aling, $text-uppercase);
-        color: nth($color, 5);
+        color: nth($color, 4);
         padding: 40px 0 0 0;
         }     
         
@@ -44,7 +44,7 @@
         
         img {
         margin: 0 20px;
-        width: 4%;
+        width: 4rem;
         @include prefijos2(2s linear);
 
         &:hover {
@@ -63,9 +63,9 @@
 .legal {
     @include titulos(nth($font-family, 1), nth($font-size, 1), $aling, $text-uppercase);
     letter-spacing: $letter-spacing - 8px;
-    background-color: nth($color,3);
+    background-color: nth($color, 2);
     width: $ancho;
-    color: nth($color, 10);
+    color: nth($color, 8);
     padding: 50px 0;
     margin: 0;
 }

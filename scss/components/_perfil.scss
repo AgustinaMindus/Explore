@@ -1,7 +1,7 @@
 /* HTML PERFIL */
 
 .recorridos {
-    background-color: nth($color, 11);
+    background-color: nth($color, 9);
     text-align: $aling;
     padding: 120px 0 100px 0;
 
@@ -12,7 +12,7 @@
         h1 {
         @include titulos(nth($font-family, 4), nth($font-size, 6), $aling, $text-uppercase);
         letter-spacing: $letter-spacing *2;
-        color: nth($color, 5);
+        color: nth($color, 4);
         }
     
         img {
@@ -24,23 +24,23 @@
     .boton-ciudades{
         padding: 20px 0 45px 0;
 
-        h3 {
+        h2 {
         @include sub-titulos(nth($font-family, 3), nth($font-size, 4), $aling);
-        color: nth($color, 9);
+        color: nth($color, 7);
         padding-bottom: 40px;
         }
 
         a{
         @include sub-titulos(nth($font-family, 3), nth($font-size, 2), $aling);
         text-decoration: $text-none;
-        color: nth($color, 3);
-        background-color: nth($color, 4);
+        color: nth($color, 2);
+        background-color: nth($color, 3);
         @extend %boton;
         margin: 60px;
 
         &:hover {
-        background-color: nth($color, 3);
-        color: nth($color, 4);
+        background-color: nth($color, 2);
+        color: nth($color, 3);
         }
         }
     }
@@ -68,7 +68,7 @@
             @include titulos(nth($font-family, 5), nth($font-size, 1), $aling, $text-uppercase);
             letter-spacing: $letter-spacing - 5px;
             text-decoration: $text-none;
-            color: nth($color, 11);
+            color: nth($color, 9);
             width: $ancho - 30%;
             height: 20%;
             padding: 10px;
@@ -76,15 +76,15 @@
             }
 
             .lugar1 {
-            background-color: nth($color, 5);
+            background-color: nth($color, 4);
             }
 
             .lugar2 {
-            background-color: nth($color, 8);
+            background-color: nth($color, 6);
             }
 
             .lugar3 {
-            background-color: nth($color,7);
+            background-color: nth($color, 5);
             }
         }   
     }
@@ -96,63 +96,75 @@
 
             .lugar1-marcador {
             border-radius: 50%;
-            height: 30px;
-            width: 30px;
-            background-color: nth($color, 5);
+            height: 3rem;
+            width: 3rem;
+            background-color: nth($color, 4);
             position: relative;
-            top: 415px;
-            left: 668px;
+            top: 410px;
+            left: 674px;
             box-shadow: $text-shadow;
             }
 
             .lugar2-marcador {
             border-radius: 50%;
-            height: 30px;
-            width: 30px;
-            background-color: nth($color, 8);
+            height: 3rem;
+            width: 3rem;
+            background-color: nth($color, 6);
             position: relative;
-            top: 300px;
-            left: 614px;
+            top: 297px;
+            left: 620px;
             box-shadow: $text-shadow;
             }
 
             .lugar3-marcador {
             border-radius: 50%;
-            height: 30px;
-            width: 30px;
-            background-color: nth($color,7);
+            height: 3rem;
+            width: 3rem;
+            background-color: nth($color, 5);
             position: relative;
             top: 105px;
-            left: 607px;
+            left: 611px;
             box-shadow: $text-shadow;
+            }
+
+            .mapa {
+                width: $ancho - 20%;
             }
     }
 }
 
 .opiniones {
-    background-color: nth($color,4);
+    background-color: nth($color, 3);
     text-align: $aling;
     padding: 100px 0;
     
-    h2 {
+    h3 {
     @include titulos(nth($font-family, 6), nth($font-size, 5), $aling, $text-uppercase);
     letter-spacing: $letter-spacing;
-    color: nth($color, 2);
+    color: nth($color, 1);
     padding-bottom: 30px;
     }
 
     .opiniones-contenedor {
     @extend %flex-2;
     width: $ancho;
-    
-            p {
-            @include sub-titulos(nth($font-family, 3), nth($font-size, 1), $aling);
-            margin: 30px;
-            line-height: 25px;
-            padding: 20px;
-            border: nth($color, 2) 2px solid;
-            color: nth($color, 9);
+
+        .opiniones-card {
+        border: nth($color, 1) 2px solid;
+        margin: 20px;
+        padding: 30px;
+
+            .opiniones-titulo {
+                @include sub-titulos(nth($font-family, 4), nth($font-size, 1), $aling);
+                line-height: 25px;
             }
+
+            .opiniones-texto {
+            @include sub-titulos(nth($font-family, 3), nth($font-size, 1), $aling);
+            line-height: 25px;
+            color: nth($color, 7);
+            }
+        }
     }
 }
 
@@ -238,7 +250,6 @@
                 }
 
                 .mapa {
-                margin: 45px 0 -40px 0;
                 width: $ancho;
                 }
         }
@@ -309,7 +320,7 @@
                 }
 
                 .mapa {
-                    width: $ancho - 5%;
+                    width: $ancho;
                 }
         }
     }
