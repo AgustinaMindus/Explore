@@ -272,7 +272,7 @@ html {
   align-items: center;
 }
 
-.error a, .recorridos .boton-ciudades a, .contacto .formulario .form button {
+.error .boton, .recorridos .boton-ciudades a, .contacto .formulario .form button {
   border-radius: 5px;
   padding: 10px;
 }
@@ -1593,7 +1593,7 @@ html {
 }
 /* Fin Media Querys Perfil */
 /* Fin Perfil */
-/* HTML ERROR */
+/* Error */
 .error {
   background-color: #eeeeee;
   background-image: url("../multimedia/error_fondo.svg");
@@ -1629,7 +1629,7 @@ html {
   letter-spacing: 4px;
   color: #6e50f9;
 }
-.error a {
+.error .boton {
   font-family: "raleway-bold";
   font-size: 1.5rem;
   text-align: center;
@@ -1639,72 +1639,74 @@ html {
   color: #fafafa;
 }
 
-/* MEDIA QUERYS ERROR*/
-@media only screen and (max-width: 400px) {
+/* Media Querys Error */
+/* Mobile*/
+@media only screen and (max-width: 480px) {
   .error {
     background-color: #eeeeee;
     background-image: url("../multimedia/error_fondo2.svg");
     background-repeat: no-repeat;
     width: 100%;
-    height: 80vh;
+    height: 85vh;
     color: #7d60f5;
-    text-align: center;
+    align-items: center;
     padding: 300px 0 60px 0;
   }
   .error h1 {
     font-family: "raleway-extrabold";
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 4px;
-    margin-top: -155px;
-    margin-left: 20px;
+    letter-spacing: 2px;
+    margin-top: -141px;
+    margin-left: 15px;
   }
-  .error h4 {
+  .error h2 {
     font-family: "raleway-extrabold";
     font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
-    color: #39c2b6;
-    padding: 50px;
+    padding: 90px 55px;
+    line-height: 27px;
   }
-  .error p {
+  .error h3 {
     font-family: "raleway-bold";
     font-size: 1.5rem;
     text-align: center;
-    margin: 25px 20px 35px 20px;
+    margin: 5px 30px 45px 30px;
   }
 }
-@media only screen and (min-width: 401px) and (max-width: 768px) {
+/* Tablet  */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   .error {
     padding: 300px 0 60px 0;
   }
   .error h1 {
     font-family: "raleway-extrabold";
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 4px;
-    margin-top: -197px;
-    margin-left: 20px;
+    letter-spacing: 2px;
+    margin-top: -200px;
+    margin-left: 17px;
   }
-  .error h4 {
+  .error h2 {
     font-family: "raleway-extrabold";
     font-size: 2.2rem;
     text-align: center;
     text-transform: uppercase;
     color: #39c2b6;
-    padding: 50px;
+    padding: 75px;
   }
-  .error p {
+  .error h3 {
     font-family: "raleway-bold";
     font-size: 2rem;
     text-align: center;
-    margin: 25px 20px 35px 20px;
+    margin: 15px 20px 35px 20px;
   }
 }
-/* FIN MEDIA QUERYS ERROR*/
-/* FIN HTML ERROR */
+/* Fin Media Querys Error*/
+/* Fin Error */
 /* Quienes Somos */
 .quienes {
   background-color: #eeeeee;

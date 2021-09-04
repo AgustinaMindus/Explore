@@ -1,104 +1,102 @@
-/* HTML ERROR */
+/* Error */
 .error {
-    background-color: nth($color, 8);
-    background-image: url("../multimedia/error_fondo.svg");
-    background-repeat: no-repeat;
-    width: $ancho;
-    color: nth($color, 5);
-    text-align: $aling;
-    padding: 300px 0 180px 0;
+background-color: nth($color, 8);
+background-image: url("../multimedia/error_fondo.svg");
+background-repeat: no-repeat;
+width: $ancho;
+color: nth($color, 5);
+text-align: $aling;
+padding: 300px 0 180px 0;
 
     h1 {
-        @include titulos(nth($font-family, 6), nth($font-size, 7), $aling, $text-uppercase);
-        letter-spacing: $letter-spacing;
-        color: nth($color, 5);
-        margin-top: -100px;
-        margin-left: 25px;
+    @include titulos(nth($font-family, 6), nth($font-size, 7), $aling, $text-uppercase);
+    letter-spacing: $letter-spacing;
+    color: nth($color, 5);
+    margin-top: -100px;
+    margin-left: 25px;
     }
 
     h2 {
-        @include titulos(nth($font-family, 6), nth($font-size, 4), $aling, $text-uppercase);
-        color: nth($color, 1);
-        padding: 100px 380px 40px 380px;
+    @include titulos(nth($font-family, 6), nth($font-size, 4), $aling, $text-uppercase);
+    color: nth($color, 1);
+    padding: 100px 380px 40px 380px;
     }
 
     h3 {
-        @include sub-titulos(nth($font-family, 4), nth($font-size, 2), $aling);
-        margin: 35px;
-        letter-spacing: $letter-spacing - 6px;
-        color: nth($color, 4);
+    @include sub-titulos(nth($font-family, 4), nth($font-size, 2), $aling);
+    margin: 35px;
+    letter-spacing: $letter-spacing - 6px;
+    color: nth($color, 4);
     }
 
-    a {
-        @include titulos(nth($font-family, 4), nth($font-size, 1), $aling, $text-uppercase);
-        background-color: nth($color, 6); 
-        text-decoration: $text-none;
-        color: nth($color, 9); 
-        @extend %boton;
+    .boton {
+    @include titulos(nth($font-family, 4), nth($font-size, 1), $aling, $text-uppercase);
+    background-color: nth($color, 6); 
+    text-decoration: $text-none;
+    color: nth($color, 9); 
+    @extend %boton;
     }
 }
 
-/* MEDIA QUERYS ERROR*/
+/* Media Querys Error */
 
-@media only screen and (max-width:400px) {
-
+/* Mobile*/
+@media only screen and (max-width:480px) {
     .error {
-        background-color: nth($color, 8);
-        background-image: url("../multimedia/error_fondo2.svg");
-        background-repeat: no-repeat;
-        width: $ancho;
-        height: 80vh;
-        color: nth($color, 5);
-        text-align: $aling;
-        padding: 300px 0 60px 0;
+    background-color: nth($color, 8);
+    background-image: url("../multimedia/error_fondo2.svg");
+    background-repeat: no-repeat;
+    width: $ancho;
+    height: 85vh;
+    color: nth($color, 5);
+    align-items: $aling;
+    padding: 300px 0 60px 0;
     
         h1 {
-            @include titulos(nth($font-family, 6), nth($font-size, 4), $aling, $text-uppercase);
-            letter-spacing: $letter-spacing - 6px;
-            margin-top: -155px;
-            margin-left: 20px;
+        @include titulos(nth($font-family, 6), nth($font-size, 6), $aling, $text-uppercase);
+        letter-spacing: $letter-spacing - 8px;
+        margin-top: -141px;
+        margin-left: 15px;
         }
     
-        h4 {
-            @include titulos(nth($font-family, 6), nth($font-size, 2), $aling, $text-uppercase);
-            color: nth($color, 1);
-            padding: 50px;
+        h2 {
+        @include titulos(nth($font-family, 6), nth($font-size, 2), $aling, $text-uppercase);
+        padding: 90px 55px;
+        line-height: 27px;
         }
     
-        p {
-            @include sub-titulos(nth($font-family, 4), nth($font-size, 1), $aling);
-            margin: 25px 20px 35px 20px;
+        h3 {
+        @include sub-titulos(nth($font-family, 4), nth($font-size, 1), $aling);
+        margin: 5px 30px 45px 30px;
+        }
 
-        }
     }
 }   
     
-    // /* Tablet  */
-    @media only screen and (min-width:401px) and (max-width:768px) {
-        .error {
-           
-            padding: 300px 0 60px 0;
+/* Tablet  */
+@media only screen and (min-width:481px) and (max-width:768px) {
+    .error {
+    padding: 300px 0 60px 0;
         
-            h1 {
-                @include titulos(nth($font-family, 6), nth($font-size, 5), $aling, $text-uppercase);
-                letter-spacing: $letter-spacing - 6px;
-                margin-top: -197px;
-                margin-left: 20px;
-            }
+        h1 {
+        @include titulos(nth($font-family, 6), nth($font-size, 6), $aling, $text-uppercase);
+        letter-spacing: $letter-spacing - 8px;
+        margin-top: -200px;
+        margin-left: 17px;
+        }
         
-            h4 {
-                @include titulos(nth($font-family, 6), nth($font-size, 3), $aling, $text-uppercase);
-                color: nth($color, 1);
-                padding: 50px;
-            }
+        h2 {
+        @include titulos(nth($font-family, 6), nth($font-size, 3), $aling, $text-uppercase);
+        color: nth($color, 1);
+        padding: 75px;
+        }
         
-            p {
-                @include sub-titulos(nth($font-family, 4), nth($font-size, 2), $aling);
-                margin: 25px 20px 35px 20px;
-    
-            }
+        h3 {
+        @include sub-titulos(nth($font-family, 4), nth($font-size, 2), $aling);
+        margin: 15px 20px 35px 20px;
         }
     }
-    /* FIN MEDIA QUERYS ERROR*/
+}
+/* Fin Media Querys Error*/
 
-/* FIN HTML ERROR */
+/* Fin Error */
