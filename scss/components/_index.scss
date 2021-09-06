@@ -75,19 +75,19 @@
         width: 165px;
         margin: 55px 90px;
         @extend %flex;
-        }
-            
-        .preferencias-card:hover {
-        width: 165px;
-        background: nth($color,8);
-        border: nth($color, 2) 2px solid;
-        border-radius: $border-radius;
-        }
+           
+            &:hover {
+            width: 165px;
+            background: nth($color, 8);
+            border: nth($color, 2) 2px solid;
+            border-radius: $border-radius;
+            }
     
-        .preferencias-img1, .preferencias-img2, .preferencias-img3, .preferencias-img4,.preferencias-img5, .preferencias-img6 {
-        width: $ancho - 25%;     
+            .preferencias-img1, .preferencias-img2, .preferencias-img3, .preferencias-img4,.preferencias-img5, .preferencias-img6 {
+            width: $ancho - 25%;     
+            }
         }
-
+        
         .preferencia-a {
         @extend %texto;
         letter-spacing: $letter-spacing - 8px;
@@ -253,11 +253,12 @@ padding: 80px 0 110px 0;
     
         .imagen-inicio {
         width: $ancho;
+        overflow: hidden;
         
             h1 {
             @include titulos(nth($font-family, 6), nth($font-size, 7), $aling, $text-uppercase);
             padding: 35px 30px;
-            margin-top: 1%;
+            margin-top: 10%;
             text-align: $aling;
             letter-spacing: $letter-spacing - 4px;
             }
@@ -282,23 +283,42 @@ padding: 80px 0 110px 0;
 
         .preferencias-contenedor {
         @extend %flex;
-           
-            .preferencias-card {
-            @extend %flex;
+        .preferencias-card {
+            width: $ancho - 40%;
             margin: 70px 0;
+            }
+                
+            .preferencias-card:hover {
             width: $ancho - 40%;
             }
-            
-            .preferencias-img {
-            border-radius: $border-radius;
-            width: $ancho;
-            @include prefijos2(2.5s all)
+        
+            .preferencias-img1, .preferencias-img2, .preferencias-img3, .preferencias-img4,.preferencias-img5, .preferencias-img6 {
+            width: $ancho - 25%;     
             }
-
+    
             .preferencia-a {
-            margin-top: 250px;
-            font-size: nth($font-size, 5);
+            font-size: nth($font-size, 5);;
+            margin-top: 250px;        
             }
+           
+            // .preferencias-card {
+            // @extend %flex;
+            // margin: 70px 0;
+            // width: $ancho - 40%;
+            // }
+            
+            // .preferencias-img {
+            // border-radius: $border-radius;
+            // width: $ancho;
+            // @include prefijos2(2.5s all)
+            // }
+
+            // .preferencia-a {
+            // margin-top: 250px;
+            // font-size: nth($font-size, 5);
+            // }
+            
+            
         }
     }
     /* Fin Sección Preferencias */

@@ -2,8 +2,7 @@
 /* Galeria */
 .galeria {
 background-color: nth($color, 8);
-padding: 20px 100px 80px 100px;
-width: $ancho;
+padding: 20px 0 80px 0;
 
     h1 {
     @include titulos(nth($font-family, 4), nth($font-size, 6), $aling, $text-uppercase);
@@ -12,9 +11,23 @@ width: $ancho;
     padding: 100px;
     }
 
-    img {
-        border-radius: 8px 0;
-        width: $ancho;
+    .img-0, .img-2, .img-3,  .img-7, .img-8 {
+    width: $ancho - 6%;
+    }
+
+    .img-1, .img-4, .img-5, .img-6, .img-9, .img-10 {
+    width: $ancho;
+    }
+
+    .img-galeria {
+    border-radius: 8px 0;
+    filter: grayscale(100%);
+    @include prefijos2(all 1s ease-in-out);
+        
+        &:hover {
+        filter: none;
+        @include prefijos(scale(1.05));
+        }
     }
 
     .imagenes-galeria {
@@ -73,14 +86,38 @@ width: $ancho;
         grid-area: c4-f4;
         }
 
-        img {
-        filter: grayscale(100%);
-        @include prefijos2(all 1s ease-in-out);
-        
-        &:hover {
-        filter: none;
-        @include prefijos(scale(1.05))
+        .c1-f1, .c2-f1, .c2-f1, .c2-f1, 
+        .c1-f2, .c2-f2, .c3-f2, .c4-f2,
+        .c1-f3, .c1-f3, .c1-f3, .c1-f3,
+        .c1-f4, .c2-f4, .c3-f3, .c4-f4 {
+        margin-top: -35px;
         }
+
+        p {
+            position: relative;
+            max-width: 26rem;
+            top: 25px;
+            left: 10px;
+            z-index: 1;
+            color: nth($color, 8);
+            background-color: nth($color, 6);
+            padding: 5px;
+            @include sub-titulos(nth($font-family, 2), nth($font-size, 1), $aling);
+            border-radius: $border-radius;
+            box-shadow:	$text-shadow;
+        }
+        
+        p::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: 100%;
+            left: 1.5em; // offset should move with padding of parent
+            border: .75rem solid transparent;
+            border-bottom: none; 
+            border-top-color: nth($color, 6);
+            filter: $text-shadow;
         }
     }
 
