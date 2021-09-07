@@ -59,41 +59,51 @@
     background-size: 100%;
     width: $ancho;
     text-align: $aling;
-    padding: 90px 0px;
+    padding: 55px 0px;
 
     h2 {
     @include titulos(nth($font-family, 4), nth($font-size, 6), $aling, $text-uppercase);
     letter-spacing: $letter-spacing *2;
     padding-bottom: 60px;
+    padding-top: 25px;
     color: nth($color, 7);
     }
 
     .preferencias-contenedor {
     @extend %flex;
-                   
+                  
         .preferencias-card {
-        width: 165px;
-        margin: 55px 90px;
-        @extend %flex;
-           
-            &:hover {
-            width: 165px;
-            background: nth($color, 8);
-            border: nth($color, 2) 2px solid;
-            border-radius: $border-radius;
-            }
-    
-            .preferencias-img1, .preferencias-img2, .preferencias-img3, .preferencias-img4,.preferencias-img5, .preferencias-img6 {
-            width: $ancho - 25%;     
-            }
-        }
+        padding: 0 10px 10px 10px;
+        border-radius: $border-radius;
+        width: $ancho - 88%;    
+        height: $ancho - 88%;  
+        margin: 11px 85px 50px 85px; 
         
-        .preferencia-a {
-        @extend %texto;
-        letter-spacing: $letter-spacing - 8px;
-        color: nth($color, 2);
-        position: absolute;
-        margin-top: 180px;        
+            &:hover {
+            box-shadow: $text-shadow;
+            background-color: nth($color, 2);
+            }
+
+            .preferencias-card-interior {
+                @extend %flex;
+                &:hover {
+                filter:  grayscale(100%);
+                filter: brightness(3);
+                }  
+              
+                .preferencias-img1, .preferencias-img2, .preferencias-img3, .preferencias-img4,.preferencias-img5, .preferencias-img6 {
+                width: $ancho;    
+                height: $ancho;  
+                padding: 10px; 
+                } 
+       
+                .preferencia-a {
+                @extend %texto;
+                letter-spacing: $letter-spacing - 8px;
+                margin-top: -11px; 
+                color: nth($color, 2); 
+                }
+            }
         }
     }
 }
@@ -258,14 +268,14 @@ padding: 80px 0 110px 0;
             h1 {
             @include titulos(nth($font-family, 6), nth($font-size, 7), $aling, $text-uppercase);
             padding: 35px 30px;
-            margin-top: 10%;
+            margin-top: 14%;
             text-align: $aling;
             letter-spacing: $letter-spacing - 4px;
             }
         
             p {
             @include sub-titulos(nth($font-family, 4), nth($font-size, 3), $aling);
-            padding: 20px 50px;
+            padding: 20px 41px;
             letter-spacing: $letter-spacing - 8px;
             }    
         }
@@ -274,66 +284,57 @@ padding: 80px 0 110px 0;
 
     /* Sección Preferencias */
     .preferencias {
+    padding: 55px 0;
+
         h2 {
         @include titulos(nth($font-family, 4), nth($font-size, 6), $aling, $text-uppercase);
         letter-spacing: $letter-spacing - 2px;
-        padding: 20px 30px;
+        padding: 0 0 5px 0;
         color: nth($color, 7);
         }
 
         .preferencias-contenedor {
         @extend %flex;
-        .preferencias-card {
-            width: $ancho - 40%;
-            margin: 70px 0;
-            }
-                
-            .preferencias-card:hover {
-            width: $ancho - 40%;
-            }
-        
-            .preferencias-img1, .preferencias-img2, .preferencias-img3, .preferencias-img4,.preferencias-img5, .preferencias-img6 {
-            width: $ancho - 25%;     
-            }
-    
-            .preferencia-a {
-            font-size: nth($font-size, 5);;
-            margin-top: 250px;        
-            }
-           
-            // .preferencias-card {
-            // @extend %flex;
-            // margin: 70px 0;
-            // width: $ancho - 40%;
-            // }
-            
-            // .preferencias-img {
-            // border-radius: $border-radius;
-            // width: $ancho;
-            // @include prefijos2(2.5s all)
-            // }
 
-            // .preferencia-a {
-            // margin-top: 250px;
-            // font-size: nth($font-size, 5);
-            // }
+            .preferencias-card {
+            width: $ancho - 45%;    
+            height: $ancho - 45%;  
+            margin: 30px 0 0 0; 
             
-            
+                .preferencias-card-interior {
+
+                    .preferencias-img1, .preferencias-img2, .preferencias-img3, .preferencias-img4,.preferencias-img5, .preferencias-img6 {
+                    width: $ancho;    
+                    height: $ancho;  
+                    padding: 10px;     
+                    }
+    
+                    .preferencia-a {
+                    font-size: nth($font-size, 4);;
+                    margin-top: -11px;        
+                    }
+                }       
+            }
         }
     }
     /* Fin Sección Preferencias */
 
     /* Sección Top 10 */
     .top-10 {
+    padding: 55px 0;
+
+        h2 {
+        letter-spacing: $letter-spacing - 2px;
+        }
         p {
         font-size: nth($font-size, 3);
         letter-spacing: $letter-spacing - 8px;
-        padding: 30px;
+        padding: 15px 50px;
         }
 
         .destinos-contenedor{
         display: flex;
-        padding: 0 40px;
+        padding: 0 25px;
         flex-direction: column;
         flex-wrap: wrap;
         align-content: center;
@@ -342,69 +343,70 @@ padding: 80px 0 110px 0;
 
             .destinos-card {
                 .top-a {
-                font-size: nth($font-size, 5);
-                margin-top: -75px;
+                font-size: nth($font-size, 4);
+                margin-top: -60px;
                 } 
             }
         }   
 
         .flecha {
-            margin: 30px;
+        margin: 0;
+        width: 11rem;
         }
-        
     }
     /* Fin Sección Top 10 */
 
     /* Sección Mapa inicio */
     .mapa-1 {
-    padding: 10px 0 40px 0;
+    padding: 55px 0;
 
         h2 {
-        padding: 40px 30px 5px 30px;
+        padding: 0 15px;
+        letter-spacing: $letter-spacing - 2px;
         }
        
         p {
         font-size: nth($font-size, 3);
-        padding: 10px 40px;
+        padding: 15px 20px;
         }
         
         &:hover .gps1 {
-        @include prefijos(translateY(55px));
+        @include prefijos(translateY(46px));
         opacity:5;
         }
     
         &:hover .gps2 {
-        @include prefijos(translateY(110px));
+        @include prefijos(translateY(87px));
         opacity:5;
         }
     
         &:hover .gps3 {
-        @include prefijos(translateY(202px));
+        @include prefijos(translateY(159px));
         opacity:5;
         }
     
         &:hover .gps4 {
-        @include prefijos(translateY(143px));
+        @include prefijos(translateY(112px));
         opacity:5;
         }
     
         &:hover .gps5 {
-        @include prefijos(translateY(173px));
+        @include prefijos(translateY(135px));
         opacity:5;
         }
     
         &:hover .gps6 {
-        @include prefijos(translateY(95px));
+        @include prefijos(translateY(75px));
         opacity:5;
         }
     
         &:hover .gps7 {
-        @include prefijos(translateY(206px));
+        @include prefijos(translateY(160px));
         opacity:5;
         }
     
         &:hover .gps8 {
-        @include prefijos(translateY(63px));
+        @include prefijos(translateY(49px));
         opacity:5;
         }
     }
@@ -414,14 +416,12 @@ padding: 80px 0 110px 0;
 
 /* Tablet  */
 @media only screen and (min-width:481px) and (max-width:768px) {
-
     /* Sección Imagen Inicio */
     .container-background {
-
         .imagen-inicio {
             h1 {
             padding: 35px 30px;
-            margin-top: 25%;
+            margin-top: 30%;
             }
         
             p {
@@ -433,74 +433,69 @@ padding: 80px 0 110px 0;
 
     /* Sección Preferencias */
     .preferencias {
-    margin-bottom: 0;
+    padding: 60px 0 20px  0;
 
         h2 {
-        padding: 20px 0 40px 0;
+        padding: 0 0 40px 0;
         text-align: $aling;
         }
 
         .preferencias-contenedor { 
 
             .preferencias-card {
-            margin: 15px 0 40px 0;
-            width: $ancho - 70%;
+            margin: 0 20px 40px 20px;
+            width: $ancho - 79%; 
+            
+                .preferencias-card-interior {
+                       
+                    .preferencia-a {
+                    margin-top: -9px;
+                    } 
+                }
             }
-                
-            .preferencia-a {
-            font-size: nth($font-size, 4);
-            position: relative;
-            margin-top: 5px;
-            } 
         }
     }
     /* Fin Sección Preferencias */
 
     /* Sección Top 10 */
     .top-10 {
-    padding-bottom: 50px;
-    padding-top: 60px;
+    padding: 55px 0 40px 0;
 
         p{
-        padding-bottom: 20px;
-        letter-spacing: $letter-spacing - 5px;
+        padding: 15px 0;
+        letter-spacing: $letter-spacing - 4px;
         }
     
         .destinos-contenedor {
-            padding: 0 10px;
+        padding: 0 10px;
+
             .destinos-card {
-            padding: 15px 10px;
+            padding: 18px 5px;
 
                 .top-a {
-                font-size: nth($font-size, 1);
+                font-size: 1.7rem;
                 margin-top: -40px;
                 }
             }
         }
 
         .flecha {
-            margin: 0 -18px;
+        margin: 0 4px;
+        width: 6rem;
         }
     }
     /* Fin Sección Top 10 */
 
     /* Sección Mapa inicio */
     .mapa-1 {
-        padding: 20px 0;
+    padding: 40px 0;
 
         h2{
-        padding: 30px 65px;
-        font-size: nth($font-size, 5);
+        padding: 15px 65px;
         }
 
         p { 
-        padding: 0 0 0 0;
-        font-size: nth($font-size, 3);
-        }
-
-        .mapa-1-img {
-        padding: 0px;
-        margin: 0 0 20px 0;
+        padding: 10px 0;
         }
 
         &:hover .gps1 {

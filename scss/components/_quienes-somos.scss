@@ -60,11 +60,11 @@
 /* Mobile */
 @media only screen and (max-width:480px) {
     .quienes {
-    padding: 45px 30px;
+    padding: 45px 20px;
     text-align: justify;
         
         h1 {
-        margin: 20px 30px;
+        margin: 0 0 20px 0;
         }
 
         .info-quienes-somos {
@@ -72,6 +72,7 @@
         flex-direction: column;
 
             .texto-quienes-somos {
+            font-size: nth($font-size, 2);
             margin: 20px 0;
             padding: 0;
             }
@@ -82,7 +83,7 @@
         }
 
         h2 {
-        margin: 70px 0 10px 0;
+        margin: 70px 0 0 0;
         }
         
        .quienes-icon {
@@ -90,7 +91,7 @@
         
             img {
             width: $ancho - 35%;
-            margin-bottom: -20px;
+            margin: 10px 0;
             }
         }
     }   
@@ -98,13 +99,12 @@
 
 /* Tablet */
 @media only screen and (min-width:481px) and (max-width:768px) {
-    
     .quienes {
-    padding: 40px 50px;
+    padding: 40px;
     text-align: justify;
         
         h1{
-        margin: 25px 50px;
+        margin: 25px 0;
         }
 
         .info-quienes-somos {
@@ -112,23 +112,20 @@
             flex-direction: column;
 
             .texto-quienes-somos {
-            margin: 20px 0 60px 0;
+            margin: 20px 10px 40px 10px;
             padding: 0;
             }
         }
 
         h2{
-        @include titulos(nth($font-family, 3), nth($font-size, 6), $aling, $text-uppercase);
-        letter-spacing: $letter-spacing;
-        margin: 90px 0 10px 0;
+        font-size: nth($font-size, 6);
         }
     
         .quienes-icon {
-        padding-bottom: 30px;
+        padding-bottom: 0;
             img {
             width: $ancho - 65%;
-            margin: 10px 0px;
-            padding: 10px 10px;
+            margin: 20px 0px;
             }
         }  
     }

@@ -49,7 +49,7 @@ html {
   height: 5%;
 }
 .header .nav .hamburger {
-  font-size: 2rem;
+  font-size: 2.5rem;
   border: 1px solid transparent;
 }
 .header .nav .nav-item .item {
@@ -84,6 +84,9 @@ html {
 .header .favoritos:hover {
   background-image: url("../multimedia/favoritos_2.svg");
   background-repeat: no-repeat;
+}
+.header .perfil {
+  margin-bottom: 10px;
 }
 
 /* Fin Header */
@@ -241,7 +244,7 @@ html {
 }
 /* Fin Media Footer */
 /* Fin Pie de Página */
-.recorridos .lugares-contenedor .lugares-card, .recorridos .lugares-contenedor, .preferencias .preferencias-contenedor .preferencias-card, .preferencias .preferencias-contenedor, .contacto .formulario {
+.recorridos .lugares-contenedor .lugares-card, .recorridos .lugares-contenedor, .preferencias .preferencias-contenedor .preferencias-card .preferencias-card-interior, .preferencias .preferencias-contenedor, .contacto .formulario {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -272,7 +275,7 @@ html {
   padding: 10px;
 }
 
-.inicio-aventuras .continentes a, .top-10 .destinos-contenedor .destinos-card .top-a, .preferencias .preferencias-contenedor .preferencia-a {
+.inicio-aventuras .continentes a, .top-10 .destinos-contenedor .destinos-card .top-a, .preferencias .preferencias-contenedor .preferencias-card .preferencias-card-interior .preferencia-a {
   font-family: "raleway-regular";
   font-size: 19px;
   text-align: center;
@@ -315,7 +318,9 @@ html {
   margin-bottom: 7px;
 }
 .contacto .formulario .form .form-input {
+  font-family: "raleway-medium";
   font-size: 1.5rem;
+  text-align: left;
   border-width: 0px;
   border-bottom: #76c0b4 1px solid;
   background: transparent;
@@ -332,7 +337,9 @@ html {
   margin-bottom: 20px;
 }
 .contacto .formulario .form .form-textarea {
+  font-family: "raleway-medium";
   font-size: 1.5rem;
+  text-align: left;
   border: #76c0b4 1px solid;
   width: 100%;
   margin-bottom: 20px;
@@ -496,7 +503,7 @@ html {
   background-size: 100%;
   width: 100%;
   text-align: center;
-  padding: 90px 0px;
+  padding: 55px 0px;
 }
 .preferencias h2 {
   font-family: "raleway-bold";
@@ -505,26 +512,33 @@ html {
   text-transform: uppercase;
   letter-spacing: 20px;
   padding-bottom: 60px;
+  padding-top: 25px;
   color: #515151;
 }
 .preferencias .preferencias-contenedor .preferencias-card {
-  width: 165px;
-  margin: 55px 90px;
+  padding: 0 10px 10px 10px;
+  border-radius: 8px;
+  width: 12%;
+  height: 12%;
+  margin: 11px 85px 50px 85px;
 }
 .preferencias .preferencias-contenedor .preferencias-card:hover {
-  width: 165px;
-  background: #eeeeee;
-  border: #76c0b4 2px solid;
-  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #76c0b4;
 }
-.preferencias .preferencias-contenedor .preferencias-card .preferencias-img1, .preferencias .preferencias-contenedor .preferencias-card .preferencias-img2, .preferencias .preferencias-contenedor .preferencias-card .preferencias-img3, .preferencias .preferencias-contenedor .preferencias-card .preferencias-img4, .preferencias .preferencias-contenedor .preferencias-card .preferencias-img5, .preferencias .preferencias-contenedor .preferencias-card .preferencias-img6 {
-  width: 75%;
+.preferencias .preferencias-contenedor .preferencias-card .preferencias-card-interior:hover {
+  filter: grayscale(100%);
+  filter: brightness(3);
 }
-.preferencias .preferencias-contenedor .preferencia-a {
+.preferencias .preferencias-contenedor .preferencias-card .preferencias-card-interior .preferencias-img1, .preferencias .preferencias-contenedor .preferencias-card .preferencias-card-interior .preferencias-img2, .preferencias .preferencias-contenedor .preferencias-card .preferencias-card-interior .preferencias-img3, .preferencias .preferencias-contenedor .preferencias-card .preferencias-card-interior .preferencias-img4, .preferencias .preferencias-contenedor .preferencias-card .preferencias-card-interior .preferencias-img5, .preferencias .preferencias-contenedor .preferencias-card .preferencias-card-interior .preferencias-img6 {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+.preferencias .preferencias-contenedor .preferencias-card .preferencias-card-interior .preferencia-a {
   letter-spacing: 2px;
+  margin-top: -11px;
   color: #76c0b4;
-  position: absolute;
-  margin-top: 180px;
 }
 
 /* Fin Sección Preferencias */
@@ -707,7 +721,7 @@ html {
     text-align: center;
     text-transform: uppercase;
     padding: 35px 30px;
-    margin-top: 10%;
+    margin-top: 14%;
     text-align: center;
     letter-spacing: 6px;
   }
@@ -715,46 +729,55 @@ html {
     font-family: "raleway-bold";
     font-size: 2.2rem;
     text-align: center;
-    padding: 20px 50px;
+    padding: 20px 41px;
     letter-spacing: 2px;
   }
 
   /* Fin Sección Imagen Inicio */
   /* Sección Preferencias */
+  .preferencias {
+    padding: 55px 0;
+  }
   .preferencias h2 {
     font-family: "raleway-bold";
     font-size: 3.5rem;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 8px;
-    padding: 20px 30px;
+    padding: 0 0 5px 0;
     color: #515151;
   }
   .preferencias .preferencias-contenedor .preferencias-card {
-    width: 60%;
-    margin: 70px 0;
+    width: 55%;
+    height: 55%;
+    margin: 30px 0 0 0;
   }
-  .preferencias .preferencias-contenedor .preferencias-card:hover {
-    width: 60%;
+  .preferencias .preferencias-contenedor .preferencias-card .preferencias-card-interior .preferencias-img1, .preferencias .preferencias-contenedor .preferencias-card .preferencias-card-interior .preferencias-img2, .preferencias .preferencias-contenedor .preferencias-card .preferencias-card-interior .preferencias-img3, .preferencias .preferencias-contenedor .preferencias-card .preferencias-card-interior .preferencias-img4, .preferencias .preferencias-contenedor .preferencias-card .preferencias-card-interior .preferencias-img5, .preferencias .preferencias-contenedor .preferencias-card .preferencias-card-interior .preferencias-img6 {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
   }
-  .preferencias .preferencias-contenedor .preferencias-img1, .preferencias .preferencias-contenedor .preferencias-img2, .preferencias .preferencias-contenedor .preferencias-img3, .preferencias .preferencias-contenedor .preferencias-img4, .preferencias .preferencias-contenedor .preferencias-img5, .preferencias .preferencias-contenedor .preferencias-img6 {
-    width: 75%;
-  }
-  .preferencias .preferencias-contenedor .preferencia-a {
-    font-size: 3rem;
-    margin-top: 250px;
+  .preferencias .preferencias-contenedor .preferencias-card .preferencias-card-interior .preferencia-a {
+    font-size: 2.5rem;
+    margin-top: -11px;
   }
 
   /* Fin Sección Preferencias */
   /* Sección Top 10 */
+  .top-10 {
+    padding: 55px 0;
+  }
+  .top-10 h2 {
+    letter-spacing: 8px;
+  }
   .top-10 p {
     font-size: 2.2rem;
     letter-spacing: 2px;
-    padding: 30px;
+    padding: 15px 50px;
   }
   .top-10 .destinos-contenedor {
     display: flex;
-    padding: 0 40px;
+    padding: 0 25px;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
@@ -762,79 +785,81 @@ html {
     align-items: center;
   }
   .top-10 .destinos-contenedor .destinos-card .top-a {
-    font-size: 3rem;
-    margin-top: -75px;
+    font-size: 2.5rem;
+    margin-top: -60px;
   }
   .top-10 .flecha {
-    margin: 30px;
+    margin: 0;
+    width: 11rem;
   }
 
   /* Fin Sección Top 10 */
   /* Sección Mapa inicio */
   .mapa-1 {
-    padding: 10px 0 40px 0;
+    padding: 55px 0;
   }
   .mapa-1 h2 {
-    padding: 40px 30px 5px 30px;
+    padding: 0 15px;
+    letter-spacing: 8px;
   }
   .mapa-1 p {
     font-size: 2.2rem;
-    padding: 10px 40px;
+    padding: 15px 20px;
   }
   .mapa-1:hover .gps1 {
-    -webkit-transform: translateY(55px);
-    -o-transform: translateY(55px);
-    -moz-transform: translateY(55px);
-    transform: translateY(55px);
+    -webkit-transform: translateY(46px);
+    -o-transform: translateY(46px);
+    -moz-transform: translateY(46px);
+    transform: translateY(46px);
     opacity: 5;
   }
   .mapa-1:hover .gps2 {
-    -webkit-transform: translateY(110px);
-    -o-transform: translateY(110px);
-    -moz-transform: translateY(110px);
-    transform: translateY(110px);
+    -webkit-transform: translateY(87px);
+    -o-transform: translateY(87px);
+    -moz-transform: translateY(87px);
+    transform: translateY(87px);
     opacity: 5;
   }
   .mapa-1:hover .gps3 {
-    -webkit-transform: translateY(202px);
-    -o-transform: translateY(202px);
-    -moz-transform: translateY(202px);
-    transform: translateY(202px);
+    -webkit-transform: translateY(159px);
+    -o-transform: translateY(159px);
+    -moz-transform: translateY(159px);
+    transform: translateY(159px);
     opacity: 5;
   }
   .mapa-1:hover .gps4 {
-    -webkit-transform: translateY(143px);
-    -o-transform: translateY(143px);
-    -moz-transform: translateY(143px);
-    transform: translateY(143px);
+    -webkit-transform: translateY(112px);
+    -o-transform: translateY(112px);
+    -moz-transform: translateY(112px);
+    transform: translateY(112px);
     opacity: 5;
   }
   .mapa-1:hover .gps5 {
-    -webkit-transform: translateY(173px);
-    -o-transform: translateY(173px);
-    -moz-transform: translateY(173px);
-    transform: translateY(173px);
+    -webkit-transform: translateY(135px);
+    -o-transform: translateY(135px);
+    -moz-transform: translateY(135px);
+    transform: translateY(135px);
     opacity: 5;
   }
   .mapa-1:hover .gps6 {
-    -webkit-transform: translateY(95px);
-    -o-transform: translateY(95px);
-    -moz-transform: translateY(95px);
-    transform: translateY(95px);
+    -webkit-transform: translateY(75px);
+    -o-transform: translateY(75px);
+    -moz-transform: translateY(75px);
+    transform: translateY(75px);
     opacity: 5;
   }
   .mapa-1:hover .gps7 {
-    -webkit-transform: translateY(206px);
-    -o-transform: translateY(206px);
-    -moz-transform: translateY(206px);
-    transform: translateY(206px);
+    -webkit-transform: translateY(160px);
+    -o-transform: translateY(160px);
+    -moz-transform: translateY(160px);
+    transform: translateY(160px);
     opacity: 5;
   }
   .mapa-1:hover .gps8 {
-    -webkit-transform: translateY(63px);
-    -o-transform: translateY(63px);
-    -moz-transform: translateY(63px);
-    transform: translateY(63px);
+    -webkit-transform: translateY(49px);
+    -o-transform: translateY(49px);
+    -moz-transform: translateY(49px);
+    transform: translateY(49px);
     opacity: 5;
   }
 
@@ -846,7 +871,7 @@ html {
   /* Sección Imagen Inicio */
   .container-background .imagen-inicio h1 {
     padding: 35px 30px;
-    margin-top: 25%;
+    margin-top: 30%;
   }
   .container-background .imagen-inicio p {
     padding: 25px 30px;
@@ -855,62 +880,54 @@ html {
   /* Fin Sección Imagen Inicio */
   /* Sección Preferencias */
   .preferencias {
-    margin-bottom: 0;
+    padding: 60px 0 20px 0;
   }
   .preferencias h2 {
-    padding: 20px 0 40px 0;
+    padding: 0 0 40px 0;
     text-align: center;
   }
   .preferencias .preferencias-contenedor .preferencias-card {
-    margin: 15px 0 40px 0;
-    width: 30%;
+    margin: 0 20px 40px 20px;
+    width: 21%;
   }
-  .preferencias .preferencias-contenedor .preferencia-a {
-    font-size: 2.5rem;
-    position: relative;
-    margin-top: 5px;
+  .preferencias .preferencias-contenedor .preferencias-card .preferencias-card-interior .preferencia-a {
+    margin-top: -9px;
   }
 
   /* Fin Sección Preferencias */
   /* Sección Top 10 */
   .top-10 {
-    padding-bottom: 50px;
-    padding-top: 60px;
+    padding: 55px 0 40px 0;
   }
   .top-10 p {
-    padding-bottom: 20px;
-    letter-spacing: 5px;
+    padding: 15px 0;
+    letter-spacing: 6px;
   }
   .top-10 .destinos-contenedor {
     padding: 0 10px;
   }
   .top-10 .destinos-contenedor .destinos-card {
-    padding: 15px 10px;
+    padding: 18px 5px;
   }
   .top-10 .destinos-contenedor .destinos-card .top-a {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin-top: -40px;
   }
   .top-10 .flecha {
-    margin: 0 -18px;
+    margin: 0 4px;
+    width: 6rem;
   }
 
   /* Fin Sección Top 10 */
   /* Sección Mapa inicio */
   .mapa-1 {
-    padding: 20px 0;
+    padding: 40px 0;
   }
   .mapa-1 h2 {
-    padding: 30px 65px;
-    font-size: 3rem;
+    padding: 15px 65px;
   }
   .mapa-1 p {
-    padding: 0 0 0 0;
-    font-size: 2.2rem;
-  }
-  .mapa-1 .mapa-1-img {
-    padding: 0px;
-    margin: 0 0 20px 0;
+    padding: 10px 0;
   }
   .mapa-1:hover .gps1 {
     -webkit-transform: translateY(95px);
@@ -1016,10 +1033,21 @@ html {
   background-color: transparent;
   border-radius: 8px;
   width: 28rem;
+  overflow: hidden;
 }
 .inicio-aventuras .contenedor-aventuras .card-aventuras .img-aventuras {
   border-radius: 8px 8px 0 0;
   height: 15%;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.inicio-aventuras .contenedor-aventuras .card-aventuras .img-aventuras:hover {
+  -webkit-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  transform: scale(1.05);
 }
 .inicio-aventuras .contenedor-aventuras .card-aventuras .favoritos {
   position: absolute;
@@ -1049,7 +1077,6 @@ html {
   text-align: center;
   color: #515151;
   padding: 15px;
-  text-align: left;
 }
 .inicio-aventuras .paginas {
   margin-top: 30px;
@@ -1064,35 +1091,44 @@ html {
 /* Media Querys Aventuras */
 /* Mobile */
 @media only screen and (max-width: 480px) {
+  .inicio-aventuras {
+    padding: 45px 20px;
+  }
   .inicio-aventuras h1 {
-    padding: 20px 35px;
+    padding: 0 0 20px 0;
+  }
+  .inicio-aventuras .continentes {
+    padding: 20px 0 70px 0;
   }
   .inicio-aventuras .continentes p {
     font-size: 2.5rem;
     padding: 7px;
   }
   .inicio-aventuras .continentes a {
-    font-size: 2.2rem;
+    font-size: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 3px;
+    padding: 5px 0;
   }
   .inicio-aventuras .contenedor-aventuras .card-aventuras {
     margin-bottom: 80px;
+  }
+  .inicio-aventuras .paginas {
+    margin-top: -15px;
   }
 }
 /* Tablet */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .inicio-aventuras {
-    padding: 40px 50px;
+    padding: 40px;
   }
   .inicio-aventuras h1 {
     padding-top: 25px;
   }
   .inicio-aventuras .continentes p {
     font-size: 3rem;
-    padding: 10px 0 0 0;
+    padding: 20px 0;
   }
   .inicio-aventuras .continentes a {
     font-size: 2.2rem;
@@ -1126,7 +1162,7 @@ html {
 }
 .galeria .img-galeria {
   border-radius: 8px 0;
-  filter: grayscale(100%);
+  filter: grayscale(90%);
   -webkit-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
@@ -1256,11 +1292,15 @@ html {
 /* Mobile */
 @media only screen and (max-width: 480px) {
   .galeria {
-    padding: 45px 30px;
+    padding: 45px 20px;
   }
   .galeria h1 {
-    font-size: 2.5rem;
-    padding: 40px 50px 50px 50px;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    padding: 0 0 20px 0;
+  }
+  .galeria .img-galeria {
+    filter: none;
   }
   .galeria .imagenes-galeria {
     grid-template-columns: repeat(2, auto);
@@ -1301,17 +1341,29 @@ html {
   .galeria .imagenes-galeria .c4-f4 {
     grid-area: c4-f4;
   }
-  .galeria .imagenes-galeria img {
-    filter: none;
+  .galeria .imagenes-galeria .c2-f1, .galeria .imagenes-galeria .c2-f1, .galeria .imagenes-galeria .c2-f1,
+.galeria .imagenes-galeria .c1-f2, .galeria .imagenes-galeria .c2-f2, .galeria .imagenes-galeria .c3-f2, .galeria .imagenes-galeria .c4-f2,
+.galeria .imagenes-galeria .c1-f3, .galeria .imagenes-galeria .c1-f3, .galeria .imagenes-galeria .c1-f3, .galeria .imagenes-galeria .c1-f3,
+.galeria .imagenes-galeria .c1-f4, .galeria .imagenes-galeria .c2-f4, .galeria .imagenes-galeria .c3-f3, .galeria .imagenes-galeria .c4-f4 {
+    margin-top: 0;
+  }
+  .galeria .imagenes-galeria p {
+    max-width: 15rem;
+    left: 1px;
+    top: 14px;
   }
   .galeria .paginas {
     margin-top: 100px;
     margin-bottom: 10px;
   }
 }
+.online {
+  padding: 45px 20px;
+}
 .online h2 {
   font-size: 3rem;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
+  margin: 15px 0 30px 0;
 }
 .online .container-online {
   display: flex;
@@ -1323,10 +1375,11 @@ html {
 }
 .online .container-online .video-info {
   width: 100%;
-  padding: 10px 35px;
+  padding: 5px 0;
+  text-align: justify;
 }
 .online .container-online .video {
-  width: 80%;
+  width: 100%;
   margin: 30px 0;
 }
 
@@ -1336,17 +1389,28 @@ html {
     padding: 40px;
   }
   .galeria h1 {
-    padding: 30px 0;
+    padding: 25px 0;
+  }
+  .galeria .imagenes-galeria .c1-f1, .galeria .imagenes-galeria .c2-f1, .galeria .imagenes-galeria .c2-f1, .galeria .imagenes-galeria .c2-f1,
+.galeria .imagenes-galeria .c1-f2, .galeria .imagenes-galeria .c2-f2, .galeria .imagenes-galeria .c3-f2, .galeria .imagenes-galeria .c4-f2,
+.galeria .imagenes-galeria .c1-f3, .galeria .imagenes-galeria .c1-f3, .galeria .imagenes-galeria .c1-f3, .galeria .imagenes-galeria .c1-f3,
+.galeria .imagenes-galeria .c1-f4, .galeria .imagenes-galeria .c2-f4, .galeria .imagenes-galeria .c3-f3, .galeria .imagenes-galeria .c4-f4 {
+    margin-top: 0;
+  }
+  .galeria .imagenes-galeria p {
+    max-width: 15rem;
+    top: 15px;
+    left: 4px;
   }
   .galeria .paginas {
-    margin-top: 130px;
+    margin-top: 150px;
   }
 
   .online h2 {
-    padding: 0 50px;
+    padding: 0;
   }
   .online .container-online .video-info {
-    width: 100%;
+    width: 90%;
   }
   .online .container-online .video {
     width: 90%;
@@ -1520,22 +1584,25 @@ html {
 /* Mobile */
 @media only screen and (max-width: 480px) {
   .recorridos {
-    padding: 70px 30px 100px 30px;
+    padding: 45px 20px;
   }
   .recorridos .recorridos-inicio {
-    padding-bottom: 45px;
+    padding-bottom: 40px;
   }
   .recorridos .recorridos-inicio h1 {
-    font-size: 2.5rem;
-    letter-spacing: 5px;
+    letter-spacing: 10px;
   }
   .recorridos .recorridos-inicio img {
-    width: 18%;
+    margin-top: 7px;
+    width: 20%;
   }
   .recorridos .boton-ciudades {
     display: flex;
     flex-direction: column;
-    padding: 10px 30px;
+    padding: 20px 58px;
+  }
+  .recorridos .boton-ciudades h2 {
+    padding-bottom: 20px;
   }
   .recorridos .boton-ciudades a {
     margin: 10px 0;
@@ -1565,43 +1632,53 @@ html {
   }
   .recorridos .lugar-mapa .lugar1-marcador {
     position: relative;
-    top: 465px;
-    left: 150px;
+    top: 408px;
+    left: 200px;
   }
   .recorridos .lugar-mapa .lugar2-marcador {
     position: relative;
-    top: 350px;
-    left: 100px;
+    top: 297px;
+    left: 147px;
   }
   .recorridos .lugar-mapa .lugar3-marcador {
     position: relative;
-    top: 160px;
-    left: 85px;
+    top: 116px;
+    left: 145px;
   }
   .recorridos .lugar-mapa .mapa {
     width: 90%;
   }
 
   .opiniones {
-    padding: 50px 30px;
+    padding: 45px 20px;
   }
   .opiniones h3 {
     padding-bottom: 20px;
-    font-size: 2.5rem;
     letter-spacing: 2px;
   }
   .opiniones .opiniones-contenedor {
     display: flex;
     flex-direction: column;
   }
+  .opiniones .opiniones-contenedor .opiniones-card {
+    padding: 20px;
+  }
+  .opiniones .opiniones-contenedor .opiniones-card .opiniones-titulo, .opiniones .opiniones-contenedor .opiniones-card .opiniones-texto {
+    font-size: 2rem;
+    line-height: 35px;
+  }
 }
 /* Tablet  */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .recorridos {
-    padding: 70px 30px 20px 30px;
+    padding: 40px;
   }
   .recorridos .recorridos-inicio {
-    padding-bottom: 45px;
+    padding-bottom: 20px;
+  }
+  .recorridos .recorridos-inicio h1 {
+    margin: 25px 0;
+    letter-spacing: 15px;
   }
   .recorridos .recorridos-inicio img {
     width: 10%;
@@ -1615,6 +1692,9 @@ html {
   .recorridos .lugares-contenedor .lugares-card {
     width: 40%;
     margin: 0 -25px;
+  }
+  .recorridos .lugar-mapa {
+    margin-bottom: 40px;
   }
   .recorridos .lugar-mapa .lugar1-marcador {
     position: relative;
@@ -1636,17 +1716,17 @@ html {
   }
 
   .opiniones {
-    padding: 50px 0;
+    padding: 40px;
   }
-  .opiniones h2 {
-    padding-bottom: 10px;
+  .opiniones h3 {
+    padding: 20px 0;
   }
   .opiniones .opiniones-contenedor {
     display: flex;
     flex-direction: column;
   }
-  .opiniones .opiniones-contenedor p {
-    font-size: 18px;
+  .opiniones .opiniones-contenedor .opiniones-card {
+    padding: 15px;
   }
 }
 /* Fin Media Querys Perfil */
@@ -1822,17 +1902,18 @@ html {
 /* Mobile */
 @media only screen and (max-width: 480px) {
   .quienes {
-    padding: 45px 30px;
+    padding: 45px 20px;
     text-align: justify;
   }
   .quienes h1 {
-    margin: 20px 30px;
+    margin: 0 0 20px 0;
   }
   .quienes .info-quienes-somos {
     display: flex;
     flex-direction: column;
   }
   .quienes .info-quienes-somos .texto-quienes-somos {
+    font-size: 2rem;
     margin: 20px 0;
     padding: 0;
   }
@@ -1840,48 +1921,42 @@ html {
     width: 100%;
   }
   .quienes h2 {
-    margin: 70px 0 10px 0;
+    margin: 70px 0 0 0;
   }
   .quienes .quienes-icon {
     display: flex;
   }
   .quienes .quienes-icon img {
     width: 65%;
-    margin-bottom: -20px;
+    margin: 10px 0;
   }
 }
 /* Tablet */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .quienes {
-    padding: 40px 50px;
+    padding: 40px;
     text-align: justify;
   }
   .quienes h1 {
-    margin: 25px 50px;
+    margin: 25px 0;
   }
   .quienes .info-quienes-somos {
     display: flex;
     flex-direction: column;
   }
   .quienes .info-quienes-somos .texto-quienes-somos {
-    margin: 20px 0 60px 0;
+    margin: 20px 10px 40px 10px;
     padding: 0;
   }
   .quienes h2 {
-    font-family: "raleway-medium";
     font-size: 3.5rem;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    margin: 90px 0 10px 0;
   }
   .quienes .quienes-icon {
-    padding-bottom: 30px;
+    padding-bottom: 0;
   }
   .quienes .quienes-icon img {
     width: 35%;
-    margin: 10px 0px;
-    padding: 10px 10px;
+    margin: 20px 0px;
   }
 }
 /* Fin Media Querys Quienes Somos */
@@ -1934,10 +2009,11 @@ html {
 /* Mobile */
 @media only screen and (max-width: 480px) {
   .seccion-favoritos {
-    padding: 70px 30px;
+    padding: 45px 20px;
   }
   .seccion-favoritos h1 {
-    letter-spacing: 2px;
+    letter-spacing: 8px;
+    padding: 0 0 20px 0;
   }
   .seccion-favoritos .contenedor-mayor-favoritos h2 {
     padding-top: 45px;
@@ -1949,13 +2025,14 @@ html {
 /* Tablet  */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .seccion-favoritos {
-    padding: 70px 30px 90px 30px;
+    padding: 40px 40px 90px 40px;
   }
   .seccion-favoritos h1 {
-    letter-spacing: 4px;
+    letter-spacing: 5px;
+    margin: 25px 0 5px 0;
   }
   .seccion-favoritos .contenedor-mayor-favoritos h2 {
-    padding-top: 50px;
+    padding: 50px 0 10px 0;
   }
   .seccion-favoritos .contenedor-mayor-favoritos .contenedor-fav .card-fav {
     width: 29%;

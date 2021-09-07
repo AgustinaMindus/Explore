@@ -21,7 +21,7 @@ padding: 20px 0 80px 0;
 
     .img-galeria {
     border-radius: 8px 0;
-    filter: grayscale(100%);
+    filter: grayscale(90%);
     @include prefijos2(all 1s ease-in-out);
         
         &:hover {
@@ -174,11 +174,16 @@ padding: 70px 0;
 @media only screen and (max-width:480px) {
 
     .galeria {
-    padding: 45px 30px;
+    padding: 45px 20px;
 
         h1 {
-        font-size: nth($font-size, 4);
-        padding: 40px 50px 50px 50px;
+        font-size: nth($font-size, 5);
+        letter-spacing: $letter-spacing - 5px;
+        padding: 0 0 20px 0;
+        }
+
+        .img-galeria {
+            filter: none;
         }
 
         .imagenes-galeria {
@@ -236,10 +241,19 @@ padding: 70px 0;
             .c4-f4 {
             grid-area: c4-f4;
             }
-
-            img {
-            filter: none;
-            }
+        
+        .c2-f1, .c2-f1, .c2-f1, 
+        .c1-f2, .c2-f2, .c3-f2, .c4-f2,
+        .c1-f3, .c1-f3, .c1-f3, .c1-f3,
+        .c1-f4, .c2-f4, .c3-f3, .c4-f4 {
+        margin-top: 0;
+        }
+        
+        p {
+        max-width: 15rem;
+        left: 1px;
+        top: 14px;
+        }
         }
 
         .paginas {
@@ -250,27 +264,30 @@ padding: 70px 0;
 }
 
 .online {
+padding: 45px 20px;
             
-        h2 {
-        font-size: nth($font-size, 5);
-        letter-spacing: $letter-spacing - 8px;
-        }
+    h2 {
+    font-size: nth($font-size, 5);
+    letter-spacing: $letter-spacing - 7px;
+    margin: 15px 0 30px 0;
+    }
     
-        .container-online {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
+    .container-online {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
     
             .video-info {
             width: $ancho;                      
-            padding: 10px 35px;
+            padding: 5px 0;
+            text-align: justify;
             }
     
             .video {
-            width: $ancho - 20%;
+            width: $ancho;
             margin: 30px 0;
             }
         }
@@ -279,25 +296,40 @@ padding: 70px 0;
 /* Tablet  */
 @media only screen and (min-width:481px) and (max-width:768px) {
     .galeria {
-        padding: 40px;
+    padding: 40px;
 
         h1 {
-        padding: 30px 0;
+        padding: 25px 0;
+        }
+
+        .imagenes-galeria {    
+            .c1-f1, .c2-f1, .c2-f1, .c2-f1, 
+            .c1-f2, .c2-f2, .c3-f2, .c4-f2,
+            .c1-f3, .c1-f3, .c1-f3, .c1-f3,
+            .c1-f4, .c2-f4, .c3-f3, .c4-f4 {
+            margin-top: 0;
+            }
+        
+            p {
+            max-width: 15rem;
+            top: 15px;
+            left: 4px;
+            } 
         }
       
         .paginas {
-        margin-top: 130px;
+        margin-top: 150px;
         }
     }
 
     .online {    
         h2 {
-        padding: 0 50px;
+        padding: 0;
         }
 
         .container-online{
             .video-info {
-            width: $ancho;
+            width: $ancho  - 10%;
             }
 
             .video {

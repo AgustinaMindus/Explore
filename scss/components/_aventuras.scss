@@ -44,10 +44,16 @@
         background-color: transparent;
         border-radius: 8px;
         width: 28rem;
+        overflow: hidden;
         
         .img-aventuras {
         border-radius: 8px 8px 0 0;
         height: 15%;
+        @include prefijos2(all 1s ease-in-out);
+
+            &:hover {
+            @include prefijos(scale(1.05));
+            }
         }
 
         .favoritos {
@@ -76,7 +82,6 @@
             @include sub-titulos(nth($font-family, 1), nth($font-size, 1), $aling);
             color: nth($color, 7);  
             padding: 15px;
-            text-align: left;
             }
         }
         }
@@ -84,14 +89,15 @@
 
     .paginas {
         margin-top: 30px;
+
         nav {
-            ul{
+            ul {
                 li {
-                a {
+                    a {
                     @include sub-titulos(nth($font-family, 2), nth($font-size, 2), $aling);
                     color: nth($color, 7) ;
+                    }
                 }
-            }
             }
         }
     }
@@ -104,29 +110,35 @@
 @media only screen and (max-width:480px) {
 
     .inicio-aventuras {
-
+    padding: 45px 20px;
         h1 {
-        padding: 20px 35px;
+        padding: 0 0 20px 0;
         }
 
         .continentes {
+        padding: 20px 0 70px 0;
             p {
             font-size: nth($font-size, 4);
             padding: 7px;
             }
 
             a {
-            font-size:  nth($font-size, 3);
+            font-size:  nth($font-size, 2);
             display: flex;
             flex-direction: row;
             justify-content: center;
-            padding: 3px;
+            padding: 5px 0;
             }
         }
+        
         .contenedor-aventuras {            
             .card-aventuras {
             margin-bottom: 80px;
             }
+        }
+
+        .paginas {
+        margin-top: -15px;
         }
     }
 }
@@ -134,7 +146,7 @@
 /* Tablet */
 @media only screen and (min-width:481px) and (max-width:768px) {
     .inicio-aventuras {
-        padding: 40px 50px;
+        padding: 40px;
 
         h1 {
         padding-top: 25px;
@@ -143,7 +155,7 @@
         .continentes {
             p {
             font-size:  nth($font-size, 5);
-            padding: 10px 0 0 0;
+            padding: 20px 0;
             }
   
             a {

@@ -173,25 +173,29 @@
 /* Mobile */
 @media only screen and (max-width:480px) {
     .recorridos {
-    padding: 70px 30px 100px 30px;
+    padding: 45px 20px;
 
         .recorridos-inicio {
-        padding-bottom: 45px;
+        padding-bottom: 40px;
 
             h1 {
-            font-size: nth($font-size, 4);
-            letter-spacing: $letter-spacing - 5px;
+            letter-spacing: $letter-spacing;
             }
 
             img {
-            width: 18%;
+            margin-top: 7px;
+            width: 20%;
             }
         }
     
         .boton-ciudades{
         display: flex;
         flex-direction: column;
-        padding: 10px 30px;           
+        padding: 20px 58px;   
+        
+            h2 {
+            padding-bottom: 20px;
+            }
 
             a{
             margin: 10px 0;
@@ -229,20 +233,20 @@
     
                 .lugar1-marcador {
                 position: relative;
-                top: 465px;
-                left: 150px;
+                top: 408px;
+                left: 200px;
                 }
     
                 .lugar2-marcador {
                 position: relative;
-                top: 350px;
-                left: 100px;
+                top: 297px;
+                left: 147px;
                 }
     
                 .lugar3-marcador {
                 position: relative;
-                top: 160px;
-                left: 85px;
+                top: 116px;
+                left: 145px;
                 }
 
                 .mapa {
@@ -252,17 +256,24 @@
     }
     
     .opiniones {
-        padding: 50px 30px;
+    padding: 45px 20px;
         
         h3 {
         padding-bottom: 20px;
-        font-size: nth($font-size, 4);
         letter-spacing: $letter-spacing - 8px;
         }
     
         .opiniones-contenedor {
         display: flex;
         flex-direction: column;
+
+            .opiniones-card {
+            padding: 20px;
+                .opiniones-titulo, .opiniones-texto {
+                font-size:  nth($font-size, 2);
+                line-height: 35px;
+                }
+            }
         }
     } 
 }
@@ -270,10 +281,15 @@
 /* Tablet  */
 @media only screen and (min-width:481px) and (max-width:768px) {
     .recorridos {
-    padding: 70px 30px 20px 30px;
+    padding: 40px;
     
         .recorridos-inicio {
-        padding-bottom: 45px;
+        padding-bottom: 20px;
+
+            h1 {
+            margin: 25px 0;
+            letter-spacing: $letter-spacing *1.5;
+            }
     
             img {
             width: 10%;
@@ -296,7 +312,7 @@
         }
     
         .lugar-mapa {  
-
+        margin-bottom: 40px;
             .lugar1-marcador {
             position: relative;
             top: 415px;
@@ -322,18 +338,18 @@
     }
     
     .opiniones {
-        padding: 50px 0;
+    padding: 40px;
         
-        h2 {
-        padding-bottom: 10px;
+        h3 {
+        padding: 20px 0;
         }
     
         .opiniones-contenedor {
         display: flex;
         flex-direction: column;
                    
-            p {
-            font-size: 18px;
+            .opiniones-card {
+            padding: 15px;
             }
         }
     } 

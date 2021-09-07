@@ -122,22 +122,21 @@ margin: 0;
 
 /* Tablet */
 @media only screen and (min-width:481px) and (max-width:768px) {
-    .footer {
-             
+    .footer {  
         .footer-li {
-            padding: 20px 0 10px 0;
+        padding: 20px 0 10px 0;
     
-               .footer-li-2 {
-                    a {
-                    font-size: 1.6rem;
-                    }
+            .footer-li-2 {
+                a {
+                font-size: 1.6rem;
+                }
             }
         }
     }
 
     .legal {
-        padding: 40px 185px;
-        }
+    padding: 40px 185px;
+    }
 }
 /* Fin Media Footer */
 
