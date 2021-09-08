@@ -1,8 +1,7 @@
-
 /* Galeria */
 .galeria {
 background-color: nth($color, 8);
-padding: 20px 0 80px 0;
+padding: 20px 0 280px 0;
 
     h1 {
     @include titulos(nth($font-family, 4), nth($font-size, 6), $aling, $text-uppercase);
@@ -94,44 +93,30 @@ padding: 20px 0 80px 0;
         }
 
         p {
-            position: relative;
-            max-width: 26rem;
-            top: 25px;
-            left: 10px;
-            z-index: 1;
-            color: nth($color, 8);
-            background-color: nth($color, 6);
-            padding: 5px;
-            @include sub-titulos(nth($font-family, 2), nth($font-size, 1), $aling);
-            border-radius: $border-radius;
-            box-shadow:	$text-shadow;
+        position: relative;
+        max-width: 26rem;
+        top: 25px;
+        left: 10px;
+        z-index: 1;
+        color: nth($color, 8);
+        background-color: nth($color, 6);
+        padding: 5px;
+        @include sub-titulos(nth($font-family, 2), nth($font-size, 1), $aling);
+        border-radius: $border-radius;
+        box-shadow:	$text-shadow;
         }
         
         p::before {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 0;
-            top: 100%;
-            left: 1.5em; // offset should move with padding of parent
-            border: .75rem solid transparent;
-            border-bottom: none; 
-            border-top-color: nth($color, 6);
-            filter: $text-shadow;
-        }
-    }
-
-    .paginas {
-        margin-top: 250px;
-        nav {
-            ul{
-                li {
-                a {
-                @include sub-titulos(nth($font-family, 2), nth($font-size, 2), $aling);
-                color: nth($color, 7) ;
-                }
-                }
-            }
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 100%;
+        left: 1.5em; 
+        border: .75rem solid transparent;
+        border-bottom: none; 
+        border-top-color: nth($color, 6);
+        filter: $text-shadow;
         }
     }
 }
@@ -139,7 +124,7 @@ padding: 20px 0 80px 0;
 .online {
 background-color: nth($color, 2);
 width: $ancho;
-padding: 70px 0;
+padding: 70px 0 80px 0;
     
     h2 {
     @include titulos(nth($font-family, 4), nth($font-size, 6), $aling, $text-uppercase);
@@ -153,28 +138,32 @@ padding: 70px 0;
         @extend %flex-2;
 
         .video-info {
-            width: $ancho - 50%;                       
+            width: $ancho - 42%;                       
             @include sub-titulos(nth($font-family, 1), nth($font-size, 2), left);
             font-style: italic;
             color: nth($color, 7);
             padding-right: 70px;
         }
 
-        .video {
-            width: $ancho - 50%;
+        .video-contenedor {
+        width: 36%;
+
+
+            .video {
+            width: $ancho;
+            height: 265px;
             margin: 0;
            }
+        }
     }
 }
 
-
 /* Media Querys Galeria */
-
 /* Mobile */
 @media only screen and (max-width:480px) {
 
     .galeria {
-    padding: 45px 20px;
+    padding: 45px 20px 130px 20px;
 
         h1 {
         font-size: nth($font-size, 5);
@@ -183,7 +172,7 @@ padding: 70px 0;
         }
 
         .img-galeria {
-            filter: none;
+        filter: none;
         }
 
         .imagenes-galeria {
@@ -255,48 +244,40 @@ padding: 70px 0;
         top: 14px;
         }
         }
-
-        .paginas {
-        margin-top: 100px;
-        margin-bottom: 10px;
-        }
     }
-}
 
-.online {
-padding: 45px 20px;
+    .online {
+    padding: 45px 20px 75px 20px;
             
-    h2 {
-    font-size: nth($font-size, 5);
-    letter-spacing: $letter-spacing - 7px;
-    margin: 15px 0 30px 0;
-    }
+        h2 {
+        font-size: nth($font-size, 5);
+        letter-spacing: $letter-spacing - 7px;
+        margin: 15px 0 30px 0;
+        }
     
-    .container-online {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+        .container-online {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
     
             .video-info {
             width: $ancho;                      
-            padding: 5px 0;
+            padding: 20px 0;
             text-align: justify;
             }
     
-            .video {
+            .video-contenedor{
             width: $ancho;
-            margin: 30px 0;
             }
         }
+    }
 }
-
 /* Tablet  */
 @media only screen and (min-width:481px) and (max-width:768px) {
     .galeria {
-    padding: 40px;
+    padding: 40px 40px 160px 40px;
 
         h1 {
         padding: 25px 0;
@@ -316,28 +297,37 @@ padding: 45px 20px;
             left: 4px;
             } 
         }
-      
-        .paginas {
-        margin-top: 150px;
-        }
     }
 
-    .online {    
+    .online {  
+    padding: 70px 30px 80px 30px;
         h2 {
         padding: 0;
+        margin-bottom: 20px;
         }
 
         .container-online{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
             .video-info {
-            width: $ancho  - 10%;
+            width: $ancho;
+            padding-right: 0;
+            margin: 20px 10px 40px 10px;
             }
 
-            .video {
-             width: $ancho - 10%;
+            .video-contenedor {
+            width: $ancho;
+                .video {
+                width: $ancho;
+                height: 300px;
+                }
             }
         }
     }
 }
 /* Fin Media Querys Galeria */
-
 /* Fin Galeria */

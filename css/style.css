@@ -10,7 +10,7 @@ html {
   /* 1rem pasa a valer a 10px.*/
 }
 
-/* TIPOGRAFIAS */
+/* Tipografías */
 @font-face {
   font-family: "raleway-light";
   src: url("../font/Raleway-Light.ttf");
@@ -35,9 +35,7 @@ html {
   font-family: "raleway-extrabold";
   src: url("../font/Raleway-ExtraBold.ttf");
 }
-/* FIN TIPOGRAFIAS */
-/* 11  - 9*/
-/* 1rem pase a valer a 10px. Por defecto el navegador aplica 16px */
+/* Fin Tipografías */
 /* Header */
 .header .nav {
   width: 100%;
@@ -85,9 +83,6 @@ html {
   background-image: url("../multimedia/favoritos_2.svg");
   background-repeat: no-repeat;
 }
-.header .perfil {
-  margin-bottom: 10px;
-}
 
 /* Fin Header */
 /* Media Querys Header */
@@ -104,6 +99,9 @@ html {
   .header .nav .hamburger {
     text-align: right;
   }
+  .header .nav .perfil {
+    margin-bottom: 10px;
+  }
 }
 /* Tablet */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -117,6 +115,9 @@ html {
   }
   .header .nav .hamburger {
     text-align: right;
+  }
+  .header .nav .perfil {
+    margin-bottom: 10px;
   }
 }
 /* Fin Media Querys Header */
@@ -165,6 +166,7 @@ html {
 .footer .redes .redes-img img {
   margin: 0 20px;
   width: 4rem;
+  height: 4rem;
   -webkit-transition: 2s linear;
   -o-transition: 2s linear;
   -moz-transition: 2s linear;
@@ -637,6 +639,7 @@ html {
 }
 .mapa-1 .gps .gps1, .mapa-1 .gps .gps2, .mapa-1 .gps .gps3, .mapa-1 .gps .gps4, .mapa-1 .gps .gps5, .mapa-1 .gps .gps6, .mapa-1 .gps .gps7, .mapa-1 .gps .gps8 {
   width: 2%;
+  height: 2%;
   opacity: 0;
   -webkit-transition: all 1.5s ease-in-out;
   -o-transition: all 1.5s ease-in-out;
@@ -701,6 +704,7 @@ html {
 }
 .mapa-1 .mapa-1-img {
   width: 100%;
+  height: 100%;
 }
 
 /* Fin Sección Mapa inicio */
@@ -1051,8 +1055,9 @@ html {
 }
 .inicio-aventuras .contenedor-aventuras .card-aventuras .favoritos {
   position: absolute;
-  top: 5%;
+  top: 4%;
   left: 80%;
+  width: 12%;
 }
 .inicio-aventuras .contenedor-aventuras .card-aventuras .favoritos:hover {
   background-image: url("../multimedia/favoritos_2.svg");
@@ -1143,7 +1148,7 @@ html {
 /* Galeria */
 .galeria {
   background-color: #eeeeee;
-  padding: 20px 0 80px 0;
+  padding: 20px 0 280px 0;
 }
 .galeria h1 {
   font-family: "raleway-bold";
@@ -1249,20 +1254,11 @@ html {
   border-top-color: #b590ff;
   filter: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.galeria .paginas {
-  margin-top: 250px;
-}
-.galeria .paginas nav ul li a {
-  font-family: "raleway-regular";
-  font-size: 2rem;
-  text-align: center;
-  color: #515151;
-}
 
 .online {
   background-color: #76c0b4;
   width: 100%;
-  padding: 70px 0;
+  padding: 70px 0 80px 0;
 }
 .online h2 {
   font-family: "raleway-bold";
@@ -1275,7 +1271,7 @@ html {
   margin-bottom: 50px;
 }
 .online .container-online .video-info {
-  width: 50%;
+  width: 58%;
   font-family: "raleway-light";
   font-size: 2rem;
   text-align: left;
@@ -1283,8 +1279,12 @@ html {
   color: #515151;
   padding-right: 70px;
 }
-.online .container-online .video {
-  width: 50%;
+.online .container-online .video-contenedor {
+  width: 36%;
+}
+.online .container-online .video-contenedor .video {
+  width: 100%;
+  height: 265px;
   margin: 0;
 }
 
@@ -1292,7 +1292,7 @@ html {
 /* Mobile */
 @media only screen and (max-width: 480px) {
   .galeria {
-    padding: 45px 20px;
+    padding: 45px 20px 130px 20px;
   }
   .galeria h1 {
     font-size: 3rem;
@@ -1352,41 +1352,35 @@ html {
     left: 1px;
     top: 14px;
   }
-  .galeria .paginas {
-    margin-top: 100px;
-    margin-bottom: 10px;
+
+  .online {
+    padding: 45px 20px 75px 20px;
+  }
+  .online h2 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    margin: 15px 0 30px 0;
+  }
+  .online .container-online {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .online .container-online .video-info {
+    width: 100%;
+    padding: 20px 0;
+    text-align: justify;
+  }
+  .online .container-online .video-contenedor {
+    width: 100%;
   }
 }
-.online {
-  padding: 45px 20px;
-}
-.online h2 {
-  font-size: 3rem;
-  letter-spacing: 3px;
-  margin: 15px 0 30px 0;
-}
-.online .container-online {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-}
-.online .container-online .video-info {
-  width: 100%;
-  padding: 5px 0;
-  text-align: justify;
-}
-.online .container-online .video {
-  width: 100%;
-  margin: 30px 0;
-}
-
 /* Tablet  */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .galeria {
-    padding: 40px;
+    padding: 40px 40px 160px 40px;
   }
   .galeria h1 {
     padding: 25px 0;
@@ -1402,18 +1396,32 @@ html {
     top: 15px;
     left: 4px;
   }
-  .galeria .paginas {
-    margin-top: 150px;
-  }
 
+  .online {
+    padding: 70px 30px 80px 30px;
+  }
   .online h2 {
     padding: 0;
+    margin-bottom: 20px;
+  }
+  .online .container-online {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
   }
   .online .container-online .video-info {
-    width: 90%;
+    width: 100%;
+    padding-right: 0;
+    margin: 20px 10px 40px 10px;
   }
-  .online .container-online .video {
-    width: 90%;
+  .online .container-online .video-contenedor {
+    width: 100%;
+  }
+  .online .container-online .video-contenedor .video {
+    width: 100%;
+    height: 300px;
   }
 }
 /* Fin Media Querys Galeria */
@@ -1988,6 +1996,16 @@ html {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background-color: transparent;
   border-radius: 8px;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.seccion-favoritos .contenedor-mayor-favoritos .contenedor-fav .card-fav:hover {
+  -webkit-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  transform: scale(1.05);
 }
 .seccion-favoritos .contenedor-mayor-favoritos .contenedor-fav .card-fav .img-fav {
   border-radius: 8px 8px 0 0;

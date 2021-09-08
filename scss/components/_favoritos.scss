@@ -1,4 +1,3 @@
-
 /* Favoritos */
 .seccion-favoritos {
     background-color: nth($color, 9);
@@ -28,6 +27,11 @@
             box-shadow: $text-shadow;
             background-color: transparent;
             border-radius: 8px;
+            @include prefijos2(all 1s ease-in-out);
+
+            &:hover {
+            @include prefijos(scale(1.05))
+            }
             
             .img-fav {
             border-radius: 8px 8px 0 0;
@@ -101,5 +105,4 @@
     }
 }
 /* Fin Media Querys Favoritos*/
-    
 /* Fin Favoritos */

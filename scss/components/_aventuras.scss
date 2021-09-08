@@ -58,8 +58,9 @@
 
         .favoritos {
             position: absolute;
-            top: 5%;
-            left: 80%;  
+            top: 4%;
+            left: 80%;
+            width: 12%; 
             
             &:hover {
             background-image: url("../multimedia/favoritos_2.svg");
@@ -169,5 +170,4 @@
     }
 }
 /* Fin Media Querys Aventuras*/
-
 /* Fin Aventuras*/

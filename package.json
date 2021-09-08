@@ -1,12 +1,21 @@
 {
-  "name": "Explore-GuiaDeViajes",
+  "name": "explore-guiadeviajes",
   "version": "1.0.0",
-  "descriotion": "Proyecto CoderHouse",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": {
+  "name": "Agustina Mindus Di Fresca",
+  "email": "agustina.mindus@gmail.com",
+  "url": "https://agustinamindus.000webhostapp.com/"
+},
+
   "license": "ISC",
-  "description": ""
+  "description": "Proyecto CoderHouse",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AgustinaMindus/Explore-ProyectoCoderHouse"
+  }
+
 }
