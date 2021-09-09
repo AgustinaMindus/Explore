@@ -16,6 +16,7 @@
     
         img {
         width: 5%;
+        height: 5%;
         border-radius: 40px;
         }
     }
@@ -60,6 +61,7 @@
             
             img {
             width: $ancho - 30%;
+            height: $ancho - 30%;
             border-radius: 8px 8px 0px 0px;
             box-shadow: $text-shadow;
             }  
@@ -99,8 +101,8 @@
         width: 3rem;
         background-color: nth($color, 4);
         position: relative;
-        top: 410px;
-        left: 674px;
+        top: 595px;
+        left: 687px;
         box-shadow: $text-shadow;
         }
 
@@ -110,7 +112,7 @@
         width: 3rem;
         background-color: nth($color, 6);
         position: relative;
-        top: 297px;
+        top: 382px;
         left: 620px;
         box-shadow: $text-shadow;
         }
@@ -121,21 +123,26 @@
         width: 3rem;
         background-color: nth($color, 5);
         position: relative;
-        top: 105px;
-        left: 611px;
+        top: 43px;
+        left: 584px;
         box-shadow: $text-shadow;
         }
 
-        .mapa {
+        .mapa-contenedor {
+        width: $ancho;
+            .mapa {
             width: $ancho - 20%;
+            height: 575px;
+            margin: 0;
+            }
         }
     }
 }
 
 .opiniones {
-    background-color: nth($color, 3);
-    text-align: $aling;
-    padding: 100px 0;
+background-color: nth($color, 3);
+text-align: $aling;
+padding: 100px 0;
     
     h3 {
     @include titulos(nth($font-family, 6), nth($font-size, 5), $aling, $text-uppercase);
@@ -227,30 +234,33 @@
         }
     
         .lugar-mapa {  
-            margin-top: -130px;
-            margin-bottom: 15px;
+        margin-top: -130px;
+        margin-bottom: 15px;
     
-                .lugar1-marcador {
-                position: relative;
-                top: 408px;
-                left: 200px;
-                }
+            .lugar1-marcador {
+            position: relative;
+            top: 594px;
+            left: 191px;
+            }
     
-                .lugar2-marcador {
-                position: relative;
-                top: 297px;
-                left: 147px;
-                }
+            .lugar2-marcador {
+            position: relative;
+            top: 382px;
+            left: 124px;
+            }
     
-                .lugar3-marcador {
-                position: relative;
-                top: 116px;
-                left: 145px;
-                }
+            .lugar3-marcador {
+            position: relative;
+            top: 127px;
+            left: 99px;
+            }
 
+            .mapa-contenedor {
+            width: $ancho;
                 .mapa {
-                width: $ancho - 10%;
+                width: $ancho - 20%;
                 }
+            }
         }
     }
     
@@ -314,24 +324,27 @@
         margin-bottom: 40px;
             .lugar1-marcador {
             position: relative;
-            top: 415px;
-            left: 350px;
+            top: 592px;
+            left: 369px;
             }
     
             .lugar2-marcador {
             position: relative;
-            top: 300px;
-            left: 300px;
+            top: 388px;
+            left: 308px;
             }
     
             .lugar3-marcador {
             position: relative;
-            top: 105px;
-            left: 295px;
+            top: 122px;
+            left: 283px;
             }
 
-            .mapa {
-            width: $ancho - 5%;
+            .mapa-contenedor {
+            width: $ancho;
+                .mapa {
+                width: $ancho - 5%;
+                }
             }
         }
     }

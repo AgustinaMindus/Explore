@@ -592,6 +592,7 @@ html {
 .top-10 .destinos-contenedor .destinos-card img {
   border-radius: 8px;
   width: 100%;
+  height: 100%;
 }
 .top-10 .destinos-contenedor .destinos-card .top-a {
   color: #fafafa;
@@ -1161,9 +1162,11 @@ html {
 }
 .galeria .img-0, .galeria .img-2, .galeria .img-3, .galeria .img-7, .galeria .img-8 {
   width: 94%;
+  height: 94%;
 }
 .galeria .img-1, .galeria .img-4, .galeria .img-5, .galeria .img-6, .galeria .img-9, .galeria .img-10 {
   width: 100%;
+  height: 100%;
 }
 .galeria .img-galeria {
   border-radius: 8px 0;
@@ -1445,6 +1448,7 @@ html {
 }
 .recorridos .recorridos-inicio img {
   width: 5%;
+  height: 5%;
   border-radius: 40px;
 }
 .recorridos .boton-ciudades {
@@ -1489,6 +1493,7 @@ html {
 }
 .recorridos .lugares-contenedor .lugares-card img {
   width: 70%;
+  height: 70%;
   border-radius: 8px 8px 0px 0px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -1524,8 +1529,8 @@ html {
   width: 3rem;
   background-color: #6e50f9;
   position: relative;
-  top: 410px;
-  left: 674px;
+  top: 595px;
+  left: 687px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .recorridos .lugar-mapa .lugar2-marcador {
@@ -1534,7 +1539,7 @@ html {
   width: 3rem;
   background-color: #b590ff;
   position: relative;
-  top: 297px;
+  top: 382px;
   left: 620px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -1544,12 +1549,17 @@ html {
   width: 3rem;
   background-color: #7d60f5;
   position: relative;
-  top: 105px;
-  left: 611px;
+  top: 43px;
+  left: 584px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.recorridos .lugar-mapa .mapa {
+.recorridos .lugar-mapa .mapa-contenedor {
+  width: 100%;
+}
+.recorridos .lugar-mapa .mapa-contenedor .mapa {
   width: 80%;
+  height: 575px;
+  margin: 0;
 }
 
 .opiniones {
@@ -1640,21 +1650,24 @@ html {
   }
   .recorridos .lugar-mapa .lugar1-marcador {
     position: relative;
-    top: 408px;
-    left: 200px;
+    top: 594px;
+    left: 191px;
   }
   .recorridos .lugar-mapa .lugar2-marcador {
     position: relative;
-    top: 297px;
-    left: 147px;
+    top: 382px;
+    left: 124px;
   }
   .recorridos .lugar-mapa .lugar3-marcador {
     position: relative;
-    top: 116px;
-    left: 145px;
+    top: 127px;
+    left: 99px;
   }
-  .recorridos .lugar-mapa .mapa {
-    width: 90%;
+  .recorridos .lugar-mapa .mapa-contenedor {
+    width: 100%;
+  }
+  .recorridos .lugar-mapa .mapa-contenedor .mapa {
+    width: 80%;
   }
 
   .opiniones {
@@ -1706,20 +1719,23 @@ html {
   }
   .recorridos .lugar-mapa .lugar1-marcador {
     position: relative;
-    top: 415px;
-    left: 350px;
+    top: 592px;
+    left: 369px;
   }
   .recorridos .lugar-mapa .lugar2-marcador {
     position: relative;
-    top: 300px;
-    left: 300px;
+    top: 388px;
+    left: 308px;
   }
   .recorridos .lugar-mapa .lugar3-marcador {
     position: relative;
-    top: 105px;
-    left: 295px;
+    top: 122px;
+    left: 283px;
   }
-  .recorridos .lugar-mapa .mapa {
+  .recorridos .lugar-mapa .mapa-contenedor {
+    width: 100%;
+  }
+  .recorridos .lugar-mapa .mapa-contenedor .mapa {
     width: 95%;
   }
 
@@ -1799,21 +1815,15 @@ html {
     padding: 300px 0 60px 0;
   }
   .error h1 {
-    font-family: "raleway-extrabold";
-    font-size: 3.5rem;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: -141px;
+    font-size: 3rem;
+    letter-spacing: 0px;
+    margin-top: -175px;
     margin-left: 15px;
   }
   .error h2 {
-    font-family: "raleway-extrabold";
-    font-size: 2rem;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 90px 55px;
-    line-height: 27px;
+    font-size: 1.8rem;
+    padding: 60px 49px;
+    line-height: 25px;
   }
   .error h3 {
     font-family: "raleway-bold";
@@ -1877,6 +1887,7 @@ html {
 }
 .quienes .info-quienes-somos .mifoto {
   width: 90%;
+  height: 90%;
   border-radius: 8px;
   -webkit-transition: 0.5s linear;
   -o-transition: 0.5s linear;
@@ -1902,6 +1913,7 @@ html {
 }
 .quienes .quienes-icon img {
   width: 15%;
+  height: 15%;
   margin: 30px 11px;
   padding: 0 15px;
 }
@@ -2009,6 +2021,8 @@ html {
 }
 .seccion-favoritos .contenedor-mayor-favoritos .contenedor-fav .card-fav .img-fav {
   border-radius: 8px 8px 0 0;
+  width: 100%;
+  height: 100%;
 }
 .seccion-favoritos .contenedor-mayor-favoritos .contenedor-fav .card-fav .contenedor-texto-fav {
   background-color: #b590ff;

@@ -37,7 +37,6 @@ padding: 300px 0 180px 0;
     @extend %boton;
     }
 }
-
 /* Media Querys Error */
 
 /* Mobile*/
@@ -53,16 +52,16 @@ padding: 300px 0 180px 0;
     padding: 300px 0 60px 0;
     
         h1 {
-        @include titulos(nth($font-family, 6), nth($font-size, 6), $aling, $text-uppercase);
-        letter-spacing: $letter-spacing - 8px;
-        margin-top: -141px;
+        font-size: nth($font-size, 5);
+        letter-spacing: $letter-spacing - 10px;
+        margin-top: -175px;
         margin-left: 15px;
         }
     
         h2 {
-        @include titulos(nth($font-family, 6), nth($font-size, 2), $aling, $text-uppercase);
-        padding: 90px 55px;
-        line-height: 27px;
+        font-size: 1.8rem;
+        padding: 60px 49px;
+        line-height: 25px;
         }
     
         h3 {

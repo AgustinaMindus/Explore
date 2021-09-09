@@ -12,10 +12,12 @@ padding: 20px 0 280px 0;
 
     .img-0, .img-2, .img-3,  .img-7, .img-8 {
     width: $ancho - 6%;
+    height: $ancho - 6%;
     }
 
     .img-1, .img-4, .img-5, .img-6, .img-9, .img-10 {
     width: $ancho;
+    height: $ancho;
     }
 
     .img-galeria {
@@ -148,12 +150,11 @@ padding: 70px 0 80px 0;
         .video-contenedor {
         width: 36%;
 
-
             .video {
             width: $ancho;
             height: 265px;
             margin: 0;
-           }
+            }
         }
     }
 }

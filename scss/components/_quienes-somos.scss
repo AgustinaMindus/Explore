@@ -24,6 +24,7 @@
 
         .mifoto {
         width: $ancho - 10%;
+        height: $ancho - 10%;
         border-radius: $border-radius;
         @include prefijos2(0.5s linear);
 
@@ -48,6 +49,7 @@
 
         img {
         width: $ancho - 85%;
+        height: $ancho - 85%;
         margin: 30px 11px;
         padding: 0 15px;
         }
