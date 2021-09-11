@@ -298,11 +298,11 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 100%;
   padding: 90px;
 }
 .contacto .formulario {
-  padding: 0 380px;
+  width: 42%;
+  padding: 0 0;
 }
 .contacto .formulario .form {
   box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
@@ -399,9 +399,9 @@ html {
   }
   .contacto .formulario {
     padding: 0 0;
+    width: 80%;
   }
   .contacto .formulario .form {
-    width: 80%;
     padding: 40px 30px;
   }
   .contacto .formulario .form h2 {
@@ -426,9 +426,9 @@ html {
   }
   .contacto .formulario {
     padding: 0 0;
+    width: 70%;
   }
   .contacto .formulario .form {
-    width: 70%;
     padding: 40px 40px;
   }
 

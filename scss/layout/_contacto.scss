@@ -7,12 +7,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: $ancho;
     padding: 90px;
 
     .formulario {
     @extend %flex;
-    padding: 0 380px;
+    width: $ancho - 58%;
+    padding: 0 0;
 
         .form {
         box-shadow: $text-shadow;
@@ -107,9 +107,8 @@ width: 3.5%;
 
         .formulario {
         padding: 0 0;
-
+        width: $ancho - 20%;
             .form {
-            width: $ancho - 20%;
             padding: 40px 30px;
 
                 h2 {
@@ -139,9 +138,8 @@ width: 3.5%;
 
         .formulario {
         padding: 0 0;
-
+        width: $ancho - 30%;
             .form {
-            width: $ancho - 30%;
             padding: 40px 40px;
             }
         }
