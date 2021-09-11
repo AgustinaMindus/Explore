@@ -1,8 +1,8 @@
 /* Sección Contacto */
 .contacto {
-    background: linear-gradient(45deg, rgba(181,144,255,.5), 
+    background: linear-gradient(45deg, rgba(181,144,255,.5),
     rgba(199,255,240,.5), rgba(181,144,255,.5),
-    rgba(199,255,240,.5)) 0 0 / 1000% no-repeat, 
+    rgba(199,255,240,.5)) 0 0 / 1000% no-repeat,
     url("../multimedia/imagen-contacto.jpg") 0 0 / cover no-repeat;
     background-repeat: no-repeat;
     background-size: cover;
@@ -58,7 +58,7 @@
             margin-bottom: 20px;
             outline: 0;
             }
-    
+
             button {
             width: $ancho - 70%;
             background-color: nth($color, 6);
@@ -73,7 +73,7 @@
                 background-color: nth($color,5);
                 border: 1px solid nth($color,5);
                 }
-            } 
+            }
         }
     }
 }
@@ -98,13 +98,13 @@ width: 3.5%;
 /* Fin Whatsapp */
 /* Fin Sección Contacto */
 
-/* Media Querys Sección Contacto */ 
+/* Media Querys Sección Contacto */
 
 /* Mobile */
 @media only screen and (max-width:480px) {
     .contacto {
         padding: 80px 0;
-    
+
         .formulario {
         padding: 0 0;
 
@@ -120,11 +120,11 @@ width: 3.5%;
 
                 button {
                 width: $ancho - 60%;
-                } 
+                }
             }
         }
     }
-    
+
     .wsp {
     vertical-align: middle;
     width: 11.5%;
@@ -136,7 +136,7 @@ width: 3.5%;
 @media only screen and (min-width:481px) and (max-width:768px) {
     .contacto {
     padding: 100px 0;
-    
+
         .formulario {
         padding: 0 0;
 
@@ -152,4 +152,4 @@ width: 3.5%;
     }
 }
 /* Fin Tablet */
-/* Fin Media Querys Sección Contacto */ 
+/* Fin Media Querys Sección Contacto */

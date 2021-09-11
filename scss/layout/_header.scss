@@ -4,7 +4,7 @@
     width: $ancho;
     padding: 5px 70px;
     background-color: transparent;
-    
+
     .logo {
       width: 5%;
       height: 5%;
@@ -14,14 +14,14 @@
       font-size: nth($font-size, 4);
       border: 1px solid transparent;
     }
-    
+
     .nav-item {
       .item {
       @include titulos(
       nth($font-family, 3), nth($font-size, 1), $aling, $text-uppercase);
       color: nth($color, 9);
       padding: 6px 15px;
-  
+
       &:hover {
         border-bottom: nth($color, 4) 3px solid;
         color: nth($color, 9);
@@ -49,22 +49,22 @@
       }
     }
   }
-        
+
   .favoritos:hover {
     background-image: url("../multimedia/favoritos_2.svg");
     background-repeat: no-repeat;
   }
 }
 /* Fin Header */
-  
+
 /* Media Querys Header */
-  
+
 /* Mobile */
 @media only screen and (max-width: 480px) {
   .header {
     .nav {
     padding: 0 5px;
-            
+
       .logo {
       width: 18%;
       height: 18%;
@@ -113,5 +113,5 @@
       }
     }
   }
-}  
+}
 /* Fin Media Querys Header */
