@@ -1,7 +1,7 @@
 /* Galeria */
 .galeria {
 background-color: nth($color, 8);
-padding: 20px 0 280px 0;
+padding: 20px 0 130px 0;
 
     h1 {
     @include titulos(nth($font-family, 4), nth($font-size, 6), $aling, $text-uppercase);
@@ -119,6 +119,22 @@ padding: 20px 0 280px 0;
         filter: $text-shadow;
         }
     }
+    .subir-img {
+    @include sub-titulos(nth($font-family, 3), nth($font-size, 2), $aling);
+    width: $ancho - 85%;
+    background-color: nth($color, 5);
+    @extend %boton;
+    margin-top: 225px;
+
+        &:hover {
+        background-color: nth($color, 4);
+        }
+
+        .subir-img-a {
+        text-decoration: $text-none;
+        color: nth($color, 9);
+        }
+    }
 }
 
 .online {
@@ -138,11 +154,11 @@ padding: 70px 0 80px 0;
         @extend %flex-2;
 
         .video-info {
-            width: $ancho - 42%;
-            @include sub-titulos(nth($font-family, 1), nth($font-size, 2), left);
-            font-style: italic;
-            color: nth($color, 7);
-            padding-right: 70px;
+        width: $ancho - 42%;
+        @include sub-titulos(nth($font-family, 1), nth($font-size, 2), left);
+        font-style: italic;
+        color: nth($color, 7);
+        padding-right: 70px;
         }
 
         .video-contenedor {
@@ -162,7 +178,7 @@ padding: 70px 0 80px 0;
 @media only screen and (max-width:480px) {
 
     .galeria {
-    padding: 45px 20px 130px 20px;
+    padding: 45px 20px 75px 20px;
 
         h1 {
         font-size: nth($font-size, 5);
@@ -243,6 +259,11 @@ padding: 70px 0 80px 0;
         top: 14px;
         }
         }
+        .subir-img {
+        font-size:  nth($font-size, 1);
+        width: $ancho - 40%;
+        margin-top: 110px;
+        }
     }
 
     .online {
@@ -265,6 +286,7 @@ padding: 70px 0 80px 0;
             width: $ancho;
             padding: 20px 0;
             text-align: justify;
+            font-size: nth($font-size, 9);
             }
 
             .video-contenedor{
@@ -276,7 +298,7 @@ padding: 70px 0 80px 0;
 /* Tablet  */
 @media only screen and (min-width:481px) and (max-width:768px) {
     .galeria {
-    padding: 40px 40px 160px 40px;
+    padding: 40px 40px 90px 40px;
 
         h1 {
         padding: 25px 0;
@@ -295,6 +317,10 @@ padding: 70px 0 80px 0;
             top: 15px;
             left: 4px;
             }
+        }
+        .subir-img {
+        width: $ancho - 70%;
+        margin-top: 150px;
         }
     }
 

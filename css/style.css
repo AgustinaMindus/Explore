@@ -280,7 +280,7 @@ html {
   align-items: center;
 }
 
-.error .boton, .recorridos .boton-ciudades a, .contacto .formulario .form button {
+.error .boton, .recorridos .boton-ciudades a, .galeria .subir-img, .contacto .formulario .form button {
   border-radius: 5px;
   padding: 10px;
 }
@@ -1147,6 +1147,9 @@ html {
   .inicio-aventuras .contenedor-aventuras .card-aventuras {
     margin-bottom: 80px;
   }
+  .inicio-aventuras .contenedor-aventuras .card-aventuras .contenedor-texto .parrafo-aventuras {
+    font-size: 1.8rem;
+  }
   .inicio-aventuras .paginas {
     margin-top: -15px;
   }
@@ -1176,7 +1179,7 @@ html {
 /* Galeria */
 .galeria {
   background-color: #eeeeee;
-  padding: 20px 0 280px 0;
+  padding: 20px 0 130px 0;
 }
 .galeria h1 {
   font-family: "raleway-bold";
@@ -1282,6 +1285,21 @@ html {
   border-top-color: #b590ff;
   filter: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
+.galeria .subir-img {
+  font-family: "raleway-medium";
+  font-size: 2rem;
+  text-align: center;
+  width: 15%;
+  background-color: #7d60f5;
+  margin-top: 225px;
+}
+.galeria .subir-img:hover {
+  background-color: #6e50f9;
+}
+.galeria .subir-img .subir-img-a {
+  text-decoration: none;
+  color: #fafafa;
+}
 
 .online {
   background-color: #76c0b4;
@@ -1320,7 +1338,7 @@ html {
 /* Mobile */
 @media only screen and (max-width: 480px) {
   .galeria {
-    padding: 45px 20px 130px 20px;
+    padding: 45px 20px 75px 20px;
   }
   .galeria h1 {
     font-size: 3rem;
@@ -1380,6 +1398,11 @@ html {
     left: 1px;
     top: 14px;
   }
+  .galeria .subir-img {
+    font-size: 1.5rem;
+    width: 60%;
+    margin-top: 110px;
+  }
 
   .online {
     padding: 45px 20px 75px 20px;
@@ -1400,6 +1423,7 @@ html {
     width: 100%;
     padding: 20px 0;
     text-align: justify;
+    font-size: 1.8rem;
   }
   .online .container-online .video-contenedor {
     width: 100%;
@@ -1408,7 +1432,7 @@ html {
 /* Tablet  */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .galeria {
-    padding: 40px 40px 160px 40px;
+    padding: 40px 40px 90px 40px;
   }
   .galeria h1 {
     padding: 25px 0;
@@ -1423,6 +1447,10 @@ html {
     max-width: 15rem;
     top: 15px;
     left: 4px;
+  }
+  .galeria .subir-img {
+    width: 30%;
+    margin-top: 150px;
   }
 
   .online {
@@ -1720,8 +1748,8 @@ html {
     margin: 15px 0;
   }
   .opiniones .opiniones-contenedor .opiniones-card .opiniones-titulo, .opiniones .opiniones-contenedor .opiniones-card .opiniones-texto {
-    font-size: 1.5rem;
-    line-height: 20px;
+    font-size: 1.8rem;
+    line-height: 22px;
   }
 }
 /* Tablet  */
@@ -1968,7 +1996,7 @@ html {
     flex-direction: column;
   }
   .quienes .info-quienes-somos .texto-quienes-somos {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 20px 0;
     padding: 0;
   }

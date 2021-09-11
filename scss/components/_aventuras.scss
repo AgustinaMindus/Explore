@@ -148,6 +148,12 @@
         .contenedor-aventuras {
             .card-aventuras {
             margin-bottom: 80px;
+
+                .contenedor-texto {
+                    .parrafo-aventuras {
+                    font-size: nth($font-size, 9);
+                    }
+                }
             }
         }
 
