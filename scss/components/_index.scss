@@ -1,8 +1,8 @@
 /* Index */
 .container-background {
-    background: linear-gradient(45deg, rgba(181,144,255,.5), 
+    background: linear-gradient(45deg, rgba(181,144,255,.5),
     rgba(199,255,240,.5), rgba(181,144,255,.5),
-    rgba(199,255,240,.5)) 0 0 / 1000% no-repeat, 
+    rgba(199,255,240,.5)) 0 0 / 1000% no-repeat,
    url("../multimedia/imagen-inicio.jpg") 0 0 / cover no-repeat;
    -webkit-animation: gradientAnimation 40s ease infinite;
    animation: gradientAnimation 40s ease infinite;
@@ -23,7 +23,7 @@
     25%  { background-position: 100% 70%, 0 0;}
     50% { background-position: 0% 30%, 0 0;}
     }
-    
+
     /* Sección Imagen Inicio */
     .imagen-inicio {
         h1 {
@@ -33,19 +33,19 @@
             color: nth($color, 9);
             margin-top: 15%;
             @include prefijos2(all 2s ease-in-out);
-    
+
             &:hover {
             @include prefijos(scale(1.25))
             }
         }
-    
+
         p {
         @include sub-titulos(nth($font-family, 4), nth($font-size, 4), $aling);
         margin: 2px;
         letter-spacing: $letter-spacing - 6px;
         color: nth($color, 9);
         text-shadow: $text-shadow;
-        }           
+        }
     }
     /* Fin Sección Imagen Inicio */
 }
@@ -70,14 +70,14 @@
 
     .preferencias-contenedor {
     @extend %flex;
-                  
+
         .preferencias-card {
         padding: 0 10px 10px 10px;
         border-radius: $border-radius;
-        width: $ancho - 88%;    
-        height: $ancho - 88%;  
-        margin: 11px 85px 50px 85px; 
-        
+        width: $ancho - 88%;
+        height: $ancho - 88%;
+        margin: 11px 85px 50px 85px;
+
             &:hover {
             box-shadow: $text-shadow;
             background-color: nth($color, 2);
@@ -88,19 +88,19 @@
                 &:hover {
                 filter:  grayscale(100%);
                 filter: brightness(3);
-                }  
-              
+                }
+
                 .preferencias-img1, .preferencias-img2, .preferencias-img3, .preferencias-img4,.preferencias-img5, .preferencias-img6 {
-                width: $ancho;    
-                height: $ancho;  
-                padding: 10px; 
-                } 
-       
+                width: $ancho;
+                height: $ancho;
+                padding: 10px;
+                }
+
                 .preferencia-a {
                 @extend %texto;
                 letter-spacing: $letter-spacing - 8px;
-                margin-top: -11px; 
-                color: nth($color, 2); 
+                margin-top: -11px;
+                color: nth($color, 2);
                 }
             }
         }
@@ -141,11 +141,11 @@
         flex-direction: row;
         @include prefijos2(all 1s ease-in-out);
         padding: 15px;
-        
+
         &:hover {
         @include prefijos(scale(1.1))
         }
-        
+
         img {
         border-radius: $border-radius;
         width: $ancho;
@@ -254,7 +254,7 @@ padding: 80px 0 110px 0;
 }
 /* Fin Sección Mapa inicio */
 
-/* Media Querys Index*/ 
+/* Media Querys Index*/
 
 /* Mobile */
 @media only screen and (max-width:480px) {
@@ -262,24 +262,29 @@ padding: 80px 0 110px 0;
     /* Sección Imagen Inicio */
     .container-background {
         overflow: hidden;
-    
+
         .imagen-inicio {
         width: $ancho;
         overflow: hidden;
-        
+
             h1 {
             @include titulos(nth($font-family, 6), nth($font-size, 7), $aling, $text-uppercase);
             padding: 35px 30px;
-            margin-top: 14%;
+            margin-top: 12%;
             text-align: $aling;
             letter-spacing: $letter-spacing - 4px;
+            @include prefijos2(all 2s ease-in-out);
+
+            &:hover {
+            @include prefijos(scale(1.10))
             }
-        
+            }
+
             p {
-            @include sub-titulos(nth($font-family, 4), nth($font-size, 3), $aling);
-            padding: 20px 41px;
+            @include sub-titulos(nth($font-family, 4), nth($font-size, 2), $aling);
+            padding: 20px 40px;
             letter-spacing: $letter-spacing - 8px;
-            }    
+            }
         }
     }
     /* Fin Sección Imagen Inicio */
@@ -299,23 +304,23 @@ padding: 80px 0 110px 0;
         @extend %flex;
 
             .preferencias-card {
-            width: $ancho - 45%;    
-            height: $ancho - 45%;  
-            margin: 30px 0 0 0; 
-            
+            width: $ancho - 45%;
+            height: $ancho - 45%;
+            margin: 30px 0 0 0;
+
                 .preferencias-card-interior {
 
                     .preferencias-img1, .preferencias-img2, .preferencias-img3, .preferencias-img4,.preferencias-img5, .preferencias-img6 {
-                    width: $ancho;    
-                    height: $ancho;  
-                    padding: 10px;     
+                    width: $ancho;
+                    height: $ancho;
+                    padding: 10px;
                     }
-    
+
                     .preferencia-a {
                     font-size: nth($font-size, 4);;
-                    margin-top: -11px;        
+                    margin-top: -11px;
                     }
-                }       
+                }
             }
         }
     }
@@ -347,9 +352,9 @@ padding: 80px 0 110px 0;
                 .top-a {
                 font-size: nth($font-size, 4);
                 margin-top: -60px;
-                } 
+                }
             }
-        }   
+        }
 
         .flecha {
         margin: 0;
@@ -366,47 +371,47 @@ padding: 80px 0 110px 0;
         padding: 0 15px;
         letter-spacing: $letter-spacing - 2px;
         }
-       
+
         p {
         font-size: nth($font-size, 3);
         padding: 15px 20px;
         }
-        
+
         &:hover .gps1 {
         @include prefijos(translateY(46px));
         opacity:5;
         }
-    
+
         &:hover .gps2 {
         @include prefijos(translateY(87px));
         opacity:5;
         }
-    
+
         &:hover .gps3 {
         @include prefijos(translateY(159px));
         opacity:5;
         }
-    
+
         &:hover .gps4 {
         @include prefijos(translateY(112px));
         opacity:5;
         }
-    
+
         &:hover .gps5 {
         @include prefijos(translateY(135px));
         opacity:5;
         }
-    
+
         &:hover .gps6 {
         @include prefijos(translateY(75px));
         opacity:5;
         }
-    
+
         &:hover .gps7 {
         @include prefijos(translateY(160px));
         opacity:5;
         }
-    
+
         &:hover .gps8 {
         @include prefijos(translateY(49px));
         opacity:5;
@@ -425,12 +430,12 @@ padding: 80px 0 110px 0;
             padding: 35px 30px;
             margin-top: 30%;
             }
-        
+
             p {
             padding: 25px 30px;
-            }    
+            }
         }
-    } 
+    }
     /* Fin Sección Imagen Inicio */
 
     /* Sección Preferencias */
@@ -442,17 +447,17 @@ padding: 80px 0 110px 0;
         text-align: $aling;
         }
 
-        .preferencias-contenedor { 
+        .preferencias-contenedor {
 
             .preferencias-card {
             margin: 0 20px 40px 20px;
-            width: $ancho - 79%; 
-            
+            width: $ancho - 79%;
+
                 .preferencias-card-interior {
-                       
+
                     .preferencia-a {
                     margin-top: -9px;
-                    } 
+                    }
                 }
             }
         }
@@ -467,7 +472,7 @@ padding: 80px 0 110px 0;
         padding: 15px 0;
         letter-spacing: $letter-spacing - 4px;
         }
-    
+
         .destinos-contenedor {
         padding: 0 10px;
 
@@ -496,7 +501,7 @@ padding: 80px 0 110px 0;
         padding: 15px 65px;
         }
 
-        p { 
+        p {
         padding: 10px 0;
         }
 
@@ -504,37 +509,37 @@ padding: 80px 0 110px 0;
         @include prefijos(translateY(95px));
         opacity:5;
         }
-        
+
         &:hover .gps2 {
         @include prefijos(translateY(180px));
         opacity:5;
         }
-        
+
         &:hover .gps3 {
         @include prefijos(translateY(325px));
         opacity:5;
         }
-        
+
         &:hover .gps4 {
         @include prefijos(translateY(228px));
         opacity:5;
         }
-        
+
         &:hover .gps5 {
         @include prefijos(translateY(275px));
         opacity:5;
         }
-        
+
         &:hover .gps6 {
         @include prefijos(translateY(150px));
         opacity:5;
         }
-        
+
         &:hover .gps7 {
         @include prefijos(translateY(327px));
         opacity:5;
         }
-        
+
         &:hover .gps8 {
         @include prefijos(translateY(100px));
         opacity:5;

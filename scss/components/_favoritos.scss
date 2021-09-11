@@ -20,7 +20,7 @@
 
         .contenedor-fav {
         @extend %flex-3;
-                    
+
             .card-fav {
             width: $ancho - 75%;
             margin: 30px;
@@ -32,21 +32,21 @@
             &:hover {
             @include prefijos(scale(1.05))
             }
-            
+
             .img-fav {
             border-radius: 8px 8px 0 0;
             width: $ancho;
             height: $ancho;
             }
-    
+
             .contenedor-texto-fav {
             background-color: nth($color, 6);
             border-radius: 0 0 8px 8px;
-    
+
                 .titulo-fav {
                 @include titulos(nth($font-family, 4), nth($font-size, 1), $aling, $text-uppercase);
                 letter-spacing: $letter-spacing - 8px;
-                color: nth($color, 9);  
+                color: nth($color, 9);
                 }
             }
             }
@@ -60,7 +60,7 @@
 @media only screen and (max-width:480px) {
     .seccion-favoritos {
     padding: 45px 20px;
-    
+
         h1 {
         letter-spacing: $letter-spacing - 2px;
         padding: 0 0 20px 0;
@@ -70,23 +70,23 @@
             h2 {
             padding-top: 45px;
             }
-    
+
             .contenedor-fav {
             @extend %flex-3;
-                        
+
                 .card-fav {
                 width: $ancho;
                 }
-            } 
+            }
         }
     }
-}   
+}
 
 /* Tablet  */
 @media only screen and (min-width:481px) and (max-width:768px) {
     .seccion-favoritos {
         padding: 40px 40px 90px 40px;
-        
+
         h1 {
         letter-spacing: $letter-spacing - 5px;
         margin: 25px 0 5px 0;
@@ -96,11 +96,11 @@
             h2 {
             padding: 50px 0 10px 0;
             }
-        
-            .contenedor-fav {       
+
+            .contenedor-fav {
                 .card-fav {
                 width: $ancho - 71%;
-                margin: 14px;          
+                margin: 14px;
                 }
             }
         }

@@ -12,19 +12,17 @@ padding: 20px 0 280px 0;
 
     .img-0, .img-2, .img-3,  .img-7, .img-8 {
     width: $ancho - 6%;
-    height: $ancho - 6%;
     }
 
     .img-1, .img-4, .img-5, .img-6, .img-9, .img-10 {
     width: $ancho;
-    height: $ancho;
     }
 
     .img-galeria {
     border-radius: 8px 0;
     filter: grayscale(90%);
     @include prefijos2(all 1s ease-in-out);
-        
+
         &:hover {
         filter: none;
         @include prefijos(scale(1.05));
@@ -44,7 +42,7 @@ padding: 20px 0 280px 0;
     "c1-f4 c2-f4 c3-f3 c4-f4";
 
         .c1-f1 {
-        grid-area: c1-f1; 
+        grid-area: c1-f1;
         }
 
         .c2-f1 {
@@ -77,7 +75,7 @@ padding: 20px 0 280px 0;
 
         .c2-f4 {
         grid-area: c2-f4;
-        } 
+        }
 
         .c3-f3 {
         grid-area: c3-f3;
@@ -87,7 +85,7 @@ padding: 20px 0 280px 0;
         grid-area: c4-f4;
         }
 
-        .c1-f1, .c2-f1, .c2-f1, .c2-f1, 
+        .c1-f1, .c2-f1, .c2-f1, .c2-f1,
         .c1-f2, .c2-f2, .c3-f2, .c4-f2,
         .c1-f3, .c1-f3, .c1-f3, .c1-f3,
         .c1-f4, .c2-f4, .c3-f3, .c4-f4 {
@@ -107,16 +105,16 @@ padding: 20px 0 280px 0;
         border-radius: $border-radius;
         box-shadow:	$text-shadow;
         }
-        
+
         p::before {
         content: '';
         position: absolute;
         width: 0;
         height: 0;
         top: 100%;
-        left: 1.5em; 
+        left: 1.5em;
         border: .75rem solid transparent;
-        border-bottom: none; 
+        border-bottom: none;
         border-top-color: nth($color, 6);
         filter: $text-shadow;
         }
@@ -127,7 +125,7 @@ padding: 20px 0 280px 0;
 background-color: nth($color, 2);
 width: $ancho;
 padding: 70px 0 80px 0;
-    
+
     h2 {
     @include titulos(nth($font-family, 4), nth($font-size, 6), $aling, $text-uppercase);
     color: nth($color, 9);
@@ -140,7 +138,7 @@ padding: 70px 0 80px 0;
         @extend %flex-2;
 
         .video-info {
-            width: $ancho - 42%;                       
+            width: $ancho - 42%;
             @include sub-titulos(nth($font-family, 1), nth($font-size, 2), left);
             font-style: italic;
             color: nth($color, 7);
@@ -222,7 +220,7 @@ padding: 70px 0 80px 0;
 
             .c2-f4 {
             grid-area: c2-f4;
-            } 
+            }
 
             .c3-f3 {
             grid-area: c3-f3;
@@ -231,14 +229,14 @@ padding: 70px 0 80px 0;
             .c4-f4 {
             grid-area: c4-f4;
             }
-        
-        .c2-f1, .c2-f1, .c2-f1, 
+
+        .c2-f1, .c2-f1, .c2-f1,
         .c1-f2, .c2-f2, .c3-f2, .c4-f2,
         .c1-f3, .c1-f3, .c1-f3, .c1-f3,
         .c1-f4, .c2-f4, .c3-f3, .c4-f4 {
         margin-top: 0;
         }
-        
+
         p {
         max-width: 15rem;
         left: 1px;
@@ -249,26 +247,26 @@ padding: 70px 0 80px 0;
 
     .online {
     padding: 45px 20px 75px 20px;
-            
+
         h2 {
         font-size: nth($font-size, 5);
         letter-spacing: $letter-spacing - 7px;
-        margin: 15px 0 30px 0;
+        margin: 15px 0;
         }
-    
+
         .container-online {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: center;
         align-items: center;
-    
+
             .video-info {
-            width: $ancho;                      
+            width: $ancho;
             padding: 20px 0;
             text-align: justify;
             }
-    
+
             .video-contenedor{
             width: $ancho;
             }
@@ -284,23 +282,23 @@ padding: 70px 0 80px 0;
         padding: 25px 0;
         }
 
-        .imagenes-galeria {    
-            .c1-f1, .c2-f1, .c2-f1, .c2-f1, 
+        .imagenes-galeria {
+            .c1-f1, .c2-f1, .c2-f1, .c2-f1,
             .c1-f2, .c2-f2, .c3-f2, .c4-f2,
             .c1-f3, .c1-f3, .c1-f3, .c1-f3,
             .c1-f4, .c2-f4, .c3-f3, .c4-f4 {
             margin-top: 0;
             }
-        
+
             p {
             max-width: 15rem;
             top: 15px;
             left: 4px;
-            } 
+            }
         }
     }
 
-    .online {  
+    .online {
     padding: 70px 30px 80px 30px;
         h2 {
         padding: 0;

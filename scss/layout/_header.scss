@@ -74,7 +74,17 @@
       .hamburger {
       text-align: right;
       }
+      .nav-item {
+        .item {
+       font-size: 1.7rem;
+       padding: 7px 15px;
+       }
+      }
 
+      .submenu {
+      font-size: 1.7rem;
+      margin-left: 0;
+      }
       .perfil {
       margin-bottom: 10px;
       }

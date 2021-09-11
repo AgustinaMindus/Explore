@@ -3,19 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": {
   "name": "Agustina Mindus Di Fresca",
   "email": "agustina.mindus@gmail.com",
-  "url": "https://agustinamindus.000webhostapp.com/"
-},
+  "url": "https://explore-guiadeviajes.netlify.app/"
+  },
 
   "license": "ISC",
   "description": "Proyecto CoderHouse",
   "repository": {
-    "type": "git",
-    "url": "https://github.com/AgustinaMindus/Explore-ProyectoCoderHouse"
+  "type": "git",
+  "url": "https://github.com/AgustinaMindus/Explore-ProyectoCoderHouse"
   }
-
 }

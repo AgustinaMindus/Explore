@@ -99,6 +99,14 @@ html {
   .header .nav .hamburger {
     text-align: right;
   }
+  .header .nav .nav-item .item {
+    font-size: 1.7rem;
+    padding: 7px 15px;
+  }
+  .header .nav .submenu {
+    font-size: 1.7rem;
+    margin-left: 0;
+  }
   .header .nav .perfil {
     margin-bottom: 10px;
   }
@@ -297,8 +305,8 @@ html {
   padding: 0 380px;
 }
 .contacto .formulario .form {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  border-radius: 0.5rem;
   background: #fafafa;
   overflow: hidden;
   padding: 45px;
@@ -371,7 +379,7 @@ html {
   bottom: 15px;
   z-index: 100;
   background-color: #4dc247;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
   border-radius: 50%;
   padding: 9px;
   width: 3.5%;
@@ -397,11 +405,9 @@ html {
     padding: 40px 30px;
   }
   .contacto .formulario .form h2 {
-    font-family: "raleway-bold";
     font-size: 2.5rem;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
   }
   .contacto .formulario .form button {
     width: 40%;
@@ -473,7 +479,7 @@ html {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 10px;
-  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
   color: #fafafa;
   margin-top: 15%;
   -webkit-transition: all 2s ease-in-out;
@@ -494,7 +500,7 @@ html {
   margin: 2px;
   letter-spacing: 4px;
   color: #fafafa;
-  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
 
 /* Sección Preferencias */
@@ -519,13 +525,13 @@ html {
 }
 .preferencias .preferencias-contenedor .preferencias-card {
   padding: 0 10px 10px 10px;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   width: 12%;
   height: 12%;
   margin: 11px 85px 50px 85px;
 }
 .preferencias .preferencias-contenedor .preferencias-card:hover {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
   background-color: #76c0b4;
 }
 .preferencias .preferencias-contenedor .preferencias-card .preferencias-card-interior:hover {
@@ -590,13 +596,13 @@ html {
   transform: scale(1.1);
 }
 .top-10 .destinos-contenedor .destinos-card img {
-  border-radius: 8px;
+  border-radius: 0.5rem;
   width: 100%;
   height: 100%;
 }
 .top-10 .destinos-contenedor .destinos-card .top-a {
   color: #fafafa;
-  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
   margin-top: -54px;
   margin-bottom: 30px;
 }
@@ -726,15 +732,25 @@ html {
     text-align: center;
     text-transform: uppercase;
     padding: 35px 30px;
-    margin-top: 14%;
+    margin-top: 12%;
     text-align: center;
     letter-spacing: 6px;
+    -webkit-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+  }
+  .container-background .imagen-inicio h1:hover {
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
   }
   .container-background .imagen-inicio p {
     font-family: "raleway-bold";
-    font-size: 2.2rem;
+    font-size: 2rem;
     text-align: center;
-    padding: 20px 41px;
+    padding: 20px 40px;
     letter-spacing: 2px;
   }
 
@@ -1034,7 +1050,7 @@ html {
 }
 .inicio-aventuras .contenedor-aventuras .card-aventuras {
   margin-bottom: 50px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
   background-color: transparent;
   border-radius: 8px;
   width: 28rem;
@@ -1066,7 +1082,7 @@ html {
 }
 .inicio-aventuras .contenedor-aventuras .card-aventuras .contenedor-texto {
   background-color: #fafafa;
-  padding: 20px 10px;
+  padding-top: 20px;
   border-radius: 0 0 8px 8px;
 }
 .inicio-aventuras .contenedor-aventuras .card-aventuras .contenedor-texto .titulo-aventuras {
@@ -1076,13 +1092,24 @@ html {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #6e50f9;
+  padding: 0 15px;
+  margin-top: 20px;
 }
 .inicio-aventuras .contenedor-aventuras .card-aventuras .contenedor-texto .parrafo-aventuras {
   font-family: "raleway-light";
   font-size: 1.5rem;
   text-align: center;
   color: #515151;
-  padding: 15px;
+}
+.inicio-aventuras .contenedor-aventuras .card-aventuras .contenedor-texto .puntuacion {
+  background-color: #b590ff;
+  padding: 10px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.inicio-aventuras .contenedor-aventuras .card-aventuras .contenedor-texto .puntuacion .puntuacion-img {
+  width: 7%;
+  margin: 0 5px;
 }
 .inicio-aventuras .paginas {
   margin-top: 30px;
@@ -1162,11 +1189,9 @@ html {
 }
 .galeria .img-0, .galeria .img-2, .galeria .img-3, .galeria .img-7, .galeria .img-8 {
   width: 94%;
-  height: 94%;
 }
 .galeria .img-1, .galeria .img-4, .galeria .img-5, .galeria .img-6, .galeria .img-9, .galeria .img-10 {
   width: 100%;
-  height: 100%;
 }
 .galeria .img-galeria {
   border-radius: 8px 0;
@@ -1242,8 +1267,8 @@ html {
   font-family: "raleway-regular";
   font-size: 1.5rem;
   text-align: center;
-  border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
 .galeria .imagenes-galeria p::before {
   content: "";
@@ -1255,7 +1280,7 @@ html {
   border: 0.75rem solid transparent;
   border-bottom: none;
   border-top-color: #b590ff;
-  filter: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  filter: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
 
 .online {
@@ -1362,7 +1387,7 @@ html {
   .online h2 {
     font-size: 3rem;
     letter-spacing: 3px;
-    margin: 15px 0 30px 0;
+    margin: 15px 0;
   }
   .online .container-online {
     display: flex;
@@ -1474,6 +1499,14 @@ html {
   background-color: #76c0b4;
   color: #c7fff0;
 }
+.recorridos .boton-ciudades .crear-nuevo {
+  color: #fafafa;
+  background-color: #b590ff;
+}
+.recorridos .boton-ciudades .crear-nuevo:hover {
+  background-color: #7d60f5;
+  color: #fafafa;
+}
 .recorridos .lugares-contenedor {
   width: 100%;
   padding: 60px 0 95px 0;
@@ -1495,7 +1528,7 @@ html {
   width: 70%;
   height: 70%;
   border-radius: 8px 8px 0px 0px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
 .recorridos .lugares-contenedor .lugares-card a {
   font-family: "raleway-bold-italic";
@@ -1531,7 +1564,7 @@ html {
   position: relative;
   top: 595px;
   left: 687px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
 .recorridos .lugar-mapa .lugar2-marcador {
   border-radius: 50%;
@@ -1541,7 +1574,7 @@ html {
   position: relative;
   top: 382px;
   left: 620px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
 .recorridos .lugar-mapa .lugar3-marcador {
   border-radius: 50%;
@@ -1551,7 +1584,7 @@ html {
   position: relative;
   top: 43px;
   left: 584px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
 .recorridos .lugar-mapa .mapa-contenedor {
   width: 100%;
@@ -1608,7 +1641,7 @@ html {
     padding-bottom: 40px;
   }
   .recorridos .recorridos-inicio h1 {
-    letter-spacing: 10px;
+    letter-spacing: 5px;
   }
   .recorridos .recorridos-inicio img {
     margin-top: 7px;
@@ -1674,19 +1707,21 @@ html {
     padding: 45px 20px;
   }
   .opiniones h3 {
+    font-size: 2.5rem;
     padding-bottom: 20px;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
   }
   .opiniones .opiniones-contenedor {
     display: flex;
     flex-direction: column;
   }
   .opiniones .opiniones-contenedor .opiniones-card {
-    padding: 20px;
+    padding: 15px;
+    margin: 15px 0;
   }
   .opiniones .opiniones-contenedor .opiniones-card .opiniones-titulo, .opiniones .opiniones-contenedor .opiniones-card .opiniones-texto {
-    font-size: 2rem;
-    line-height: 35px;
+    font-size: 1.5rem;
+    line-height: 20px;
   }
 }
 /* Tablet  */
@@ -1888,7 +1923,7 @@ html {
 .quienes .info-quienes-somos .mifoto {
   width: 90%;
   height: 90%;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   -webkit-transition: 0.5s linear;
   -o-transition: 0.5s linear;
   -moz-transition: 0.5s linear;
@@ -2005,7 +2040,7 @@ html {
 .seccion-favoritos .contenedor-mayor-favoritos .contenedor-fav .card-fav {
   width: 25%;
   margin: 30px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
   background-color: transparent;
   border-radius: 8px;
   -webkit-transition: all 1s ease-in-out;

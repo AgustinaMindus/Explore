@@ -3,7 +3,7 @@
     background-color: nth($color, 8);
     padding: 100px 0;
     width: $ancho;
-    
+
     h1 {
         @include titulos(nth($font-family, 4), nth($font-size, 6), $aling, $text-uppercase);
         letter-spacing: $letter-spacing;
@@ -15,7 +15,7 @@
     .info-quienes-somos {
         @extend %flex-2;
 
-        .texto-quienes-somos {        
+        .texto-quienes-somos {
         font-size: nth($font-size, 2);
         font-family: nth($font-family, 1);
         padding-right: 70px;
@@ -63,7 +63,7 @@
     .quienes {
     padding: 45px 20px;
     text-align: justify;
-        
+
         h1 {
         margin: 0 0 20px 0;
         }
@@ -86,16 +86,16 @@
         h2 {
         margin: 70px 0 0 0;
         }
-        
+
        .quienes-icon {
         display: flex;
-        
+
             img {
             width: $ancho - 35%;
             margin: 10px 0;
             }
         }
-    }   
+    }
 }
 
 /* Tablet */
@@ -103,7 +103,7 @@
     .quienes {
     padding: 40px;
     text-align: justify;
-        
+
         h1{
         margin: 25px 0;
         }
@@ -121,15 +121,15 @@
         h2{
         font-size: nth($font-size, 6);
         }
-    
+
         .quienes-icon {
         padding-bottom: 0;
             img {
             width: $ancho - 65%;
             margin: 20px 0px;
             }
-        }  
+        }
     }
 }
-/* Fin Media Querys Quienes Somos */ 
+/* Fin Media Querys Quienes Somos */
 /* Fin Quienes Somos */
